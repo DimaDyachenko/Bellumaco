@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="eng" data-livestyle-extension="available">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="css/styles_mobile.css" />
+    <link rel="stylesheet" href="css/styles_tablet.css" />
+    <link rel="stylesheet" href="css/styles_desktop.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+    <link rel="stylesheet" href="../../css/modal.css" />
+  </head>
+
+  <body>
+   
+    <script src="js/jquery.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.lastElementChild;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+    <script>
+      $("form#formElem").submit(function (event) {
+        $.ajax({
+          type: "POST", // define method post or get
+          url: $("form#formElem").attr("action"), // gets the post url from your action attribute
+          data: $("input[name=femail]").val(), // binds your form data
+          dataType: "json", // server response data type, use 'html' 'json' etc
+          encode: true,
+          success: function (data) {
+            console.log(data);
+          },
+          error: function (xhr, status, errorThrown) {
+            //alert( "Sorry, there was a problem!" );
+            console.log("Error: " + errorThrown);
+            console.log("Status: " + status);
+            console.dir(xhr);
+          },
+        });
+        event.preventDefault(); // prevents from going to the posting url
+      });
+    </script>
+    <script>
+      (() => {
+        const refs = {
+          wrapper: document.querySelector(".cookiesWrapper"),
+          closeBtn: document.querySelector(".cookiesBtn"),
+          openBurger: document.querySelector(".input"),
+          burger: document.querySelector(".navList"),
+          openModalBtn: document.querySelector(".mainButton"),
+          closeModalBtn: document.querySelector(".modalClose"),
+          modal: document.querySelector(".backdrop"),
+          openMenu: document.querySelector(".menu"),
+        };
+
+        refs.closeBtn.addEventListener("click", cookies);
+        refs.openBurger.addEventListener("click", burger);
+        refs.openModalBtn.addEventListener("click", modal);
+        refs.closeModalBtn.addEventListener("click", modal);
+
+        function burger() {
+          refs.burger.classList.toggle("is-vissually");
+        }
+        function cookies() {
+          refs.wrapper.classList.toggle("is-hidden");
+        }
+        function modal() {
+          refs.modal.classList.toggle("is-hidden");
+        }
+      })();
+    </script>
+  </body>
+</html>
