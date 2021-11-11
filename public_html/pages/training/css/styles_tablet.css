@@ -1,0 +1,116 @@
+@media (min-width: 720px) {
+  
+  .container {
+    padding: 80px 40px;
+  }
+  .header {
+    background-image: url("../images/mainBgMobile.WebP");
+    background-position: bottom center;
+  }
+  .logoImgTop {
+    max-width: 150px;
+  }
+  .nav {
+    align-self: center;
+  }
+  .headerTitle {
+    font-size: 50px;
+    line-height: 1.25em;
+    margin-bottom: 30px;
+  }
+  .headerText {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+
+  .headerNavBlock {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .headerNavSubblock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+  }
+
+  .ordinaryLink {
+    font-size: 20px;
+  }
+  .mainButton {
+    width: 100%;
+    max-width: 250px;
+  }
+  .brownSection {
+    padding: 0;
+  }
+  .marginForButton {
+    width: 60%;
+  }
+  .titleWithLine {
+    position: relative;
+    color: #d3b870;
+    font-size: 16px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+  }
+  .titleWithLine::before {
+    width: 40px;
+    left: -50px;
+    bottom: 8px;
+  }
+  .mainTitle {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .white {
+    color: white;
+    font-size: 30px;
+  }
+  .businessKnowsTitle {
+    font-size: 30px;
+  }
+  .red {
+    color: #9a312e;
+    font-size: 40px;
+  }
+  .black {
+    color: black;
+    font-size: 40px;
+  }
+  .creamSection:nth-of-type(2) .container {
+    padding: 0 40px;
+  }
+
+  .cardsWithContent {
+      padding: 0 40px;
+  }
+  .goldCarrerBlock {
+    padding: 60px 40px;
+  }
+  .footer {
+    background-color: #240c0c;
+    display: flex;
+    flex-direction: column;
+  }
+  .logoFooterBlock {
+    margin-bottom: 50px;
+  }
+  .logoFooter {
+    width: 50%;
+    height: auto;
+  }
+  .footerContentBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 24px;
+  }
+  .footerLink {
+    margin-bottom: 50px;
+  }
+  .footerLink:last-of-type {
+    display: none;
+  }
+}

@@ -1,0 +1,405 @@
+@media (min-width: 1440px) {
+  @font-face {
+    font-family: "Cardo";
+    src: url("../fonts/Cardo-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Prompt";
+    src: url("../fonts/Prompt-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+  .container {
+    padding: 60px 80px;
+  }
+  .desktopWrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .desktopWrapper:nth-of-type(1) .container {
+    padding: 80px 0;
+  }
+  .nav {
+    display: none;
+  }
+  .desktopNav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navList {
+    display: flex;
+  }
+  .navLink {
+    text-decoration: none;
+  }
+  .navText {
+    position: relative !important;
+    
+    font-size: 16px !important;
+    line-height: 1.9em;
+    color: white;
+    margin-right: 60px;
+    transition: 0.3s ease-in-out;
+  }
+  .navText::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    background-color: #d3b870;
+    transition: all 0.3s ease-in;
+  }
+  .navLink:hover .navText {
+    color: #d3b870;
+  }
+  .navLink:hover .navText::after {
+    opacity: 1;
+  }
+  .navList:nth-of-type(1) .accordion::after {
+    display: none;
+  }
+  .navLink:nth-of-type(2) .navText {
+    margin-right: 30px;
+  }
+  .navLink:nth-of-type(4) .navText {
+    margin-left: 30px;
+  }
+  .innerMenu {
+    font-size: 16px;
+    line-height: 1.9em;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    color: white;
+  }
+  .accordion {
+    position: relative;
+    margin-right: 0 !important;
+  }
+  .triangleAccordion {
+    position: absolute;
+    width: 15px;
+    min-width: 15px;
+    min-height: 10px;
+    height: 10px;
+    background-image: linear-gradient(to right bottom, transparent 50%, #d3b870 0), linear-gradient(to right top, #d3b870 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    left: 100%;
+    opacity: 0;
+    transform: translate(-250%) translateY(-49%);
+    transition: transform 0.1s ease-in;
+  }
+  .active .triangleAccordion {
+    opacity: 1;
+  }
+  .navTextSmall:hover {
+    color: black;
+  }
+  .panel {
+    text-align: center;
+    color: white;
+    background-color: #d3b870;
+    min-width: 205px;
+  }
+  .navTextSmall {
+    color: white;
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+    transition: 0.2s ease-in-out;
+  }
+  .header {
+    background-image: url("../images/trainer_bg_desk.WebP");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .logoImgTop {
+    max-width: 150px;
+    height: 100%;
+  }
+  .nav {
+    align-self: center;
+  }
+  .navLink .careersDesktop {
+    background-color: #d3b870;
+    width: 100%;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navLink:hover .careersDesktop {
+    color: black;
+  }
+  .careersDesktop::after {
+    display: none;
+  }
+
+  .navList:nth-of-type(1) .navLink:nth-child(6) {
+    margin-right: 40px !important;
+  }
+
+  .linkedinTop,.facebookTop {
+    margin-top: 0 !important;
+    transform: translateY(50%);
+  }
+.headerContent {
+  padding: 0 80px 310px;
+}
+
+  .headerTitle {
+    font-size: 50px;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+    max-width: 760px;
+  }
+  .headerText {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+  .mainButton {
+    width: 100%;
+    max-width: 250px;
+  }
+  .brownSection {
+    padding: 0 !important;
+  }
+  .marginForButton {
+    width: 60%;
+  }
+  .titleWithLine {
+    position: relative;
+    color: #d3b870;
+    font-size: 16px;
+    margin-left: 90px;
+    letter-spacing: 2px;
+  }
+  .titleWithLine::before {
+   left: -90px;
+    bottom: 10px;
+  }
+  .mainTitle {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .white {
+    color: white;
+    font-size: 40px;
+  }
+
+  .businessKnows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .businessKnowsTitle {
+    font-size: 30px;
+  }
+
+  .ordinaryText {
+    width: 100%;
+  }
+  .red {
+    color: #9a312e;
+    font-size: 40px;
+  }
+  .black {
+    color: black;
+    font-size: 40px;
+  }
+  .bottom {
+    margin: 40px -40px -50px !important;
+  }
+
+  .rightContent,.leftContent {
+   width: 100%;
+    max-width: 450px;
+  }
+
+  .weAreYourSolution {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+  }
+
+
+.whatWeOfferBlock {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+
+  .listWithYellowDots {
+    margin-bottom: 60px;
+  }
+  .listItem {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .weAreYourSolutionImg {
+    width: 100%;
+    height: 100%;
+  }
+  .rightContentPhoto {
+    width: 50%;
+    margin: 0 !important;
+  }
+  .rightContentPhotoLitle {
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+  .createChangesThatMatters {
+    display: flex;
+  }
+  .leftContentWithPhoto {
+    width: calc(50% - 240px);
+    margin: 0 !important;
+    align-self: center;
+    padding: 140px 120px;
+  }
+  .leftContentWithPhotoLitle {
+    width: calc(50% - 80px);
+    padding: 70px 40px 70px 40px;
+    align-self: center;
+  }
+  .bottomContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 80px;
+  }
+
+  .bottomContentTitle {
+    margin-bottom: 0;
+  }
+
+
+
+
+
+  .humanResoursesBlock, .trainingBlock, .managementConsultingBlock, .financeConsultingBlock {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+  }
+  .trainingBlock, .humanResoursesBlock {
+    flex-direction: row;
+  }
+
+  .managementConsultingBlock, .financeConsultingBlock {
+    flex-direction: row;
+  }
+
+  .flex {
+    display: flex;
+    width: 50%;
+  }
+  .goldCarrerBlock {
+    padding: 30px 0;
+    justify-content: center;
+  }
+
+  .carrerBlockDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 120px;
+  }
+  .careersTitle {
+    margin-bottom: 0 !important;
+    font-size: 40px;
+  }
+  .contactUsBlock {
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+  }
+  .typeOfContactAndDetails {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .typeOfContactAndDetails:last-of-type {
+    margin-bottom: 60px;
+  }
+  .typeOfContact {
+    display: block;
+    width: 20%;
+  }
+  .contactDetails {
+    display: block;
+    width: 100%;
+  }
+  .footer {
+    position: relative;
+    background-color: #240c0c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logoFooterBlock {
+    margin-bottom: 50px;
+  }
+  .logoFooter {
+    max-width: 407px;
+  }
+  .footerContentBlock {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 275px;
+  }
+
+  .quickLinksBlock, .footerContactBlock {
+    width: 100%;
+  }
+
+  .copyrigthBlock {
+    position: absolute;
+    bottom: calc(0% + 60px);
+  }
+  .footerLink {
+    margin-bottom: 50px;
+  }
+  .footerLink:last-of-type {
+    display: block;
+    margin-bottom: 0;
+  }
+  .mainContent {
+    display: flex;
+  }
+  .leftContentPhoto {
+    width: 50%;
+  }
+  .blackWhiteBlockWrapper {
+    width: 50%;
+    flex-direction: column;
+  }
+  .blackBlock, .whiteBlock {
+    width: 100%;
+  }
+  .wrapper {
+    padding: 175px 0 15px;
+    width: 50%;
+  }
+  .formContainer {
+    margin: 140px 0;
+    width: 50%;
+  }
+  .list {
+    width: 70%;
+  }
+  .footer.container {
+    padding-bottom: 20px;
+  }
+}
