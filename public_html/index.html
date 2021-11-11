@@ -9,18 +9,214 @@
 
     <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
-    <link rel="stylesheet" href="css/burger.css" />
   </head>
 
   <body>
-    
+    <header class="header">
+      <div class="desktopWrapper">
+        <div class="topBlock container">
+          <img class="logoImgTop" src="./images/mainLogo.WebP" />
 
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="/geo.js"></script>
-    <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
+          <nav role="navigation" class="nav">
+            <div id="menuToggle" class="burgerMenu">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input
+                class="input"
+                type="checkbox"
+                id="navigation"
+                onchange="onChange()"
+              />
+
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu" class="navList">
+                <a href="" class="navLink">
+                  <li class="navText">HOME</li>
+                </a>
+                <a href="pages/aboutUs/index.html" class="navLink">
+                  <li class="navText">ABOUT US</li>
+                </a>
+                <a class="navLink innerMenu">
+                  <li class="navText accordion">
+                    SERVICES
+                    <div class="triangle"></div>
+                    <ul id="menuInMenu" class="navInnerList panel">
+                      <a href="pages/humanResources/index.html" class="navLink">
+                        <li class="navTextSmall">Mobile development</li>
+                      </a>
+                      <a
+                        href="pages/managementConsulting/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Cloud development</li>
+                      </a>
+                      <a
+                        href="pages/financeConsulting/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Quality Assuarance</li>
+                      </a>
+                      <a href="pages/training/index.html" class="navLink">
+                        <li class="navTextSmall">DevOps</li>
+                      </a>
+                      <a href="pages/training/index.html" class="navLink">
+                        <li class="navTextSmall">Product Design</li>
+                      </a>
+                      <a href="pages/training/index.html" class="navLink">
+                        <li class="navTextSmall">Machine learning</li>
+                      </a>
+                      <a href="pages/training/index.html" class="navLink">
+                        <li class="navTextSmall">Web development</li>
+                      </a>
+                    </ul>
+                  </li>
+                </a>
+                <a href="pages/contact/index.html" class="navLink">
+                  <li class="navText">CASES</li>
+                </a>
+                <a href="pages/careers/index.html" class="navLink">
+                  <li class="navText careers">CONTACTS</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="desktopNav">
+            <ul class="navList">
+              <a href="index.html" class="navLink">
+                <li class="navText">HOME</li>
+              </a>
+              <a href="pages/aboutUs/index.html" class="navLink">
+                <li class="navText">ABOUT US</li>
+              </a>
+              <a class="navLink innerMenu">
+                <li class="navText accordion">
+                  SERVICES
+                  <div class="triangle"></div>
+                  <ul class="navInnerList panel">
+                    <div class="triangleAccordion"></div>
+                    <a href="pages/humanResources/index.html" class="navLink">
+                      <li class="navTextSmall">Mobile development</li>
+                    </a>
+                    <a
+                      href="pages/managementConsulting/index.html"
+                      class="navLink"
+                    >
+                      <li class="navTextSmall">Cloud development</li>
+                    </a>
+                    <a
+                      href="pages/financeConsulting/index.html"
+                      class="navLink"
+                    >
+                      <li class="navTextSmall">Quality Assuarance</li>
+                    </a>
+                    <a href="pages/training/index.html" class="navLink">
+                      <li class="navTextSmall">DevOps</li>
+                    </a>
+                    <a href="pages/training/index.html" class="navLink">
+                      <li class="navTextSmall">Product Design</li>
+                    </a>
+                    <a href="pages/training/index.html" class="navLink">
+                      <li class="navTextSmall">Machine learning</li>
+                    </a>
+                    <a href="pages/training/index.html" class="navLink">
+                      <li class="navTextSmall">Web development</li>
+                    </a>
+                  </ul>
+                </li>
+              </a>
+              <a href="pages/contact/index.html" class="navLink">
+                <li class="navText">CASES</li>
+              </a>
+              <a href="pages/careers/index.html" class="navLink">
+                <li class="navText careersDesktop">CONTACTS</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+        <div class="headerContent" id="headerContent">
+          <div class="container headerTextVisibility">
+            <img class="logoHeader" src="./images/logo.png" />
+            <h1 class="mainTitle headerTitile">
+              We make running your business easier. We make it smart.
+            </h1>
+            <p class="ordinaryText headerText">
+              Our goal is the rapid growth of your business. That's why our team
+              researches, analyzes and implements the right solutions for your
+              system.
+            </p>
+            <a class="mainButton" href="#">
+              <button class="mainButtonText">Our services</button>
+            </a>
+          </div>
+          <div class="lineWithPoint">
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- <script>
+      (() => {
+        const refs = {
+          wrapper: document.querySelector(".cookiesWrapper"),
+          closeBtn: document.querySelector(".cookiesBtn"),
+          openBurger: document.getElementById('navigation'),
+          burger: document.getElementById("menu"),
+        };
+
+        refs.closeBtn.addEventListener("click", cookies);
+        refs.openBurger.addEventListener("click", burger);
+
+        function burger() {
+          refs.burger.classList.add("is-vissually");
+        }
+        function cookies() {
+          refs.wrapper.classList.add("is-hidden");
+        }
+      })();
+    </script> -->
+
+    <!-- #### VANTA JS PLUGIN ### -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.waves.min.js"></script>
+    <!-- B. Instilize vanta js by #id selector change WAVES to BIRDS -->
+    <script>
+      // Step 3 - Instilize the plugin by #id selector
+      VANTA.WAVES({
+        el: "#headerContent",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x90909,
+        shininess: 37.0,
+        waveSpeed: 0.3,
+      });
+    </script>
 
     <script>
       var acc = document.getElementsByClassName("accordion");
@@ -40,24 +236,19 @@
       }
     </script>
     <script>
-      (() => {
-        const refs = {
-          wrapper: document.querySelector(".cookiesWrapper"),
-          closeBtn: document.querySelector(".cookiesBtn"),
-          openBurger: document.querySelector(".input"),
-          burger: document.querySelector(".navList"),
-        };
+      var checkbox = document.querySelector('input[type="checkbox"]');
+      let header = document.querySelector(".headerTextVisibility");
 
-        refs.closeBtn.addEventListener("click", cookies);
-        refs.openBurger.addEventListener("click", burger);
+      checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+          header.style.zIndex = '0';
+          checkbox.value = '';
+        } else {
+          header.style.zIndex = '1'
+        }
+      })
 
-        function burger() {
-          refs.burger.classList.toggle("is-vissually");
-        }
-        function cookies() {
-          refs.wrapper.classList.toggle("is-hidden");
-        }
-      })();
     </script>
+    
   </body>
 </html>
