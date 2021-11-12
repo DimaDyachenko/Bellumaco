@@ -1,3 +1,141 @@
-@media (min-width: 720px) {
- 
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+@media (min-width: 768px) {
+  .vanta-canvas {
+    min-height: 546px;
+  }
+  .container {
+    padding: 30px 40px 40px;
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .headerText {
+    max-width: 170px;
+  }
+  .headerTitle {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .textWrapper,
+  .headerImgWrapper {
+    width: 50%;
+  }
+  .headerImg {
+    margin-top: 40px;
+  }
+  .headerInfo {
+    max-width: 334px;
+  }
+  .lineWithPointContainer {
+    margin-top: -79px;
+  }
+  .infoSection {
+    padding: 70px 0 60px;
+  }
+  .infoBoxWithLine {
+    margin-right: 73px;
+  }
+  .infoBoxWithLineImg {
+    width: 69px;
+    height: 9px;
+  }
+  .infoBoxWithLineTitle {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .infoBoxDescriprion {
+    margin-left: 87px;
+    max-width: 490px;
+  }
+  .infoBoxList {
+    margin-bottom: 40px;
+    margin-left: 95px;
+  }
+  .infoBoxBlock {
+    margin-bottom: 40px;
+  }
+  .sideBorder {
+    border-right: 2px solid #393838;
+    border-left: 2px solid #393838;
+  }
+  .resultSection {
+    background-image: url(../img/resultBG_tab.png);
+    background-size: 111% 96%;
+    background-position: top;
+  }
+  .resultImg {
+    width: 69px;
+    height: 10px;
+  }
+  .resultTitle {
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 700;
+  }
+  .resultList {
+    margin-bottom: 40px;
+  }
+  .resultMobBox {
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(-97px);
+  }
+  .resultTablerWrapper {
+    max-width: 688px;
+    margin-bottom: 0;
+  }
+  .resultMobWrapper {
+    max-width: 334px;
+    margin-bottom: 0 !important;
+  }
+  .resultMobWrapper:nth-child(odd) {
+    margin-right: 20px;
+  }
+  .resultMobWrapper:nth-child(-n + 2) {
+    margin-bottom: 20px !important;
+  }
+  .secondMobBox,
+  .fourthMobBox {
+    transform: translateY(40px);
+  }
+  .workSectionLeftBlock {
+    width: 65%;
+    margin-bottom: 0;
+  }
+  .workSectionRightBlock {
+    width: 35%;
+  }
+  .workSectionWithLineImg {
+    width: 69px;
+    height: 9px;
+  }
+  .workSectionHeadTitle {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .workSectionDescription {
+    padding-left: 90px;
+    margin-bottom: 50px;
+    max-width: 334px;
+  }
+  .btnWrapper {
+    max-width: 190px;
+    padding-left: 90px;
+  }
+  .workSectionWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .workImg {
+    margin-top: 35px;
+  }
 }

@@ -1,3 +1,121 @@
 @media (min-width: 1440px) {
- 
+  .vanta-canvas {
+    min-height: 608px;
+  }
+  .container {
+    padding: 20px 165px 40px;
+  }
+  .textWrapper {
+    width: 53%;
+    padding-top: 112px;
+  }
+  .headerImgWrapper {
+    width: 47%;
+  }
+  .headerImg {
+    margin-top: 0;
+  }
+  .headerInfo {
+    max-width: 520px;
+  }
+  .lineWithPointContainer {
+    padding-bottom: 100px;
+    margin-top: -157px;
+  }
+  .infoSectionContainer {
+    padding: 100px 55px;
+  }
+  .infoSection {
+    padding-top: 0;
+  }
+  .infoBox {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .infoBoxBlock {
+    max-width: 630px;
+  }
+  .infoBoxWithLineImg {
+    width: 89px;
+    height: auto;
+  }
+  .infoBoxDescriprion {
+    margin-left: 109px;
+    max-width: 630px;
+  }
+  .infoBoxList {
+    margin-left: 115px;
+  }
+  .resultSectionContainer {
+    padding: 120px 55px 0;
+  }
+  .resultSection {
+    background-image: url(../img/resultBG_desk.png);
+    background-size: contain;
+    background-position: top;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .resultTextBox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 120px;
+  }
+  .resultHead {
+    margin: 0 89px 0 110px;
+  }
+  .resultImg {
+    width: 89px;
+    height: auto;
+  }
+  .resultList {
+    max-width: 630px;
+  }
+  .resultMobBox {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .resultTablerWrapper {
+    max-width: 1070px;
+    margin: 0 auto;
+  }
+  .resultMobWrapper {
+    margin: 0 !important;
+    max-width: 300px;
+  }
+  .secondMobBox {
+    transform: translateY(-20px);
+  }
+  .thirdMobBox {
+    transform: translateY(-60px);
+  }
+  .fourthMobBox {
+    transform: none;
+  }
+  .workSectionContainer {
+    padding: 0 55px;
+    display: block;
+  }
+  .workSectionWrapper {
+    border-right: 2px solid #393838;
+    border-left: 2px solid #393838;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 108px;
+  }
+  .workSectionWithLineImg {
+    width: 89px;
+    height: auto;
+  }
+  .workSectionDescription {
+    padding-left: 110px;
+    max-width: 410px;
+  }
+  .workSectionHeadWrapper,
+  .workSectionRightBlock {
+    width: 50%;
+  }
 }

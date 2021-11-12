@@ -1,3 +1,108 @@
 @media (min-width: 768px) {
- 
+  .container {
+    padding: 60px 40px 40px;
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .headerText {
+    max-width: 170px;
+  }
+  .headerTitle {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .textWrapper,
+  .headerImgWrapper {
+    width: 50%;
+  }
+  .headerInfo {
+    max-width: 334px;
+  }
+  .infoSection {
+    padding: 40px 0 60px;
+  }
+  .infoBoxWithLine {
+    margin-right: 73px;
+  }
+  .infoBoxWithLineImg {
+    width: 69px;
+    height: 9px;
+  }
+  .infoBoxWithLineTitle {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .infoBoxDescriprion {
+    margin-left: 87px;
+    max-width: 490px;
+  }
+  .infoBoxList {
+    margin-bottom: 40px;
+    margin-left: 95px;
+  }
+  .sideBorder {
+    border-right: 2px solid #393838;
+    border-left: 2px solid #393838;
+  }
+  .resultSection {
+    background-image: url(../img/resultBG_tab.png);
+    margin-bottom: 100px;
+  }
+  .resultImg {
+    width: 69px;
+    height: 10px;
+  }
+  .resultList {
+      margin-bottom: 40px;
+  }
+  .resultMobBox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .resultMobWrapper {
+      max-width: 332px;
+      margin-bottom: 0 !important;
+  }
+  .resultMobWrapper:nth-child(odd) {
+      margin-right: 20px;
+  }
+  .resultMobWrapper:nth-child(-n+2) {
+      margin-bottom: 20px !important;
+  }
+  .secondMobBox, .fourthMobBox {
+      transform: translateY(40px);
+  }
+  .workSectionLeftBlock {
+      width: 65%;
+      margin-bottom: 0;
+  }
+  .workSectionRightBlock {
+      width: 35%;
+  }
+  .workSectionWithLineImg {
+      width: 69px;
+      height: 9px;
+  }
+  .workSectionHeadTitle {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .workSectionDescription {
+      padding-left: 90px;
+      margin-bottom: 50px;
+      max-width: 334px;
+  }
+  .btnWrapper {
+      max-width: 190px;
+      padding-left: 90px;
+  }
+  .workSectionContainer {
+      display: flex;
+      justify-content: space-between;
+  }
+  .workImg {
+      margin-top: 35px;
+  }
 }

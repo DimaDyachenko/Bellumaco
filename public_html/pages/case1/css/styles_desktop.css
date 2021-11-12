@@ -1,4 +1,103 @@
 @media (min-width: 1440px) {
-  
-  
+  /* .vanta-canvas {
+        min-height: 700px;
+    } */
+  .container {
+    padding: 100px 165px 40px;
+  }
+  .textWrapper {
+    width: 60%;
+  }
+  .headerImgWrapper {
+    width: 40%;
+  }
+  .headerInfo {
+    max-width: 520px;
+  }
+  .lineWithPointContainer {
+    transform: translateY(-60px);
+  }
+  .infoSectionContainer {
+    padding: 100px 55px;
+  }
+  .infoSection {
+    padding-top: 0;
+  }
+  .infoBox {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .infoBoxWithLineImg {
+    width: 89px;
+    height: auto;
+  }
+  .infoBoxDescriprion {
+    margin-left: 109px;
+    max-width: 630px;
+  }
+  .infoBoxList {
+    margin-left: 115px;
+  }
+  .resultSectionContainer {
+      padding: 120px 55px;
+  }
+  .resultSection {
+      background-image: url(../img/resultBG_desk.png);
+      background-size: contain;
+      background-position: top;
+      padding: 0 0 40px;
+      margin-bottom: 0;
+  }
+  .resultTextBox {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin-bottom: 120px;
+  }
+  .resultImg {
+      width: 89px;
+      height: auto;
+  }
+  .resultList {
+      max-width: 630px;
+  }
+  .resultMobBox {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+  }
+  .resultMobWrapper {
+      margin: 0 !important;
+      max-width: 300px;
+  }
+  .thirdMobBox {
+      transform: translateY(100px);
+  }
+  .fourthMobBox {
+      transform: none;
+  }
+  .workSectionContainer {
+      padding: 0 55px;
+      display: block;
+  }
+  .workSectionWrapper {
+    border-right: 2px solid #393838;
+    border-left: 2px solid #393838;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 108px;
+  }
+  .workSectionWithLineImg {
+      width: 89px;
+      height: auto;
+  }
+  .workSectionDescription {
+      padding-left: 110px;
+      max-width: 410px;
+  }
+  .workSectionHeadWrapper, .workSectionRightBlock {
+      width: 50%;
+  }
 }
