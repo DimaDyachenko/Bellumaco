@@ -1,3 +1,174 @@
-@media (min-width: 1440px) {
- 
+@media (min-width: 1400px) {
+  .container {
+    padding: 30px 50px;
+  }
+  .desktopWrapper {
+    background-color: #191919;
+  }
+
+  .topBlock {
+    padding-bottom: 0;
+    align-items: baseline;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav {
+    display: none;
+  }
+  .desktopNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .navList {
+    display: flex;
+    margin-right: 160px;
+  }
+  .navLink {
+    text-decoration: none;
+  }
+  .navText {
+    position: relative !important;
+
+    font-size: 16px !important;
+    line-height: 1.9em;
+    color: white;
+    margin-right: 60px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navLink:hover .navText {
+    color: #60d4c9;
+  }
+  .navLink:hover .navText::after {
+    opacity: 1;
+  }
+  .navList:nth-of-type(1) .accordion::after {
+    display: none;
+  }
+  .navLink:nth-of-type(2) .navText {
+    margin-right: 30px;
+  }
+  .navLink:nth-of-type(4) .navText {
+    margin-left: 30px;
+  }
+  .innerMenu {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.9em;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    color: white;
+  }
+  .accordion {
+    position: relative;
+    margin-right: 0 !important;
+    transition: all 0.2s;
+  }
+
+  .accordion :hover {
+    color: #60d4c9;
+  }
+
+  .navTextSmall:hover {
+    color: #60d4c9;
+  }
+  .panel {
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-25%);
+    text-align: center;
+    color: white;
+    background-color: #191919;
+    min-width: 205px;
+    border-radius: 16px;
+  }
+  .navTextSmall {
+    color: white;
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+    transition: 0.2s ease-in-out;
+  }
+
+  .burderedButton {
+    display: block;
+  }
+
+  .burderedButtonText {
+    cursor: pointer;
+    background-color: #191919;
+    color: #60d4c9;
+    border: 1px solid #60d4c9;
+    padding: 16px 32px;
+    border-radius: 14px;
+    font-size: 14px;
+  }
+
+  .contactUsSection {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  .contactFlex {
+    align-items: center;
+    padding: 0px 100px;
+    margin: 120px 0;
+  }
+  .contentBlock {
+    width: 50%;
+    /* margin-top: 100px; */
+  }
+  .contactButton {
+    margin-top: 40px;
+  }
+
+  .contactUsImg {
+    margin: 0px auto;
+    max-width: 550px;
+  }
+  .contactUsImgItem {
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+  }
+
+  .grey {
+    background-color: #191919;
+  }
+  .footer {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+
+  .logoFooter, .logoFooterBlock {
+      max-width: 200px;
+  }
+
+  .footerCopyrigth {
+      left: 3%;
+  }
+
+  .linksFooterPrivacy {
+      top: 32%;
+      left: 85%;
+  }
+
+  .typeOfContact {
+      max-width: 14px;
+      height: 20px;
+      
+  }
+
+  .email {
+      width: 20px;
+      max-width: 20px;
+  }
 }
