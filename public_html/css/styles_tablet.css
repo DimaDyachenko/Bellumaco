@@ -1,3 +1,159 @@
 @media (min-width: 720px) {
- 
+  .headerContent {
+    padding-bottom: 10px;
+  }
+  .container {
+    padding: 30px 40px;
+  }
+  .logoImgTop {
+    max-width: 157px;
+  }
+
+  .mainTitle {
+    font-size: 40px;
+    line-height: 1.1em;
+  }
+
+  .mainButton {
+    max-width: 190px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .headerText {
+    margin-bottom: 50px;
+  }
+
+  .lineWithPoint {
+    display: block !important;
+    margin-top: 40px;
+  }
+
+  .lineHeader {
+    position: relative;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80px;
+    background-color: white;
+    /* transform: rotate(90deg); */
+  }
+
+  .lineHeader::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 100%;
+    transform: translate(-45%);
+  }
+
+  .contactFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contentBlock {
+    margin-top: 80px;
+  }
+  .contactButton {
+    position: relative;
+
+    left: 9%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .contactUSubtitle {
+    font-size: 32px;
+    line-height: 144%;
+  }
+
+  .line {
+    transform: translateY(16px);
+  }
+
+  .contactUsImg {
+    margin: 80px 0;
+    max-width: 245px;
+    width: 100%;
+  }
+  .contactUsImgItem {
+    max-width: 245px;
+  }
+  .footer {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  /* .logoFooterBlock {
+    margin-bottom: 50px;
+  } */
+  .logoFooter {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+  }
+
+  .footerContentBlock {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .footerCopyrigth {
+    position: absolute;
+    display: block !important;
+    color: white;
+    left: 5%;
+    top: 86%;
+  }
+
+  .list {
+    width: 60%;
+    margin: 0;
+    margin-left: auto;
+  }
+  .typeOfContactAndDetailsFooter {
+    display: flex;
+  }
+
+  .typeOfContact {
+    margin-right: 13px;
+  }
+
+  .contactDetails {
+    text-align: start;
+    line-height: 24px;
+  }
+
+  .linksFooterPrivacy {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    left: 73%;
+    top: 85%;
+  }
+
+  .quickLinksBlock {
+    text-align: start;
+  }
+
+  .linkedinBot,
+  .footerLink {
+    margin: 0;
+  }
+
+  .footerLink {
+    margin-right: 30px;
+  }
 }

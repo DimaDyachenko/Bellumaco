@@ -167,13 +167,87 @@
             <a class="mainButton" href="#">
               <button class="mainButtonText">Our services</button>
             </a>
-          </div>
-          <div class="lineWithPoint">
-            <div class="line"></div>
+            <div class="lineWithPoint">
+              <div class="lineHeader"></div>
+            </div>
           </div>
         </div>
       </div>
     </header>
+    <section class="contactUsSection">
+      <div class="container contactFlex">
+        <div class="contentBlock">
+          <div class="subtitleWithLine">
+            <div class="line"></div>
+            <h1 class="contactUSubtitle">
+              Give life to the project of your dream, contact us
+            </h1>
+          </div>
+          <a class="mainButton contactButton" href="#">
+            <button class="mainButtonText">contact Us</button>
+          </a>
+        </div>
+        <div class="contactUsImg">
+          <img class="contactUsImgItem" src="./images/stone.png" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer container">
+      <div class="logoFooterBlock">
+        <img class="logoFooter" src="./images/mainLogo.WebP" />
+      </div>
+      <div class="footerContentBlock">
+        <div class="quickLinksBlock">
+          <ul class="linksList">
+            <a href="index.html" class="navLinkFooter"
+              ><li class="navTextFooter">Home</li></a
+            >
+            <a href="pages/aboutUs/index.html" class="navLinkFooter"
+              ><li class="navTextFooter">About Us</li></a
+            >
+            <a href="pages/whatWeOffer/index.html" class="navLinkFooter"
+              ><li class="navTextFooter">Services</li></a
+            >
+            <a href="pages/careers/index.html" class="navLinkFooter"
+              ><li class="navTextFooter">Cases</li></a
+            >
+            <a href="pages/contact/index.html" class="navLinkFooter"
+              ><li class="navTextFooter">Contact</li></a
+            >
+          </ul>
+        </div>
+        <div class="footerContactBlock">
+          <ul class="list">
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact location" src="./images/location.png" />
+              <li class="contactDetails">
+                Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
+              </li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact phone" src="./images/phone.png" />
+              <li class="contactDetails">+ 44 786 596 39 35</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact email" src="./images/letter.png" />
+              <li class="contactDetails">info@bellumaco.com</li>
+            </div>
+          </ul>
+
+          <div class="linksFooterPrivacy">
+            <a href="https://ru.linkedin.com/" class="navLinkFooter">
+              <img class="linkedinBot" src="./images/linkedin.png"
+            /></a>
+            <a href="pages/privacy/index.html" class="footerLink"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyrigthBlock">
+        <p class="footerCopyrigth">Copyright © 2021 Bellumaco</p>
+      </div>
+    </footer>
 
     <!-- <script src="js/jquery.js"></script> -->
     <!-- <script>
@@ -239,16 +313,14 @@
       var checkbox = document.querySelector('input[type="checkbox"]');
       let header = document.querySelector(".headerTextVisibility");
 
-      checkbox.addEventListener('change', () => {
+      checkbox.addEventListener("change", () => {
         if (checkbox.checked) {
-          header.style.zIndex = '0';
-          checkbox.value = '';
+          header.style.zIndex = "0";
+          checkbox.value = "";
         } else {
-          header.style.zIndex = '1'
+          header.style.zIndex = "1";
         }
-      })
-
+      });
     </script>
-    
   </body>
 </html>

@@ -14,7 +14,6 @@
   user-select: none;
 }
 
-
 #menuToggle a {
   text-decoration: none;
   color: white;
@@ -23,7 +22,7 @@
 }
 
 #menuToggle a:hover {
-  color: #00E2D5;
+  color: #00e2d5;
 }
 
 #menuToggle input {
@@ -101,11 +100,11 @@
  */
 
 #menu {
-  overflow:hidden;
+  overflow: hidden;
   position: absolute;
   text-align: center;
   padding-top: 125px;
-  right: 1000px;
+  right: 10000px;
   top: calc(50%);
   width: 100vw;
   height: 100vh;
@@ -115,11 +114,10 @@
   /* to stop flickering of text in safari */
 
   transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-
 }
 
-.navList {}
-
+.navList {
+}
 
 .navText {
   margin-bottom: 25px;
@@ -140,13 +138,10 @@ li:hover {
   /* transform: translate(0); */
   right: calc(0% - 20px);
   width: 100vw;
-
 }
-
 
 .accordion {
   cursor: pointer;
-  
 }
 .navLink {
   font-family: "TT Firis Neue";
@@ -190,7 +185,6 @@ li:hover {
 
 .whatWeOfferLink {
   margin-right: 10px;
- 
 }
 
 .navTextSmall {
@@ -204,24 +198,9 @@ li:hover {
   margin-bottom: 0;
 } */
 
-
-
 @media (min-width: 720px) {
-  #menu {
+  #menuToggle input:checked ~ ul {
     right: calc(0% - 40px);
-    top: calc(0% - 120px);
-    padding-top: 150px;
-  }
-  .careers {
-    max-width: 380px;
-    width: 100%;
-    padding: 10px 0 !important;
-  }
-  #menu li {
-    padding: 0;
-    margin-bottom: 40px;
-  }
-  .navTextSmall {
-    margin-bottom: 20px;
+    height: 200vh;
   }
 }

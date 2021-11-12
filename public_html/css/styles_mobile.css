@@ -3,6 +3,8 @@
   src: url("../fonts/TTFirsNeue-Regular.ttf");
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
+  
 }
 
 .container {
@@ -10,15 +12,47 @@
 }
 
 .mainTitle {
-  color: white;
+  color: #F0F8F7;
   font-weight: 700;
   font-size: 32px;
   line-height: 137%;
   font-family: "TT Firis Neue";
 }
 
+.subtitleWithLine {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4em;
+  display: flex;
+}
+
+.line {
+  position: relative;
+  content: '';
+  display: block;
+  width: 55px;
+  height: 1px;
+  background-color: black;
+  margin-right: 21px;
+  transform: translateY(12px);
+}
+
+.line::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+  left: 100%;
+  top: 0;
+  transform: translate(-25%, -30% );
+}
+
 .ordinaryText {
-  color: white;
+  color: #F0F8F7;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5em;
@@ -50,7 +84,8 @@
 }
 
 .headerContent {
-  height: 600px;
+  /* max-height: 700px; */
+  height: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -86,4 +121,132 @@
   border: none;
   outline: none;
   width: 100%;
+  transition: 0.2s all;
+}
+.mainButtonText:hover {
+  background-color: #60D4C9;
+}
+
+.lineWithPoint {
+  display: none;
+}
+
+
+.contentBlock {
+  margin-top: 60px;
+}
+.contactButton {
+  margin-top: 40px;
+}
+
+.contactUsImg {
+  margin: 40px 0 60px;
+}
+.contactUsImgItem {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+.footer {
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logoFooterBlock {
+  max-width: 130px;
+  margin-bottom: 50px;
+}
+
+.logoFooter {
+  width: 100%;
+  height: auto;
+}
+
+.footerContentBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.quickLinksBlock {
+}
+
+.footerTitle {
+  color: #f0d57d;
+  font-family: "Cardo";
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.linksList {
+  margin-bottom: 42px;
+}
+
+.navLinkFooter {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.navLinkFooter:hover {
+  color: #00e2d5;
+}
+
+.navTextFooter {
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.linkedinBot {
+  width: 20px;
+  height: auto;
+  margin-top: 50px;
+
+  margin-bottom: 20px;
+}
+
+.typeOfContactAndDetailsFooter {
+  color: white;
+  margin-bottom: 23px;
+}
+
+.typeOfContact {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  max-width: 20px;
+  height: auto;
+}
+
+.footerLink {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  
+  color: white;
+  margin-bottom: 60px;
+}
+
+.copyrigthBlock {
+  margin-bottom: 15px;
+}
+
+.footerCopyrigth {
+  display: none;
+}
+
+.responsibleCard {
+  text-align: center;
+}
+.footer.container {
+  padding-bottom: 0;
 }
