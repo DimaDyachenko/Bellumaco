@@ -175,13 +175,16 @@
   .casesCards {
     max-width: 728px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto -130px;
     padding: 1px;
   }
   .burderedButtonCases {
     width: 70%;
   }
   .casesCardItem {
+      background-color: #020202;
+      z-index: 100;
+      overflow: visible;
     border-radius: 40px;
     padding: 40px;
     max-width: 423px;
