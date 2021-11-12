@@ -104,6 +104,12 @@
     padding: 16px 32px;
     border-radius: 14px;
     font-size: 14px;
+    transition: all 0.2s;
+  }
+
+  .burderedButtonText:hover {
+      background-color: #60d4c9;
+      color: black;
   }
 
   .contactUsSection {
