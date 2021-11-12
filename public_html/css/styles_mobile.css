@@ -4,7 +4,6 @@
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  
 }
 
 .container {
@@ -12,7 +11,7 @@
 }
 
 .mainTitle {
-  color: #F0F8F7;
+  color: #f0f8f7;
   font-weight: 700;
   font-size: 32px;
   line-height: 137%;
@@ -27,20 +26,56 @@
   display: flex;
 }
 
+.white {
+  color: white !important;
+  background-color: white !important;
+}
+
+.white::after {
+  border: 1px solid white !important;
+}
+
+.black {
+  color: black !important;
+}
+
+.burderedButton {
+  display: block;
+}
+
+.burderedButtonText {
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  /* background-color: #191919; */
+  color: #60d4c9;
+  border: 1px solid #60d4c9;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.burderedButtonText:hover {
+  background-color: #60d4c9;
+  color: black;
+}
+
 .line {
   position: relative;
-  content: '';
+  content: "";
   display: block;
   width: 55px;
   height: 1px;
   background-color: black;
   margin-right: 21px;
-  transform: translateY(12px);
+  transform: translateY(15px);
 }
 
 .line::after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 5px;
   height: 5px;
@@ -48,11 +83,11 @@
   border-radius: 50%;
   left: 100%;
   top: 0;
-  transform: translate(-25%, -30% );
+  transform: translate(-25%, -30%);
 }
 
 .ordinaryText {
-  color: #F0F8F7;
+  color: #f0f8f7;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5em;
@@ -92,8 +127,6 @@
   align-items: center;
 }
 
-
-
 .headerTitile {
   margin-bottom: 20px;
 }
@@ -121,13 +154,117 @@
   transition: 0.2s all;
 }
 .mainButtonText:hover {
-  background-color: #60D4C9;
+  background-color: #60d4c9;
 }
 
 .lineWithPoint {
   display: none;
 }
 
+.aboutUsContainer {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.aboutUsCards {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardItem {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.numberImg {
+  width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.one {
+  max-width: 77px;
+}
+
+.seventy {
+  max-width: 144px;
+}
+
+.eighty {
+  max-width: 163px;
+}
+
+.aboutUsCardText {
+  display: block;
+  width: 50%;
+}
+
+.aboutUsText,
+.aboutUsButton {
+  display: none;
+}
+
+.lineAboutUs {
+  margin-top: 15px;
+  position: relative;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80px;
+  background-color: black;
+  /* transform: rotate(90deg); */
+}
+
+.lineAboutUs::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: 100%;
+  transform: translate(-45%);
+}
+
+.servicesSection,
+.casesSection {
+  background-image: url("../images/servicesBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0;
+ 
+}
+
+.servicesCardItem {
+  margin-bottom: 20px;
+}
+
+.servicesSubtitle {
+  margin-bottom: 40px;
+  color: white;
+}
+.servicesTitle {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.textService {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.planetImg {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
 
 .contentBlock {
   margin-top: 60px;
@@ -144,10 +281,38 @@
   height: auto;
 }
 
+.casesSection {
+  position: relative;
+}
+
+.casesContainer {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  max-width: 728px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 
+.casesSubtitle {
+  margin-bottom: 0;
+}
 
+.casesSubtitleWithLine {
+  justify-content: center;
+  
+}
 
+.casesCards {
+  padding-bottom: 130px;
+}
+
+.casesCardItem {
+  background-color: #191919;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
 
 .footer {
   background-color: #191919;
@@ -228,9 +393,14 @@
   display: block;
   text-decoration: none;
   font-size: 16px;
-  
+
   color: white;
   margin-bottom: 60px;
+  transition: all 0.2s;
+}
+
+.footerLink:hover {
+  color: #00e2d5;
 }
 
 .copyrigthBlock {

@@ -47,7 +47,7 @@
 #menuToggle span {
   display: block;
   width: 15px;
-  height: 2px;
+  height: 1px;
   margin-bottom: 5px;
   position: relative;
   background: white;
@@ -73,7 +73,7 @@
 
 #menuToggle input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(3px, 5px);
+  transform: rotate(45deg) translate(2px, 3px);
   background: white;
 }
 
