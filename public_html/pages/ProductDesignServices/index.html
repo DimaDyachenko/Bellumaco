@@ -8,21 +8,350 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
 
     <!-- <link rel="icon" href="favicon.ico" /> -->
-    <link rel="stylesheet" href="/reg-form/intlTelInput.css" />
     <link rel="stylesheet" href="../../css/reset.css" />
-    <link rel="stylesheet" href="../../css/burger.css" />
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
-
-   
+    <link rel="stylesheet" href="css/burger.css" />
   </head>
 
   <body>
-    
-    <script src="js/jquery.js"></script>
- 
+    <header class="header">
+      <div class="desktopWrapper">
+        <div class="topBlock topBlockContainer">
+          <img class="logoImgTop" src="./img/mainLogo.WebP" />
 
+          <nav role="navigation" class="nav">
+            <div id="menuToggle" class="burgerMenu">
+              <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+              <input
+                class="input"
+                type="checkbox"
+                id="navigation"
+                onchange="onChange()"
+              />
+
+              <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+              <ul id="menu" class="navList">
+                <a href="" class="navLink">
+                  <li class="navText">HOME</li>
+                </a>
+                <a href="pages/aboutUs/index.html" class="navLink">
+                  <li class="navText">ABOUT US</li>
+                </a>
+                <a class="navLink innerMenu">
+                  <li class="navText accordion">
+                    SERVICES
+                    <div class="triangle"></div>
+                    <ul id="menuInMenu" class="navInnerList panel">
+                      <a href="pages/humanResources/index.html" class="navLink">
+                        <li class="navTextSmall">Mobile development</li>
+                      </a>
+                      <a
+                        href="pages/managementConsulting/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Cloud development</li>
+                      </a>
+                      <a
+                        href="pages/financeConsulting/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Quality Assuarance</li>
+                      </a>
+                      <a href="pages/training/index.html" class="navLink">
+                        <li class="navTextSmall">DevOps</li>
+                      </a>
+                      <a href="pages/training/index.html" class="navLink">
+                        <li class="navTextSmall">Product Design</li>
+                      </a>
+                      <a href="pages/training/index.html" class="navLink">
+                        <li class="navTextSmall">Machine learning</li>
+                      </a>
+                      <a href="pages/training/index.html" class="navLink">
+                        <li class="navTextSmall">Web development</li>
+                      </a>
+                    </ul>
+                  </li>
+                </a>
+                <a href="pages/contact/index.html" class="navLink">
+                  <li class="navText">CASES</li>
+                </a>
+                <a href="pages/careers/index.html" class="navLink">
+                  <li class="navText careers">CONTACTS</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="desktopNav">
+            <ul class="navList">
+              <a href="index.html" class="navLink">
+                <li class="navText">HOME</li>
+              </a>
+              <a href="pages/aboutUs/index.html" class="navLink">
+                <li class="navText">ABOUT US</li>
+              </a>
+              <a class="navLink innerMenu">
+                <li class="navText accordion">
+                  SERVICES
+                  <div class="triangle"></div>
+                  <ul class="navInnerList panel">
+                    <div class="triangleAccordion"></div>
+                    <a href="pages/humanResources/index.html" class="navLink">
+                      <li class="navTextSmall">Mobile development</li>
+                    </a>
+                    <a
+                      href="pages/managementConsulting/index.html"
+                      class="navLink"
+                    >
+                      <li class="navTextSmall">Cloud development</li>
+                    </a>
+                    <a
+                      href="pages/financeConsulting/index.html"
+                      class="navLink"
+                    >
+                      <li class="navTextSmall">Quality Assuarance</li>
+                    </a>
+                    <a href="pages/training/index.html" class="navLink">
+                      <li class="navTextSmall">DevOps</li>
+                    </a>
+                    <a href="pages/training/index.html" class="navLink">
+                      <li class="navTextSmall">Product Design</li>
+                    </a>
+                    <a href="pages/training/index.html" class="navLink">
+                      <li class="navTextSmall">Machine learning</li>
+                    </a>
+                    <a href="pages/training/index.html" class="navLink">
+                      <li class="navTextSmall">Web development</li>
+                    </a>
+                  </ul>
+                </li>
+              </a>
+              <a href="pages/contact/index.html" class="navLink">
+                <li class="navText">CASES</li>
+              </a>
+              <a href="pages/careers/index.html" class="navLink">
+                <li class="navText careersDesktop">CONTACTS</li>
+              </a>
+            </ul>
+            <a class="burderedButton">
+              <button class="burderedButtonText">CONTACT US</button>
+            </a>
+          </nav>
+        </div>
+        <div class="headerInner">
+          <div class="container headerContainer">
+            <div class="textWrapper">
+              <p class="headerText">Product design services</p>
+              <h1 class="headerTitle">
+                Every candy needs a wrapper. It needs one so it can be sold.
+              </h1>
+              <p class="headerInfo">
+                That's exactly the kind of wrapper product design is. It makes
+                the brand, the website, the program recognizable and easy to use
+                for the customer.
+              </p>
+            </div>
+            <div class="headerImgWrapper">
+              <img src="./img/img1.png" alt="#" class="headerImg" />
+            </div>
+          </div>
+          <div class="lineWithPointContainer">
+            <img
+              src="./img/whiteLineWithPoint.png"
+              alt="#"
+              style="width: 10px"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="infoSection">
+        <div class="container infoSectionContainer">
+          <div class="sideBorder">
+            <div class="infoBoxWrapper">
+              <div class="infoBox">
+                <div class="infoBoxWithLine">
+                  <img
+                    class="infoBoxWithLineImg"
+                    src="./img/blackRightLine.png"
+                    alt="#"
+                  />
+                  <h2 class="infoBoxWithLineTitle">Introduction</h2>
+                </div>
+                <p class="infoBoxDescriprion">
+                  We help you define quality goals, then scrutinize each one and
+                  determine a set of steps you need to take to improve the
+                  quality of your software so that it meets your performance
+                  requirements. Quality in our delivery paradigm means "a
+                  solution that perfectly meets the customer's business goals.
+                </p>
+              </div>
+              <div class="infoBox">
+                <div class="infoBoxWithLine infoBoxWithLineDescription">
+                  <img
+                    class="infoBoxWithLineImg"
+                    src="./img/blackRightLine.png"
+                    alt="#"
+                  />
+                  <h2 class="infoBoxWithLineTitle">Description</h2>
+                </div>
+                <h2 class="infoBoxDescriprion bold">Iterative Design</h2>
+                <p class="infoBoxDescriprion infoBoxDescriprionRight">
+                  A continuous cycle of prototyping, testing, and refinement
+                  allows designers to create a highly adaptable product,
+                  establishing clarity in the early stages of development and
+                  giving stakeholders visibility into progress.
+                </p>
+                <h2 class="infoBoxDescriprion bold">Human-centered design</h2>
+                <p class="infoBoxDescriprion infoBoxDescriprionRight">
+                  By understanding the user and their needs, human-centered
+                  design enables the development of customized solutions by
+                  involving humans in all phases of the problem-solving process.
+                </p>
+                <h2 class="infoBoxDescriprion bold">
+                  Cross-platform experience.
+                </h2>
+                <p class="infoBoxDescriprion infoBoxDescriprionRight">
+                  Today's consumer is constantly switching from one device to
+                  another to use services on the go. Designing a cross-platform
+                  experience is paramount to ensuring a seamless experience
+                  across devices.
+                </p>
+              </div>
+            </div>
+            <div class="infoBoxImgWrapper">
+              <img
+                class="infoBoxImg"
+                src="./img/blackArrowBottom.png"
+                alt="#"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="workSection">
+        <div class="container workSectionContainer">
+          <div class="workSectionWrapper">
+            <div class="workSectionLeftBlock">
+              <div class="workSectionHeadWrapper">
+                <img
+                  class="workSectionWithLineImg"
+                  src="./img/whiteRightLineDev.png"
+                  alt="#"
+                />
+                <h2 class="workSectionHeadTitle">
+                  Make your product good looking, everywhere.
+                </h2>
+              </div>
+              <div class="btnWrapper">
+                <a href="">
+                  <button class="workSectionBtn">contact Us</button></a
+                >
+              </div>
+            </div>
+
+            <div class="workSectionRightBlock">
+              <img
+                class="headerImg workImg"
+                src="./img/workSection.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="logoFooterBlock">
+        <img class="logoFooter" src="./img/mainLogo.WebP" />
+      </div>
+      <div class="footerContentBlock">
+        <div class="quickLinksBlock">
+          <ul class="linksList">
+            <a href="index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Home</li></a
+            >
+            <a href="pages/aboutUs/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">About Us</li></a
+            >
+            <a href="pages/whatWeOffer/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Services</li></a
+            >
+            <a href="pages/careers/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Cases</li></a
+            >
+            <a href="pages/contact/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Contact</li></a
+            >
+          </ul>
+        </div>
+        <div class="footerContactBlock">
+          <ul class="list">
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact location" src="./img/location.png" />
+              <li class="contactDetails">
+                Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
+              </li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact phone" src="./img/phone.png" />
+              <li class="contactDetails">+ 44 786 596 39 35</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact email" src="./img/letter.png" />
+              <li class="contactDetails">info@bellumaco.com</li>
+            </div>
+          </ul>
+
+          <div class="linksFooterPrivacy">
+            <a href="https://ru.linkedin.com/" class="navLinkFooter">
+              <img class="linkedinBot" src="./img/linkedin.png"
+            /></a>
+            <a href="pages/privacy/index.html" class="footerLink"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyrigthBlock">
+        <p class="footerCopyrigth">Copyright © 2021 Bellumaco</p>
+      </div>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/vanta.waves.min.js"></script>
+    <script>
+      VANTA.WAVES({
+        el: ".headerInner",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 535.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x90909,
+      });
+    </script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -40,28 +369,18 @@
         });
       }
     </script>
-
     <script>
-      (() => {
-  const refs = {
-    wrapper: document.querySelector(".cookiesWrapper"),
-    closeBtn: document.querySelector(".cookiesBtn"),
-    openBurger: document.querySelector(".input"),
-    burger: document.querySelector(".navList"),
-  };
+      var checkbox = document.querySelector('input[type="checkbox"]');
+      let header = document.querySelector(".headerTextVisibility");
 
-  refs.closeBtn.addEventListener("click", cookies);
-  refs.openBurger.addEventListener("click", burger);
-
-
-  function burger() {
-    refs.burger.classList.toggle("is-vissually");
-  }
-  function cookies() {
-    refs.wrapper.classList.toggle("is-hidden");
-  }
-})();
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          header.style.zIndex = "0";
+          checkbox.value = "";
+        } else {
+          header.style.zIndex = "1";
+        }
+      });
     </script>
-    
   </body>
 </html>

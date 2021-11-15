@@ -17,6 +17,7 @@
 
   <body>
     <header class="header">
+      <div class="desktopWrapper">
       <div class="topBlock topBlockContainer">
         <img class="logoImgTop" src="./img/mainLogo.WebP" />
 
@@ -150,10 +151,13 @@
               <li class="navText careersDesktop">CONTACTS</li>
             </a>
           </ul>
+          <a class="burderedButton">
+            <button class="burderedButtonText">CONTACT US</button>
+          </a>
         </nav>
       </div>
       <div class="headerInner">
-        <div class="container headerContainer">
+        <div class="container headerContainer headerTextVisibility">
           <div class="textWrapper">
             <p class="headerText">Mobile development, product design</p>
             <h1 class="headerTitle">ThatHLTH</h1>
@@ -172,6 +176,7 @@
           <img src="./img/whiteLineWithPoint.png" alt="#" style="width: 10px" />
         </div>
       </div>
+    </div>
     </header>
     <main>
       <section class="infoSection">
@@ -279,6 +284,65 @@
         </div>
       </section>
     </main>
+    <footer class="footer container">
+      <div class="logoFooterBlock">
+        <img class="logoFooter" src="./img/mainLogo.WebP" />
+      </div>
+      <div class="footerContentBlock">
+        <div class="quickLinksBlock">
+          <ul class="linksList">
+            <a href="index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Home</li></a
+            >
+            <a href="pages/aboutUs/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">About Us</li></a
+            >
+            <a href="pages/whatWeOffer/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Services</li></a
+            >
+            <a href="pages/careers/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Cases</li></a
+            >
+            <a href="pages/contact/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Contact</li></a
+            >
+          </ul>
+        </div>
+        <div class="footerContactBlock">
+          <ul class="list">
+            <div class="typeOfContactAndDetailsFooter">
+              <img
+                class="typeOfContact location"
+                src="./img/location.png"
+              />
+              <li class="contactDetails">
+                Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
+              </li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact phone" src="./img/phone.png" />
+              <li class="contactDetails">+ 44 786 596 39 35</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact email" src="./img/letter.png" />
+              <li class="contactDetails">info@bellumaco.com</li>
+            </div>
+          </ul>
+
+          <div class="linksFooterPrivacy">
+            <a href="https://ru.linkedin.com/" class="navLinkFooter">
+              <img class="linkedinBot" src="./img/linkedin.png"
+            /></a>
+            <a href="pages/privacy/index.html" class="footerLink"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyrigthBlock">
+        <p class="footerCopyrigth">Copyright © 2021 Bellumaco</p>
+      </div>
+    </footer>
     <script src="../../js/jquery.js"></script>
     <script src="./js/three.min.js"></script>
     <script src="./js/vanta.waves.min.js"></script>

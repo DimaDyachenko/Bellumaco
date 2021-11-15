@@ -1,6 +1,12 @@
 @media (min-width: 768px) {
+  .vanta-canvas {
+    min-height: 615px;
+  }
   .container {
     padding: 60px 40px 40px;
+  }
+  .topBlockContainer {
+    padding: 30px 40px;
   }
   .headerContainer {
     display: flex;
@@ -19,6 +25,9 @@
   }
   .headerInfo {
     max-width: 334px;
+  }
+  .lineWithPointContainer {
+    padding-bottom: 20px;
   }
   .infoSection {
     padding: 40px 0 60px;
@@ -74,6 +83,9 @@
   .secondMobBox, .fourthMobBox {
       transform: translateY(40px);
   }
+  .workSectionContainer {
+    padding-bottom: 100px;
+  }
   .workSectionLeftBlock {
       width: 65%;
       margin-bottom: 0;
@@ -98,11 +110,92 @@
       max-width: 190px;
       padding-left: 90px;
   }
-  .workSectionContainer {
+  .workSectionWrapper {
       display: flex;
-      justify-content: space-between;
   }
   .workImg {
       margin-top: 35px;
+  }
+
+  /* footer  */
+  .footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer.container {
+    padding: 80px 40px;
+  }
+  .logoFooterBlock {
+    margin-right: 109px;
+  }
+  .logoFooter {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+  }
+
+  .footerContentBlock {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .footerCopyrigth {
+    position: absolute;
+    display: block !important;
+    color: white;
+    left: 5%;
+    top: 86%;
+  }
+ 
+  .list {
+    max-width: 250px;
+    margin: 0;
+    margin-left: auto;
+  }
+  .typeOfContactAndDetailsFooter {
+    display: flex;
+  }
+
+  .typeOfContact {
+    margin-right: 13px;
+  }
+  .location {
+    width: 12px;
+    height: 20px;
+  }
+  .phone {
+    width: 18px;
+    height: 18px;
+  }
+  .contactDetails {
+    text-align: start;
+    line-height: 24px;
+  }
+
+  .linksFooterPrivacy {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    left: 73%;
+    top: 85%;
+  }
+
+  .quickLinksBlock {
+    text-align: start;
+    margin-right: 110px;
+  }
+
+  .linkedinBot,
+  .footerLink {
+    margin: 0;
+  }
+
+  .footerLink {
+    margin-right: 30px;
   }
 }

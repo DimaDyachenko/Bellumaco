@@ -1,16 +1,189 @@
 @media (min-width: 768px) {
-  @font-face {
-    font-family: "Cardo";
-    src: url("../fonts/Cardo-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
+  .vanta-canvas {
+    min-height: 533px;
   }
-  @font-face {
-    font-family: "Prompt";
-    src: url("../fonts/Prompt-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
+  .container {
+    padding: 40px 40px 40px;
   }
-  
+  .topBlockContainer {
+    padding: 30px 40px;
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .headerText {
+    max-width: 170px;
+  }
+  .headerTitle {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .textWrapper,
+  .headerImgWrapper {
+    width: 50%;
+  }
+  .headerInfo {
+    max-width: 334px;
+    margin-bottom: 0;
+  }
+  .headerImg {
+    margin-top: 40px;
+  }
+  .lineWithPointContainer {
+    padding-bottom: 20px;
+    margin-top: -40px;
+  }
+  .infoSection {
+    padding: 60px 0 60px;
+  }
+  .infoBoxWithLine {
+    margin-left: 87px;
+  }
+  .infoBoxWithLineImg {
+    width: 69px;
+    height: 9px;
+  }
+  .infoBoxWithLineTitle {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .infoBoxDescriprion {
+    margin-left: 87px;
+    max-width: 490px;
+  }
+  .infoBoxList {
+    margin-bottom: 40px;
+    margin-left: 95px;
+    max-width: 495px;
+  }
+  .sideBorder {
+    border-right: 2px solid #393838;
+    border-left: 2px solid #393838;
+  }
+ 
+  .workSection {
+    background-image: url(../img/devBG_tab.png);
+  }
+  .workSectionContainer {
+    padding-bottom: 100px;
+  }
+  .workSectionHeadWrapper {
+    margin-bottom: 50px;
+  }
+  .workSectionLeftBlock {
+    margin-bottom: 120px;
+  }
+  .workSectionRightBlock {
+    max-width: 511px;
+    max-height: 343px;
+    margin: 0 auto;
+  }
+  .workSectionWithLineImg {
+    width: 69px;
+    height: 9px;
+  }
+  .workSectionHeadTitle {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .workSectionDescription {
+    padding-left: 90px;
+    margin-bottom: 50px;
+    max-width: 334px;
+  }
+  .btnWrapper {
+    max-width: 190px;
+    padding-left: 90px;
+  }
+  /* .workSectionWrapper {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .workImg {
+    margin-top: 0;
+  }
+  /* footer  */
+  .footer.container {
+    padding: 80px 40px;
+  }
+  .footer {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .logoFooterBlock {
+    margin-right: 109px;
+  }
+  .logoFooter {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+  }
 
+  .footerContentBlock {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .footerCopyrigth {
+    position: absolute;
+    display: block !important;
+    color: white;
+    left: 5%;
+    top: 86%;
+  }
+
+  .list {
+    max-width: 250px;
+    margin: 0;
+    margin-left: auto;
+  }
+  .typeOfContactAndDetailsFooter {
+    display: flex;
+  }
+
+  .typeOfContact {
+    margin-right: 13px;
+  }
+  .location {
+    width: 12px;
+    height: 20px;
+  }
+  .phone {
+    width: 18px;
+    height: 18px;
+  }
+  .contactDetails {
+    text-align: start;
+    line-height: 24px;
+  }
+
+  .linksFooterPrivacy {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    left: 73%;
+    top: 85%;
+  }
+
+  .quickLinksBlock {
+    text-align: start;
+    margin-right: 110px;
+  }
+
+  .linkedinBot,
+  .footerLink {
+    margin: 0;
+  }
+
+  .footerLink {
+    margin-right: 30px;
+  }
 }
