@@ -236,11 +236,11 @@
   }
   /* footer  */
   .footer {
-    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     padding-top: 150px;
     padding-bottom: 60px;
+    box-sizing: border-box;
   }
   .footerContentBlock {
     margin-bottom: 0;
@@ -252,12 +252,12 @@
   }
 
   .footerCopyrigth {
-    left: 3%;
-    top: 66%;
+    left: 0;
+    top: 76%;
   }
 
   .linksFooterPrivacy {
-    top: 32%;
+    top: 0;
     left: 85%;
     flex-direction: column-reverse;
     align-items: self-start;

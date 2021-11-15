@@ -119,14 +119,14 @@
 
   /* footer  */
   .footer {
+    padding: 80px 40px;
+  }
+  .footerContainer {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-  }
-  .footer.container {
-    padding: 80px 40px;
   }
   .logoFooterBlock {
     margin-right: 109px;

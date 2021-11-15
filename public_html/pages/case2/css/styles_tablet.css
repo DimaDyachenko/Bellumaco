@@ -145,13 +145,20 @@
     margin-top: 35px;
   }
   /* footer  */
-  .footer.container {
+  .footer {
     padding: 80px 40px;
   }
-  .footer {
+  /* .footer {
     position: relative;
     padding-top: 150px;
     padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  } */
+  .footerContainer {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: flex-start;

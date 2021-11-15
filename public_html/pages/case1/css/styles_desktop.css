@@ -104,13 +104,9 @@
   }
 
   .burderedButtonText {
-      background-color: #191919;
+    background-color: #191919;
   }
   /* HEADER END  */
-
-
-
-
 
   .textWrapper {
     width: 60%;
@@ -148,48 +144,48 @@
     margin-left: 115px;
   }
   .resultSectionContainer {
-      padding: 120px 55px;
+    padding: 120px 55px;
   }
   .resultSection {
-      background-image: url(../img/resultBG_desk.png);
-      background-size: contain;
-      background-position: top;
-      padding: 0 0 40px;
-      margin-bottom: 0;
+    background-image: url(../img/resultBG_desk.png);
+    background-size: contain;
+    background-position: top;
+    padding: 0 0 40px;
+    margin-bottom: 0;
   }
   .resultTextBox {
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      margin-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 120px;
   }
   .resultImg {
-      width: 89px;
-      height: auto;
+    width: 89px;
+    height: auto;
   }
   .resultList {
-      max-width: 630px;
+    max-width: 630px;
   }
   .resultMobBox {
-      flex-wrap: nowrap;
-      justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .resultMobWrapper {
-      margin: 0 !important;
-      max-width: 300px;
+    margin: 0 !important;
+    max-width: 300px;
   }
   .thirdMobBox {
-      transform: translateY(100px);
+    transform: translateY(100px);
   }
   .fourthMobBox {
-      transform: none;
+    transform: none;
   }
   .workSection {
     padding-bottom: 120px;
   }
   .workSectionContainer {
-      padding: 0 55px;
-      display: block;
+    padding: 0 55px;
+    display: block;
   }
   .workSectionWrapper {
     border-right: 2px solid #393838;
@@ -200,26 +196,26 @@
     padding: 0 108px;
   }
   .workSectionWithLineImg {
-      width: 89px;
-      height: auto;
+    width: 89px;
+    height: auto;
   }
   .workSectionDescription {
-      padding-left: 110px;
-      max-width: 410px;
+    padding-left: 110px;
+    max-width: 410px;
   }
-  .workSectionHeadWrapper, .workSectionRightBlock {
-      width: 50%;
+  .workSectionHeadWrapper,
+  .workSectionRightBlock {
+    width: 50%;
   }
 
   /* footer  */
   .footer {
-    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     padding-top: 150px;
     padding-bottom: 60px;
+    box-sizing: border-box;
   }
-
   .logoFooter,
   .logoFooterBlock {
     max-width: 200px;
@@ -229,19 +225,17 @@
   }
 
   .footerCopyrigth {
-    left: 3%;
+    top: 76%;
+    left: 0;
   }
 
   .linksFooterPrivacy {
-    top: 32%;
+    top: 0;
     left: 85%;
     flex-direction: column-reverse;
     align-items: self-start;
   }
   .footerLink {
     margin-bottom: 20px;
-  }
-  .footerCopyrigth  {
-    top: 66%;
   }
 }
