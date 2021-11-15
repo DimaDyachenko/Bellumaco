@@ -7,6 +7,9 @@
     background-color: ; */
   }
 
+  .logoImgTop {
+      max-width: 190px;
+  }
   .vanta-canvas {
     border-radius: 0 0 40px 40px;
   }
