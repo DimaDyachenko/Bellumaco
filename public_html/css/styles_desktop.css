@@ -105,6 +105,62 @@
     transition: 0.2s ease-in-out;
   }
 
+  .aboutUsCards {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .cardItem {
+      align-items: center;
+      margin-bottom: 0;
+  }
+
+  .aboutUsCardText {
+    
+  }
+
+  .aboutUsText {
+    font-weight: 400;
+  }
+
+  .servicesSection {
+      border-radius: 40px;
+  }
+
+  .servicesContainer {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 120px;
+  }
+
+  .servicesFlex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .planetImgDesktop {
+      display: block !important;
+      width: 410px;
+      height: 407px;
+  }
+
+  .planetImg {
+      display: none;
+  }
+  
+  .titleAndPhotoDesktop {
+    display: flex;
+    flex-direction: column;
+
+    align-items: baseline;
+    margin-right: 140px;
+}
+  .servicesCards {
+      width: 50%;
+  }
+
   .burderedButtonText {
       background-color: #191919;
   }
@@ -139,9 +195,9 @@
     background-color: #191919;
   }
   .footer {
-    max-width: 1400px;
+    /* max-width: 1400px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; */
     padding-top: 150px;
     padding-bottom: 60px;
   }

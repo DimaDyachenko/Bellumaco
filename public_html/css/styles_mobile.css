@@ -237,7 +237,6 @@
   border-radius: 20px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0;
- 
 }
 
 .servicesCardItem {
@@ -288,11 +287,10 @@
 .casesContainer {
   padding-top: 80px;
   padding-bottom: 40px;
-  max-width: 728px;
+  /* max-width: 728px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
-
 
 .casesSubtitle {
   margin-bottom: 0;
@@ -300,7 +298,6 @@
 
 .casesSubtitleWithLine {
   justify-content: center;
-  
 }
 
 .casesCards {
@@ -313,7 +310,9 @@
   margin-bottom: 20px;
   padding: 20px;
 }
-
+.planetImgDesktop {
+  display: none;
+}
 .footer {
   background-color: #191919;
   display: flex;
