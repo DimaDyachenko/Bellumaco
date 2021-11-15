@@ -3,7 +3,7 @@
     padding: 30px 50px;
   }
   .desktopWrapper {
-    background-color: #191919;
+    /* background-color: #191919; */
   }
 
   .sectionWithBorders {
@@ -22,9 +22,6 @@
   .topBlock {
     padding-bottom: 0;
     align-items: baseline;
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
   }
 
   .nav {
@@ -106,18 +103,17 @@
   }
 
   .aboutUsCards {
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
 
   .cardItem {
-      align-items: center;
-      margin-bottom: 0;
+    align-items: center;
+    margin-bottom: 0;
   }
 
   .aboutUsCardText {
-    
   }
 
   .aboutUsText {
@@ -125,44 +121,75 @@
   }
 
   .servicesSection {
-      border-radius: 40px;
+    border-radius: 40px;
   }
 
   .servicesContainer {
-      max-width: 1400px;
-      width: 100%;
-      margin: 0 auto;
-      padding-top: 120px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 120px;
   }
 
   .servicesFlex {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
   }
   .planetImgDesktop {
-      display: block !important;
-      width: 410px;
-      height: 407px;
+    display: block !important;
+    width: 410px;
+    height: 407px;
   }
 
   .planetImg {
-      display: none;
+    display: none;
   }
-  
+
+  .gridWrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .casesContainer {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .casesCardItem {
+    max-width: 630px;
+  }
+  .casesSubtitleWithLine {
+    justify-content: end;
+  }
+
+  .casesSection {
+    border-radius: 40px 40px 0px 0px;
+  }
+  .second {
+    transform: translateY(-30%);
+  }
+
+  .third {
+    transform: translateY(3%);
+  }
   .titleAndPhotoDesktop {
     display: flex;
     flex-direction: column;
 
     align-items: baseline;
     margin-right: 140px;
-}
+  }
   .servicesCards {
-      width: 50%;
+    width: 50%;
   }
 
   .burderedButtonText {
-      background-color: #191919;
+    background-color: #191919;
   }
 
   .contactUsSection {
