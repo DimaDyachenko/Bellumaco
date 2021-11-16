@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Cardo";
   src: url("../fonts/Cardo-Regular.ttf");
   font-weight: 400;
@@ -10,4 +10,354 @@
   src: url("../fonts/Prompt-Regular.ttf");
   font-weight: 400;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.vanta-canvas {
+  filter: drop-shadow(0px 30px 40px rgba(57, 56, 56, 0.2));
+  border-radius: 0px 0px 20px 20px;
+  min-height: 856px;
+}
+.topBlockContainer {
+  padding: 30px 20px;
+}
+.topBlock {
+  background-color: #191919;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logoImgTop {
+  max-width: 130px;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+.desktopNav {
+  display: none;
+}
+
+.logoHeader {
+  max-width: 25px;
+  width: 100%;
+  height: auto;
+  margin: 0px 0 30px;
+}
+
+.burderedButton {
+  display: block;
+}
+
+.burderedButtonText {
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  /* background-color: #191919; */
+  color: #60d4c9;
+  border: 1px solid #60d4c9;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.burderedButtonText:hover {
+  background-color: #60d4c9;
+  color: black;
+}
+
+/* NAV END */
+.container {
+  padding: 30px 20px;
+}
+.headerText {
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #00e2d5;
+  margin-bottom: 10px;
+  max-width: 170px;
+}
+.headerTitle {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #f0f8f7;
+  margin-bottom: 20px;
+}
+.headerInfo {
+  font-size: 20px;
+  line-height: 150%;
+  color: #cbcfcf;
+  margin-bottom: 30px;
+}
+.headerImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.lineWithPointContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.infoSection {
+  padding: 50px 0;
+}
+.infoBoxWithLine {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.infoBoxWithLineImg {
+  width: 55px;
+  height: 8px;
+  margin-right: 20px;
+}
+.infoBoxWithLineTitle {
+  font-size: 24px;
+  line-height: 140%;
+  color: #0e0e0e;
+  font-weight: bold;
+}
+.infoBoxDescriprion {
+  font-size: 16px;
+  line-height: 24px;
+  color: #393838;
+  margin-bottom: 10px;
+}
+.infoBoxList {
+  padding-left: 20px;
+  list-style-type: disc;
+  font-size: 20px;
+  line-height: 150%;
+  color: #0e0e0e;
+  margin-bottom: 20px;
+}
+.infoBoxImg {
+  width: 10px;
+}
+.infoBoxImgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resultSection {
+  background-image: url(../img/resultBG_mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: drop-shadow(0px 30px 40px rgba(57, 56, 56, 0.2));
+  border-radius: 20px;
+  padding-top: 50px;
+}
+.resultHead {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.resultImg {
+  width: 55px;
+  height: 8px;
+  margin-right: 20px;
+}
+.resultTitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  color: #f0f8f7;
+}
+.resultList {
+  padding-left: 20px;
+  list-style-type: disc;
+  font-size: 20px;
+  line-height: 150%;
+  color: #f0f8f7;
+  margin-bottom: 30px;
+}
+.resultMobBoxImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.workSectionContainer {
+  padding-bottom: 80px;
+}
+.resultMobWrapper {
+  max-width: 280px;
+}
+.workSectionLeftBlock {
+  margin-bottom: 40px;
+}
+.workSectionHeadWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.workSectionWithLineImg {
+  width: 55px;
+  height: 8px;
+  margin-right: 20px;
+}
+.workSectionHeadTitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  color: #0e0e0e;
+}
+.resultMobWrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.workSectionDescription {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #393838;
+  padding-left: 27%;
+  margin-bottom: 40px;
+}
+.workSectionBtn {
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #0e0e0e;
+  padding: 16px 0;
+  width: 100%;
+  background: #00e2d5;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.workSectionBtn:hover {
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+/* footer */
+.footer {
+  background-color: #191919;
+  padding: 60px 35px 80px;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1440px;
+}
+
+.logoFooterBlock {
+  max-width: 130px;
+  margin-bottom: 50px;
+}
+
+.logoFooter {
+  width: 100%;
+  height: auto;
+}
+
+.footerContentBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.quickLinksBlock {
+}
+
+.footerTitle {
+  color: #f0d57d;
+  font-family: "Cardo";
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.linksList {
+  margin-bottom: 42px;
+}
+
+.navLinkFooter {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.navLinkFooter:hover {
+  color: #00e2d5;
+}
+
+.navTextFooter {
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.linkedinBot {
+  width: 20px;
+  height: auto;
+  margin-top: 50px;
+
+  margin-bottom: 20px;
+}
+
+.typeOfContactAndDetailsFooter {
+  color: white;
+  margin-bottom: 23px;
+}
+
+.typeOfContact {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  max-width: 20px;
+  height: auto;
+}
+
+.footerLink {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+
+  color: white;
+  margin-bottom: 60px;
+  transition: all 0.2s;
+}
+
+.footerLink:hover {
+  color: #00e2d5;
+}
+
+.copyrigthBlock {
+  margin-bottom: 15px;
+}
+
+.footerCopyrigth {
+  display: none;
+}
+
+.responsibleCard {
+  text-align: center;
+}
+.footer.container {
+  padding-bottom: 0;
+}
+
+.navTextFooterLink {
+  font-size: 14px;
+}
+.contactDetails {
+  line-height: 24px;
 }

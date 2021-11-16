@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng" data-livestyle-extension="available">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="css/styles_mobile.css" />
+    <link rel="stylesheet" href="css/styles_tablet.css" />
+    <link rel="stylesheet" href="css/styles_desktop.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+  </head>
+
+  <body>
+   
+    <script src="../../js/jquery.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.lastElementChild;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <script>
+      (() => {
+        const refs = {
+          wrapper: document.querySelector(".cookiesWrapper"),
+          closeBtn: document.querySelector(".cookiesBtn"),
+          openBurger: document.querySelector(".input"),
+          burger: document.querySelector(".navList"),
+        };
+
+        refs.closeBtn.addEventListener("click", cookies);
+        refs.openBurger.addEventListener("click", burger);
+
+        function burger() {
+          refs.burger.classList.toggle("is-vissually");
+        }
+        function cookies() {
+          refs.wrapper.classList.toggle("is-hidden");
+        }
+      })();
+    </script>
+  </body>
+</html>

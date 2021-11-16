@@ -119,6 +119,9 @@
 .navList {
 }
 
+.navList {}
+
+
 .navText {
   margin-bottom: 25px;
   font-size: 18px;
@@ -140,8 +143,13 @@ li:hover {
   width: 100vw;
 }
 
+
 .accordion {
   cursor: pointer;
+  
+}
+.navLink {
+  font-family: "TT Firis Neue";
 }
 .navLink {
   font-family: "TT Firis Neue";
@@ -185,6 +193,7 @@ li:hover {
 
 .whatWeOfferLink {
   margin-right: 10px;
+ 
 }
 
 .navTextSmall {

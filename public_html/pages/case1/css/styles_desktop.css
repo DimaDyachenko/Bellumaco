@@ -1,4 +1,241 @@
 @media (min-width: 1440px) {
-  
-  
+  /* .vanta-canvas {
+        min-height: 700px;
+    } */
+  .container {
+    padding: 100px 165px 40px;
+  }
+  .topBlockContainer {
+    padding: 10px 55px;
+  }
+  .desktopWrapper {
+    background-color: #191919;
+  }
+
+  /* HEADER START  */
+  .desktopContent {
+    padding-bottom: 50px;
+    padding-top: 40px;
+  }
+
+  .topBlock {
+    padding-bottom: 0;
+    align-items: baseline;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .nav {
+    display: none;
+  }
+  .desktopNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .navList {
+    display: flex;
+    margin-right: 160px;
+  }
+  .navLink {
+    text-decoration: none;
+  }
+  .navText {
+    position: relative !important;
+
+    font-size: 16px !important;
+    line-height: 1.9em;
+    color: white;
+    margin-right: 60px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navLink:hover .navText {
+    color: #60d4c9;
+  }
+  .navLink:hover .navText::after {
+    opacity: 1;
+  }
+  .navList:nth-of-type(1) .accordion::after {
+    display: none;
+  }
+  .navLink:nth-of-type(2) .navText {
+    margin-right: 30px;
+  }
+  .navLink:nth-of-type(4) .navText {
+    margin-left: 30px;
+  }
+  .innerMenu {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.9em;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    color: white;
+  }
+  .accordion {
+    position: relative;
+    margin-right: 0 !important;
+    transition: all 0.2s;
+  }
+
+  .accordion :hover {
+    color: #60d4c9;
+  }
+
+  .navTextSmall:hover {
+    color: #60d4c9;
+  }
+  .panel {
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-25%);
+    text-align: center;
+    color: white;
+    background-color: #191919;
+    min-width: 205px;
+    border-radius: 16px;
+  }
+  .navTextSmall {
+    color: white;
+    font-size: 15px !important;
+    margin-bottom: 10px !important;
+    transition: 0.2s ease-in-out;
+  }
+
+  .burderedButtonText {
+    background-color: #191919;
+  }
+  /* HEADER END  */
+
+  .textWrapper {
+    width: 60%;
+  }
+  .headerImgWrapper {
+    width: 40%;
+  }
+  .headerInfo {
+    max-width: 520px;
+  }
+  .lineWithPointContainer {
+    transform: translateY(-60px);
+  }
+  .infoSectionContainer {
+    padding: 100px 55px;
+  }
+  .infoSection {
+    padding-top: 0;
+  }
+  .infoBox {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .infoBoxWithLineImg {
+    width: 89px;
+    height: auto;
+  }
+  .infoBoxDescriprion {
+    margin-left: 109px;
+    max-width: 630px;
+  }
+  .infoBoxList {
+    margin-left: 115px;
+  }
+  .resultSectionContainer {
+    padding: 120px 55px;
+  }
+  .resultSection {
+    background-image: url(../img/resultBG_desk.png);
+    background-size: contain;
+    background-position: top;
+    padding: 0 0 40px;
+    margin-bottom: 0;
+  }
+  .resultTextBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 120px;
+  }
+  .resultImg {
+    width: 89px;
+    height: auto;
+  }
+  .resultList {
+    max-width: 630px;
+  }
+  .resultMobBox {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .resultMobWrapper {
+    margin: 0 !important;
+    max-width: 300px;
+  }
+  .thirdMobBox {
+    transform: translateY(100px);
+  }
+  .fourthMobBox {
+    transform: none;
+  }
+  .workSection {
+    padding-bottom: 120px;
+  }
+  .workSectionContainer {
+    padding: 0 55px;
+    display: block;
+  }
+  .workSectionWrapper {
+    border-right: 2px solid #393838;
+    border-left: 2px solid #393838;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 108px;
+  }
+  .workSectionWithLineImg {
+    width: 89px;
+    height: auto;
+  }
+  .workSectionDescription {
+    padding-left: 110px;
+    max-width: 410px;
+  }
+  .workSectionHeadWrapper,
+  .workSectionRightBlock {
+    width: 50%;
+  }
+
+  /* footer  */
+  .footer {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+  }
+  .logoFooter,
+  .logoFooterBlock {
+    max-width: 200px;
+  }
+  .footerContentBlock {
+    margin-bottom: 0;
+  }
+
+  .footerCopyrigth {
+    top: 76%;
+    left: 0;
+  }
+
+  .linksFooterPrivacy {
+    top: 0;
+    left: 85%;
+    flex-direction: column-reverse;
+    align-items: self-start;
+  }
+  .footerLink {
+    margin-bottom: 20px;
+  }
 }

@@ -4,22 +4,355 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Services</title>
+    <title>Welcome!</title>
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
 
     <!-- <link rel="icon" href="favicon.ico" /> -->
     <link rel="stylesheet" href="../../css/reset.css" />
-    <link rel="stylesheet" href="../../css/burger.css" />
     <link rel="stylesheet" href="css/styles_mobile.css" />
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
+    <link rel="stylesheet" href="css/burger.css" />
   </head>
 
   <body>
-   
+    <header class="header">
+      <div class="desktopWrapper">
+        <div class="topBlock topBlockContainer">
+          <img class="logoImgTop" src="./img/mainLogo.WebP" />
 
-    <script src="js/jquery.js"></script>
+          <nav role="navigation" class="nav">
+            <div id="menuToggle" class="burgerMenu">
+              <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+              <input
+                class="input"
+                type="checkbox"
+                id="navigation"
+                onchange="onChange()"
+              />
 
+              <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+              <ul id="menu" class="navList">
+                <a href="../../index.html" class="navLink">
+                  <li class="navText">HOME</li>
+                </a>
+                <a href="../aboutUs/index.html" class="navLink">
+                  <li class="navText">ABOUT US</li>
+                </a>
+                <a class="navLink innerMenu">
+                  <li class="navText accordion">
+                    SERVICES
+                    <div class="triangle"></div>
+                    <ul id="menuInMenu" class="navInnerList panel">
+                      <a href="../mobileDev/index.html" class="navLink">
+                        <li class="navTextSmall">Mobile development</li>
+                      </a>
+                      <a
+                        href="../cloudSoftDev/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Cloud development</li>
+                      </a>
+                      <a
+                        href="../QAServices/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Quality Assuarance</li>
+                      </a>
+                      <a href="../DevOpsServices/index.html" class="navLink">
+                        <li class="navTextSmall">DevOps</li>
+                      </a>
+                      <a href="../ProductDesignServices/index.html" class="navLink">
+                        <li class="navTextSmall">Product Design</li>
+                      </a>
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">Machine learning</li>
+                      </a>
+                      <a href="../WebDevelopmentSerices/index.html" class="navLink">
+                        <li class="navTextSmall">Web development</li>
+                      </a>
+                    </ul>
+                  </li>
+                </a>
+                <a href="../case1/index.html" class="navLink">
+                  <li class="navText">CASES</li>
+                </a>
+                <a href="../contact/index.html" class="navLink">
+                  <li class="navText careers">CONTACTS</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="desktopNav">
+            <ul class="navList">
+              <a href="../../index.html" class="navLink">
+                <li class="navText">HOME</li>
+              </a>
+              <a href="../aboutUs/index.html" class="navLink">
+                <li class="navText">ABOUT US</li>
+              </a>
+              <a class="navLink innerMenu">
+                <li class="navText accordion">
+                  SERVICES
+                  <div class="triangle"></div>
+                  <ul class="navInnerList panel">
+                    <div class="triangleAccordion"></div>
+                    <a href="../mobileDev/index.html" class="navLink">
+                      <li class="navTextSmall">Mobile development</li>
+                    </a>
+                    <a
+                      href="../cloudSoftDev/index.html"
+                      class="navLink"
+                    >
+                      <li class="navTextSmall">Cloud development</li>
+                    </a>
+                    <a
+                      href="../QAServices/index.html"
+                      class="navLink"
+                    >
+                      <li class="navTextSmall">Quality Assuarance</li>
+                    </a>
+                    <a href="../DevOpsServices/index.html" class="navLink">
+                      <li class="navTextSmall">DevOps</li>
+                    </a>
+                    <a href="../ProductDesignServices/index.html" class="navLink">
+                      <li class="navTextSmall">Product Design</li>
+                    </a>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">Machine learning</li>
+                    </a>
+                    <a href="../WebDevelopmentSerices/index.html" class="navLink">
+                      <li class="navTextSmall">Web development</li>
+                    </a>
+                  </ul>
+                </li>
+              </a>
+              <a href="../case1/index.html" class="navLink">
+                <li class="navText">CASES</li>
+              </a>
+              <a href="../contact/index.html" class="navLink">
+                <li class="navText careersDesktop">CONTACTS</li>
+              </a>
+            </ul>
+            <a href="../contact/index.html" class="burderedButton">
+              <button class="burderedButtonText">CONTACT US</button>
+            </a>
+          </nav>
+        </div>
+        <div class="headerInner">
+          <div class="container headerContainer">
+            <div class="textWrapper">
+              <p class="headerText">Machine learning services</p>
+              <h1 class="headerTitle">
+                Machine learning development and consultations
+              </h1>
+              <p class="headerInfo">Atomization must be smart</p>
+            </div>
+            <div class="headerImgWrapper">
+              <img src="./img/img1.png" alt="#" class="headerImg" />
+            </div>
+          </div>
+          <div class="lineWithPointContainer">
+            <img
+              src="./img/whiteLineWithPoint.png"
+              alt="#"
+              style="width: 10px"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="infoSection">
+        <div class="container infoSectionContainer">
+          <div class="sideBorder">
+            <div class="infoBoxWrapper">
+              <div class="infoBox">
+                <div class="infoBoxWithLine">
+                  <img
+                    class="infoBoxWithLineImg"
+                    src="./img/blackRightLine.png"
+                    alt="#"
+                  />
+                  <h2 class="infoBoxWithLineTitle">Introduction</h2>
+                </div>
+                <p class="infoBoxDescriprion">
+                  Huge amounts of data are turned into useful insights that help
+                  customers improve internal processes and user experience. The
+                  effectiveness of these processes is worked through by ML
+                  engineers and data analysts.
+                </p>
+              </div>
+              <div class="infoBox">
+                <div class="infoBoxWithLine infoBoxWithLineDescription">
+                  <img
+                    class="infoBoxWithLineImg"
+                    src="./img/blackRightLine.png"
+                    alt="#"
+                  />
+                  <h2 class="infoBoxWithLineTitle">Description</h2>
+                </div>
+                <h2 class="infoBoxDescriprion bold">ML Model Development</h2>
+                <p class="infoBoxDescriprion infoBoxDescriprionRight">
+                  We analyze your business case and create an accurate algorithm
+                  that meets your requirements. The next step is to train
+                  machine learning models on your real or mockup data for best
+                  results. Our ML company provides a solution that is
+                  immediately ready to implement.
+                </p>
+                <h2 class="infoBoxDescriprion bold">Data Development</h2>
+                <p class="infoBoxDescriprion infoBoxDescriprionRight">
+                  Your software processes large amounts of information on a
+                  daily basis. If you want to leverage big data and optimize
+                  business operations, data engineering is what you need. Our
+                  experts will create robust data pipelines, gather information
+                  from a variety of sources, and prepare it for analysis to
+                  provide you with effective ML services that meet your business
+                  needs.
+                </p>
+                <h2 class="infoBoxDescriprion bold">Data Analysis</h2>
+                <p class="infoBoxDescriprion infoBoxDescriprionRight">
+                  Use ML to get the most out of your data inputs. Proper
+                  analysis allows you to understand customer needs and make
+                  accurate predictions about changes in market demand, pricing,
+                  competition, etc. Turn to LITSLINK for top-notch services and
+                  gain a competitive edge in your industry!
+                </p>
+              </div>
+            </div>
+            <div class="infoBoxImgWrapper">
+              <img
+                class="infoBoxImg"
+                src="./img/blackArrowBottom.png"
+                alt="#"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="workSection">
+        <div class="container workSectionContainer">
+          <div class="workSectionWrapper">
+            <div class="workSectionLeftBlock">
+              <div class="workSectionHeadWrapper">
+                <img
+                  class="workSectionWithLineImg"
+                  src="./img/whiteRightLineDev.png"
+                  alt="#"
+                />
+                <h2 class="workSectionHeadTitle">
+                  Make your machine learning, or learn machining.
+                </h2>
+              </div>
+              <div class="btnWrapper">
+                <a href="../contact/index.html">
+                  <button class="workSectionBtn">contact Us</button></a
+                >
+              </div>
+            </div>
+
+            <div class="workSectionRightBlock">
+              <img
+                class="headerImg workImg"
+                src="./img/workSection.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footerContainer">
+      <div class="logoFooterBlock">
+        <img class="logoFooter" src="./img/mainLogo.WebP" />
+      </div>
+      <div class="footerContentBlock">
+        <div class="quickLinksBlock">
+          <ul class="linksList">
+            <a href="../../index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Home</li></a
+            >
+            <a href="../aboutUs/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">About Us</li></a
+            >
+            <a href="../mobileDev/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Services</li></a
+            >
+            <a href="../case1/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Cases</li></a
+            >
+            <a href="../contact/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Contact</li></a
+            >
+          </ul>
+        </div>
+        <div class="footerContactBlock">
+          <ul class="list">
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact location" src="./img/location.png" />
+              <li class="contactDetails">
+                Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
+              </li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact phone" src="./img/phone.png" />
+              <li class="contactDetails">+ 44 786 596 39 35</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact email" src="./img/letter.png" />
+              <li class="contactDetails">info@bellumaco.com</li>
+            </div>
+          </ul>
+
+          <div class="linksFooterPrivacy">
+            <a href="https://ru.linkedin.com/" class="navLinkFooter">
+              <img class="linkedinBot" src="./img/linkedin.png"
+            /></a>
+            <a href="../privacy/index.html" class="footerLink"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyrigthBlock">
+        <p class="footerCopyrigth">Copyright © 2021 Bellumaco</p>
+      </div>
+    </div>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/vanta.waves.min.js"></script>
+    <script>
+      VANTA.WAVES({
+        el: ".headerInner",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 535.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x90909,
+      });
+    </script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -37,26 +370,18 @@
         });
       }
     </script>
-
     <script>
-      (() => {
-        const refs = {
-          wrapper: document.querySelector(".cookiesWrapper"),
-          closeBtn: document.querySelector(".cookiesBtn"),
-          openBurger: document.querySelector(".input"),
-          burger: document.querySelector(".navList"),
-        };
+      var checkbox = document.querySelector('input[type="checkbox"]');
+      let header = document.querySelector(".headerTextVisibility");
 
-        refs.closeBtn.addEventListener("click", cookies);
-        refs.openBurger.addEventListener("click", burger);
-
-        function burger() {
-          refs.burger.classList.toggle("is-vissually");
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          header.style.zIndex = "0";
+          checkbox.value = "";
+        } else {
+          header.style.zIndex = "1";
         }
-        function cookies() {
-          refs.wrapper.classList.toggle("is-hidden");
-        }
-      })();
+      });
     </script>
   </body>
 </html>

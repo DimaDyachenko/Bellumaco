@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Cardo";
   src: url("../fonts/Cardo-Regular.ttf");
   font-weight: 400;
@@ -10,347 +10,230 @@
   src: url("../fonts/Prompt-Regular.ttf");
   font-weight: 400;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
 }
 
-.container {
+.vanta-canvas {
+  filter: drop-shadow(0px 30px 40px rgba(57, 56, 56, 0.2));
+  border-radius: 0px 0px 20px 20px;
+  min-height: 883px;
+}
+.topBlockContainer {
   padding: 30px 20px;
 }
-
-.header {
-  background-image: url("../images/policy_bg_mob.WebP");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  min-height: 100%;
-}
-
 .topBlock {
+  background-color: #191919;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  align-items: flex-start;
 }
 
 .logoImgTop {
   max-width: 130px;
-  z-index: 100;
-}
-
-.navText {
-  font-size: 30px;
-  line-height: 44px;
+  width: 100%;
+  height: auto;
+  z-index: 10;
 }
 
 .desktopNav {
   display: none;
 }
 
-.headerContent {
-  padding-bottom: 180px;
+.logoHeader {
+  max-width: 25px;
+  width: 100%;
+  height: auto;
+  margin: 0px 0 30px;
+}
+.burderedButton {
+  display: block;
 }
 
-.headerTitle {
-  font-size: 30px;
-  line-height: 1.5em;
-  font-family: "Cardo";
+.burderedButtonText {
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  /* background-color: #191919; */
+  color: #60d4c9;
+  border: 1px solid #60d4c9;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-size: 14px;
   text-transform: uppercase;
-  color: white;
-  margin-bottom: 40px;
+  transition: all 0.2s;
 }
 
-.headerListItem:not(:last-child) {
+.burderedButtonText:hover {
+  background-color: #60d4c9;
+  color: black;
+}
+/* NAV END */
+.container {
+  padding: 30px 20px;
+}
+.headerText {
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #00e2d5;
+  margin-bottom: 10px;
+  max-width: 170px;
+}
+.headerTitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #f0f8f7;
   margin-bottom: 20px;
 }
-
-.headerListItemLink {
-  font-family: "Prompt";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: #f0d57d;
-  text-decoration: none;
-}
-
-.headerText {
-  color: white;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.mainButton {
-  width: 100%;
-  padding: 12px 0;
-  background-color: #d0ac5b;
-  outline: none;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.redBg {
-  background-color: #9a312e;
-}
-.goldBg {
-  background-color: #d0ac5b;
-}
-
-.mainButtonText {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-}
-
-.brownSection {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  background-color: #240c0c;
-}
-
-.titleWithLine {
-  position: relative;
-  color: #d3b870;
-  font-size: 12px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-.letter {
-  letter-spacing: 2px;
-}
-
-.titleWithLine::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 20px;
-  height: 1px;
-  background-color: #d0ac5b;
-  left: -30px;
-  bottom: 5px;
-}
-
-.mainTitle {
-  font-family: "Cardo";
+.headerInfo {
   font-size: 20px;
-  line-height: 1.5em;
+  line-height: 150%;
+  color: #cbcfcf;
   margin-bottom: 30px;
 }
-.sectionAddress {
-  margin-bottom: 40px;
-}
-.sectionAddressBlock {
-  display: flex;
-  margin-bottom: 20px;
-}
-.sectionAddressBlock:last-child {
-  margin-bottom: 0;
-}
-.sectionAddressTitle {
-  width: 63px;
-  margin-right: 16px;
-  font-size: 15px;
-  line-height: 27px;
-  color: #240b0c;
-}
-.sectionAddressInfo {
-  font-size: 15px;
-  line-height: 24px;
-  color: #240b0c;
-}
-.white {
-  color: white;
-  font-size: 25px;
-}
-
-.red {
-  color: #9a312e;
-  font-size: 25px;
-}
-
-.black {
-  color: black;
-  font-size: 25px;
-}
-
-/* .bottom {
-  margin: 40px -20px -20px !important;
-} */
-
-.ordinaryText {
-  font-size: 15px;
-  line-height: 1.9;
-  color: white;
-}
-.contentText {
-  font-family: "Prompt";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 27px;
-  color: #240b0c;
-}
-.contentText {
-  margin-bottom: 10px;
-}
-
-.creamSectionWithPhoto {
-  background-color: #fef8ee;
-}
-
-.brownSectionWithPhoto {
-  background-color: #240c0c;
-}
-
-.listWithYellowDots {
-  margin-bottom: 40px;
-}
-
-.pointAndList {
-  display: flex;
-}
-
-.yellowPoint {
+.headerImg {
   display: block;
-  width: 10px;
-  min-width: 10px;
-  height: 10px;
-  background-color: #d0ac5b;
-  border-radius: 50%;
-  margin-top: 8px;
-}
-
-.listItem {
-  margin-left: 15px;
-  margin-bottom: 10px;
-  font-size: 15px;
-  line-height: 27px;
-  color: #240b0c;
-  word-break: break-word;
-}
-
-.createChangesThatMattersImg {
   width: 100%;
-  height: 100%;
-  display: block;
+  height: auto;
 }
-
-.titleWrapper {
-  padding: 60px 20px;
-}
-.rightContentPhoto {
-}
-
-/* .leftContentWithPhoto {
-  margin-top: 50px;
-} */
-
-.leftContentWithPhotoLitle {
-  display: block;
-  padding: 50px 20px;
-}
-
-.rightContentPhotoLitle {
-  display: block;
-  height: 100%;
-}
-
-.litle {
-}
-
-.bottomContent {
-  background-color: #e4cd81;
-  padding: 60px 20px;
-}
-.bottomContentTitle {
-  font-family: "Cardo";
-  font-size: 25px;
-  line-height: 30px;
-  color: #240c0c;
-  margin-bottom: 50px;
-}
-
-.marginForButton {
-  margin-bottom: 40px;
-}
-
-.linkWithArrow {
+.lineWithPointContainer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.infoSection {
+  padding: 50px 0 10px;
+}
+.infoBoxWithLine {
+  display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.arrowLinkText {
-  position: relative;
-  text-decoration: none;
-  outline: none;
-  text-transform: uppercase;
-  color: #d0ac5b;
-  transition: 0.2s all;
+.infoBoxWithLineImg {
+  width: 55px;
+  height: 8px;
+  margin-right: 20px;
 }
-
-.arrowLinkText:hover {
-  transform: scale(1.1) translate(10px);
-  transform-origin: center;
+.infoBoxWithLineTitle {
+  font-size: 24px;
+  line-height: 140%;
+  color: #0e0e0e;
+  font-weight: bold;
 }
-
-.arrowLinkText::before,
-.arrowLinkText::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 1px;
-  width: 7px;
-  background-color: #d0ac5b;
-  left: 100%;
+.infoBoxDescriprion {
+  font-size: 16px;
+  line-height: 24px;
+  color: #393838;
+  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
-
-.arrowLinkText::before {
-  transform: rotate(-135deg) translate(-8px);
+.bold {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-
-.arrowLinkText::after {
-  transform: rotate(135deg) translate(-8px);
-}
-
-.goldCarrerBlock {
-  padding: 60px 20px;
-  display: flex;
-  flex-direction: column;
-  background-color: #e4cd81;
-}
-
-.careersTitle {
-  margin-bottom: 50px;
-}
-
-.typeOfContactAndDetails {
-  display: flex;
+.infoBoxList {
+  padding-left: 20px;
+  list-style-type: disc;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0e0e0e;
   margin-bottom: 20px;
 }
+.infoBoxImg {
+  width: 10px;
+}
+.infoBoxImgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.typeOfContactAndDetails:last-of-type {
+.workSection {
+  background-image: url(../img/devBG_mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0px 30px 40px rgba(57, 56, 56, 0.2));
+  border-radius: 20px 20px 0 0;
+}
+.workSectionLeftBlock {
   margin-bottom: 40px;
 }
-
-.typeOfContact {
-  display: block;
-  width: 40%;
+.workSectionHeadWrapper {
+  display: flex;
+  margin-bottom: 40px;
+}
+.workSectionWithLineImg {
+  width: 55px;
+  height: 8px;
+  margin: 12px 20px 0 0;
+}
+.workSectionHeadTitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  color: #F4FAF9;
+}
+.resultMobWrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+.workSectionContainer {
+  padding: 80px 20px;
 }
 
-.contactDetails {
-  display: block;
+.workSectionDescription {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #393838;
+  padding-left: 27%;
+  margin-bottom: 40px;
+}
+.workSectionBtn {
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #0e0e0e;
+  padding: 16px 0;
   width: 100%;
+  background: #00e2d5;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-
+.workSectionBtn:hover {
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+/* footer */
 .footer {
-  background-color: #240c0c;
+  background-color: #191919;
+  padding: 60px 35px 80px;
+}
+.footerContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1440px;
 }
 
 .logoFooterBlock {
+  max-width: 130px;
   margin-bottom: 50px;
 }
 
@@ -377,7 +260,7 @@
 }
 
 .linksList {
-  margin-bottom: 30px;
+  margin-bottom: 42px;
 }
 
 .navLinkFooter {
@@ -387,7 +270,7 @@
 }
 
 .navLinkFooter:hover {
-  color: #d0ac5b;
+  color: #00e2d5;
 }
 
 .navTextFooter {
@@ -396,192 +279,58 @@
   text-transform: uppercase;
 }
 
-.linkedinBot,
-.facebookBot {
-  width: 30px;
+.linkedinBot {
+  width: 20px;
   height: auto;
+  margin-top: 50px;
+
+  margin-bottom: 20px;
 }
 
 .typeOfContactAndDetailsFooter {
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .typeOfContact {
   text-transform: uppercase;
   margin-bottom: 10px;
+  max-width: 20px;
+  height: auto;
 }
 
 .footerLink {
   display: block;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #d0ac5b;
-  margin-bottom: 30px;
+  font-size: 16px;
+
+  color: white;
+  margin-bottom: 60px;
+  transition: all 0.2s;
+}
+
+.footerLink:hover {
+  color: #00e2d5;
 }
 
 .copyrigthBlock {
+  margin-bottom: 15px;
 }
 
 .footerCopyrigth {
-  color: #d0ac5b;
-  font-size: 15px;
-  line-height: 27px;
-}
-.blackWhiteBlockWrapperTitle {
-  font-family: "Cardo";
-  font-size: 40px;
-  line-height: 44px;
-  color: #fef8ee;
-  font-weight: normal;
-  margin-bottom: 40px;
-}
-.red {
-  color: #9a312e;
+  display: none;
 }
 
-.blackBlock {
-  padding: 54px 20px;
-  background-color: #240c0c;
-}
-.blackWhiteBlockWrapperLink {
-  text-transform: uppercase;
-  color: #d0ac5b;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 2px;
-  text-decoration: none;
-}
-.whiteBlock {
-  padding: 54px 20px;
-  background-color: #fef8ee;
-}
-
-.wrapper {
-  padding: 60px 20px 0;
-}
-.formContainer {
-  padding: 60px 20px;
-  margin: 0 20px 30px;
-  background: #d0ac5b33;
-}
-.formWrapper {
-  /* background: #d0ac5b33; */
-}
-.field {
-  width: 100%;
-  height: 47px;
-  box-sizing: border-box;
-  padding: 10px;
-  background: #fef8ee;
-  border: 1px solid rgba(36, 11, 12, 0.4);
-}
-.formGroup {
-  margin-bottom: 10px;
-}
-.formGroup:nth-child(5n) {
-  margin-bottom: 20px;
-}
-.formGroup:nth-child(7n) {
-  margin-bottom: 40px;
-}
-.formGroupWrapper {
-  display: flex;
-  margin-bottom: 20px;
-}
-.textarea {
-  height: 188px;
-}
-.field::placeholder {
-  font-size: 15px;
-  line-height: 27px;
-  font-family: "Prompt";
-}
-.formUploadInput {
-  margin-bottom: 25px;
-}
-.formUploadInputLabel,
-.formCheckboxText {
-  font-family: "Prompt";
-  font-size: 15px;
-  line-height: 27px;
-  color: #240b0c;
-}
-.formCheckboxText {
-  margin-left: 5px;
-}
-.formUploadInputSpan {
-  font-family: "Prompt";
-  font-size: 12px;
-  line-height: 25px;
-  color: rgba(36, 11, 12, 0.6);
-  margin-left: 20px;
-  padding: 0 5px;
-  border: 1px solid rgba(36, 11, 12, 0.4);
-  cursor: pointer;
-}
-.formCheckboxLink {
-  font-size: 15px;
-  line-height: 27px;
-  text-decoration-line: underline;
-  color: #962a2f;
-}
-.contentBlock {
-  margin-bottom: 30px;
-}
-.contentBlock:last-child {
-  margin-bottom: 80px;
-}
-.contentBlockList {
-  list-style-type: decimal;
-  margin-left: 20px;
-}
-.contentBlockListItem {
-  margin-bottom: 10px;
+.responsibleCard {
+  text-align: center;
 }
 .footer.container {
   padding-bottom: 0;
 }
-.cookiesWrapper {
-  display: block;
-  position: sticky;
-  width: 100%;
-  height: 120px;
-  bottom: 0;
-  left: 0;
-  background-color: #fef8ee;
-}
 
-.cookiesBlock {
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  bottom: 0;
-  transform: translateY(50%);
+.navTextFooterLink {
+  font-size: 14px;
 }
-
-.cookiesBox {
-  margin-top: 20px;
-}
-
-.contentText{
-  font-size: 20px;
-}
-.cookiesBtn {
-  margin-right: 10px;
-  padding: 0 10px;
-  background-color: #d0ac5b;
-  color: white;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-.cookiesLink {
-  text-decoration: none;
-  color: #d0ac5b;
-}
-.is-hidden {
-  display: none;
+.contactDetails {
+  line-height: 24px;
 }

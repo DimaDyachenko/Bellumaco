@@ -1,67 +1,57 @@
 @media (min-width: 1440px) {
-  @font-face {
-    font-family: "Cardo";
-    src: url("../fonts/Cardo-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Prompt";
-    src: url("../fonts/Prompt-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
+  .vanta-canvas {
+    min-height: 620px;
+    height: 620px !important;
   }
   .container {
-    padding: 60px 80px;
+    padding: 20px 165px 40px;
   }
-
-  .desktopWrapper:nth-of-type(1) .container {
-    padding: 80px 0;
+  .topBlockContainer {
+    padding: 10px 55px;
   }
   .desktopWrapper {
-    width: 100%;
-    max-width: 1280px;
+    background-color: #191919;
+  }
+  /* HEADER START  */
+  .desktopContent {
+    padding-bottom: 50px;
+    padding-top: 40px;
+  }
+
+  .topBlock {
+    padding-bottom: 0;
+    align-items: baseline;
+    max-width: 1400px;
     margin: 0 auto;
   }
-  .desktopWrapper:nth-of-type(1) .container {
-    padding: 80px 0;
-  }
+
   .nav {
     display: none;
   }
   .desktopNav {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
   .navList {
     display: flex;
+    margin-right: 160px;
   }
   .navLink {
     text-decoration: none;
   }
   .navText {
     position: relative !important;
-    
+
     font-size: 16px !important;
     line-height: 1.9em;
     color: white;
     margin-right: 60px;
     transition: 0.3s ease-in-out;
   }
-  .navText::after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 100%;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    opacity: 0;
-    background-color: #d3b870;
-    transition: all 0.3s ease-in;
-  }
+
   .navLink:hover .navText {
-    color: #d3b870;
+    color: #60d4c9;
   }
   .navLink:hover .navText::after {
     opacity: 1;
@@ -76,6 +66,7 @@
     margin-left: 30px;
   }
   .innerMenu {
+    position: relative;
     font-size: 16px;
     line-height: 1.9em;
     margin: 0 !important;
@@ -85,33 +76,25 @@
   .accordion {
     position: relative;
     margin-right: 0 !important;
+    transition: all 0.2s;
   }
-  .triangleAccordion {
-    position: absolute;
-    width: 15px;
-    min-width: 15px;
-    min-height: 10px;
-    height: 10px;
-    background-image: linear-gradient(to right bottom, transparent 50%, #d3b870 0), linear-gradient(to right top, #d3b870 50%, transparent 0);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: left, right;
-    left: 100%;
-    opacity: 0;
-    transform: translate(-250%) translateY(-49%);
-    transition: transform 0.1s ease-in;
+
+  .accordion :hover {
+    color: #60d4c9;
   }
-  .active .triangleAccordion {
-    opacity: 1;
-  }
+
   .navTextSmall:hover {
-    color: black;
+    color: #60d4c9;
   }
   .panel {
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-25%);
     text-align: center;
     color: white;
-    background-color: #d3b870;
+    background-color: #191919;
     min-width: 205px;
+    border-radius: 16px;
   }
   .navTextSmall {
     color: white;
@@ -119,288 +102,166 @@
     margin-bottom: 10px !important;
     transition: 0.2s ease-in-out;
   }
-  .header {
-    background-image: url("../images/policy_bg_desk.WebP");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-  }
-  .logoImgTop {
-    max-width: 150px;
-    height: 100%;
-  }
-  .nav {
-    align-self: center;
-  }
-  .navLink .careersDesktop {
-    background-color: #d3b870;
-    width: 100%;
-    text-align: center;
-    transition: color 0.3s ease-in-out;
-  }
 
-  .navLink:hover .careersDesktop {
-    color: black;
+  .burderedButtonText {
+    background-color: #191919;
   }
-  .careersDesktop::after {
-    display: none;
-  }
+  /* HEADER END  */
 
-  .navList:nth-of-type(1) .navLink:nth-child(6) {
-    margin-right: 40px !important;
+  .textWrapper {
+    width: 53%;
   }
-
-  .linkedinTop,.facebookTop {
-    margin-top: 0 !important;
-    transform: translateY(50%);
+  .headerImgWrapper {
+    width: 47%;
   }
-.headerContent {
-  padding: 0 80px 310px;
-}
-
-  .headerTitle {
-    font-size: 50px;
-    line-height: 1.25em;
-    margin-bottom: 20px;
-    max-width: 760px;
+  .headerImg {
+    margin-top: 0;
   }
-  .headerText {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 60px;
+  .headerInfo {
+    max-width: 520px;
   }
-  .mainButton {
-    width: 100%;
-    max-width: 250px;
+  .textWrapper {
+    margin-top: 100px;
   }
-  .brownSection {
-    padding: 0 !important;
+  .lineWithPointContainer {
+    transform: translateY(-63px);
   }
-  .marginForButton {
-    width: 60%;
+  .infoSectionContainer {
+    padding: 100px 55px;
   }
-  .titleWithLine {
-    position: relative;
-    color: #d3b870;
-    font-size: 16px;
-    margin-left: 90px;
-    letter-spacing: 2px;
+  .infoSection {
+    padding-top: 0;
   }
-  .titleWithLine::before {
-   left: -90px;
-    bottom: 10px;
+  .infoBoxWrapper {
+    display: flex;
   }
-  .mainTitle {
-    font-size: 30px;
+  .infoBox {
+    width: 50%;
     margin-bottom: 40px;
   }
-  .white {
-    color: white;
-    font-size: 40px;
+  .infoBoxWithLine {
+    margin-left: 108px;
   }
-
-  .businessKnows {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .businessKnowsTitle {
-    font-size: 30px;
-  }
-
-  .ordinaryText {
-    width: 100%;
-  }
-  .red {
-    color: #9a312e;
-    font-size: 40px;
-  }
-  .black {
-    color: black;
-    font-size: 40px;
-  }
-  .bottom {
-    margin: 40px -40px -50px !important;
-  }
-
-  .rightContent,.leftContent {
-   width: 100%;
-    max-width: 450px;
-  }
-
-  .weAreYourSolution {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-  }
-
-
-.whatWeOfferBlock {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-
-  .listWithYellowDots {
-    margin-bottom: 60px;
-  }
-  .listItem {
-    margin-left: 15px;
-    margin-bottom: 15px;
-  }
-  .weAreYourSolutionImg {
-    width: 100%;
-    height: 100%;
-  }
-  .rightContentPhoto {
-    width: 50%;
-    margin: 0 !important;
-  }
-  .rightContentPhotoLitle {
-    width: 50%;
+ 
+  .infoBoxWithLineImg {
+    width: 89px;
     height: auto;
-    display: block;
   }
-  .createChangesThatMatters {
-    display: flex;
+  .infoBoxDescriprion {
+    margin-left: 108px;
+    max-width: 520px;
   }
-  .leftContentWithPhoto {
-    width: calc(50% - 240px);
-    margin: 0 !important;
-    align-self: center;
-    padding: 140px 120px;
+  .infoBoxWithLineDescription, .bold, .infoBoxDescriprionRight, .infoBoxList {
+    margin-left: 0;
   }
-  .leftContentWithPhotoLitle {
-    width: calc(50% - 80px);
-    padding: 70px 40px 70px 40px;
-    align-self: center;
+  
+  .infoBoxListDescription {
+    margin-left: 14px;
   }
-  .bottomContent {
-    display: flex;
-    justify-content: space-between;
-    padding: 70px 80px;
+  .resultSectionContainer {
+    padding: 120px 55px;
   }
-
-  .bottomContentTitle {
+  .resultSection {
+    background-image: url(../img/resultBG_desk.png);
+    background-size: contain;
+    background-position: top;
+    padding: 0 0 40px;
     margin-bottom: 0;
   }
-
-
-
-
-
-  .humanResoursesBlock, .trainingBlock, .managementConsultingBlock, .financeConsultingBlock {
+  .resultTextBox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 130px;
+  }
+  .resultImg {
+    width: 89px;
+    height: auto;
+  }
+  .resultHead {
+    margin: 0 89px 0 110px;
+  }
+  .resultInfo {
+    max-width: 630px;
+  }
+  .resultMobBox {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .resultMobWrapper {
+    margin: 0 !important;
+    max-width: 300px;
+  }
+  .secondMobBox {
+    transform: translateY(20px);
+  }
+  .thirdMobBox {
+    transform: translateY(-30px);
+  }
+  .fourthMobBox {
+    transform: none;
+  }
+  .workSectionContainer {
+    padding: 100px 55px;
+    display: block;
+  }
+  .workSectionWrapper {
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
-    height: 100%;
-    margin: 0 !important;
+    align-items: center;
   }
-  .trainingBlock, .humanResoursesBlock {
-    flex-direction: row;
+  .workSectionHeadTitle {
+    max-width: 410px;
   }
-
-  .managementConsultingBlock, .financeConsultingBlock {
-    flex-direction: row;
+  .workSectionWithLineImg {
+    width: 89px;
+    height: 10px;
   }
-
-  .flex {
-    display: flex;
+  .workSectionDescription {
+    padding-left: 110px;
+    max-width: 410px;
+  }
+  .workSectionLeftBlock {
+    margin-bottom: 0;
     width: 50%;
   }
-  .goldCarrerBlock {
-    padding: 30px 0;
-    justify-content: center;
+  
+  .workSectionRightBlock {
+    width: 50%;
+    max-width: 630px;
+    max-height: 423px;
   }
-
-  .carrerBlockDesktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 120px;
+  .btnWrapper {
+    padding-left: 109px;
   }
-  .careersTitle {
-    margin-bottom: 0 !important;
-    font-size: 40px;
-  }
-  .contactUsBlock {
-    display: flex;
-    flex-direction: row;
-    padding: 0 !important;
-  }
-  .typeOfContactAndDetails {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  .typeOfContactAndDetails:last-of-type {
-    margin-bottom: 60px;
-  }
-  .typeOfContact {
-    display: block;
-    width: 20%;
-  }
-  .contactDetails {
-    display: block;
-    width: 100%;
-  }
+  /* footer  */
   .footer {
-    position: relative;
-    background-color: #240c0c;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .logoFooterBlock {
-    margin-bottom: 50px;
-  }
-  .logoFooter {
-    max-width: 407px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
   }
   .footerContentBlock {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 275px;
-  }
-
-  .quickLinksBlock, .footerContactBlock {
-    width: 100%;
-  }
-
-  .copyrigthBlock {
-    position: absolute;
-    bottom: calc(0% + 60px);
-  }
-  .footerLink {
-    margin-bottom: 50px;
-  }
-  .footerLink:last-of-type {
-    display: block;
     margin-bottom: 0;
   }
-  .mainContent {
-    display: flex;
+
+  .logoFooter,
+  .logoFooterBlock {
+    max-width: 200px;
   }
-  .leftContentPhoto {
-    width: 50%;
+
+  .footerCopyrigth {
+    left: 0;
+    top: 76%;
   }
-  .blackWhiteBlockWrapper {
-    width: 50%;
-    flex-direction: column;
+
+  .linksFooterPrivacy {
+    top: 0;
+    left: 85%;
+    flex-direction: column-reverse;
+    align-items: self-start;
   }
-  .blackBlock, .whiteBlock {
-    width: 100%;
-  }
-  .wrapper {
-    padding: 140px 190px 60px;
-    
-  }
-  .formContainer {
-    margin: 140px 80px;
-    width: 50%;
-  }
-  .footer.container {
-    padding-bottom: 20px;
+  .footerLink {
+    margin-bottom: 20px;
   }
 }
