@@ -6,9 +6,16 @@
     margin: 0 auto;
     background-color: ; */
   }
-
+  .wrapperHeader {
+    max-width: 1290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin: 0 auto;
+  }
   .logoImgTop {
-      max-width: 190px;
+    max-width: 190px;
   }
   .vanta-canvas {
     border-radius: 0 0 40px 40px;
@@ -24,20 +31,27 @@
   .navList {
     display: flex;
     margin-right: 160px;
+    align-self: center;
+  }
+
+  .logoImgTop {
+    max-width: 190px;
+  }
+
+  .borderedButtonHeader {
+    transform: translateY(-25%);
   }
   .navLink {
     text-decoration: none;
   }
   .navText {
     position: relative !important;
-
     font-size: 16px !important;
     line-height: 1.9em;
     color: white;
     margin-right: 60px;
     transition: 0.3s ease-in-out;
   }
-
   .navLink:hover .navText {
     color: #60d4c9;
   }
@@ -66,11 +80,9 @@
     margin-right: 0 !important;
     transition: all 0.2s;
   }
-
   .accordion :hover {
     color: #60d4c9;
   }
-
   .navTextSmall:hover {
     color: #60d4c9;
   }
@@ -97,33 +109,27 @@
     width: 100%;
     margin: 0 auto;
   }
-
   .headerImg {
     max-width: 410px;
     width: 100%;
   }
-
   .companyHistoryContainer {
     max-width: 1070px;
     width: 100%;
     margin: 0 auto;
   }
-
   .historyText {
     font-size: 16px;
     line-height: 24px;
   }
-
   .historySubtitle {
     justify-content: flex-start;
   }
-
   .gridContainer {
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 60px;
     /* grid-template-rows: repeat(3, 1fr); */
   }
-
   .cellItem {
     border-radius: 40px;
   }
@@ -153,11 +159,9 @@
     width: 80%;
     grid-column: 3 / -1;
   }
-
   .benefitsSection {
     border-radius: 40px;
   }
-
   .benefitsBlock {
     max-width: 1070px;
     width: 100%;
@@ -166,41 +170,33 @@
     align-items: center;
     padding: 100px 0;
   }
-
   .benefitsTextBlock {
     width: 50%;
     margin-bottom: 0;
   }
-
   .benefitsText {
     font-size: 16px;
   }
-
   .imgBlock {
     max-width: 410px;
   }
-
   .ourTeamContainer {
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
     padding: 100px 0;
   }
-
   .subtitleTeamSection {
     justify-content: flex-start;
   }
-
   .gridWrapperTeam {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 60px;
   }
-
   .gridItemImg {
     border-radius: 40px;
   }
-
   .gridItem_1 {
     width: 100%;
   }
@@ -224,7 +220,6 @@
     width: 100%;
     grid-column: 3 /4;
   }
-
   .contactFlex {
     flex-direction: row-reverse;
     align-items: center;
@@ -235,23 +230,18 @@
     border-left: 1px solid black;
     border-right: 1px solid black;
   }
-
   .contactUsSection {
     margin-bottom: 120px;
   }
-
   .subtitleWithLineContact {
     width: 80%;
   }
-
   .contentBlock {
     flex: 0 1 50%;
   }
-
   .contactUsImg {
     max-width: 520px;
   }
-
   .grey {
     background-color: #191919;
   }
@@ -259,19 +249,15 @@
     max-width: 1290px;
     width: 100%;
     margin: 0 auto;
-
     padding: 150px 0 50px;
     /* padding-bottom: 60px; */
   }
-
-  .logoFooter,
-  .logoFooterBlock {
+  .logoFooter, .logoFooterBlock {
     max-width: 200px;
   }
   .footerContentBlock {
     margin-bottom: 84px;
   }
-
   .linksList {
     margin-bottom: 0;
   }
@@ -279,23 +265,19 @@
     left: 0%;
     top: 79%;
   }
-
   .linksFooterPrivacy {
     top: 32%;
     left: 85%;
   }
-
   .typeOfContact {
     max-width: 14px;
     height: 20px;
   }
-
   .email {
     width: 20px;
     max-width: 20px;
     height: auto;
   }
-
   .navLinkFooter:last-of-type .navTextFooter {
     margin-bottom: 0;
   }

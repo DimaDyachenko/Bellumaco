@@ -5,7 +5,14 @@
   .desktopWrapper {
     /* background-color: #191919; */
   }
-
+  .wrapperHeader {
+    max-width: 1290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin: 0 auto;
+  }
   .sectionWithBorders {
     max-width: 1290px;
     width: 100%;
@@ -13,17 +20,17 @@
     border-left: 2px solid black;
     border-right: 2px solid black;
   }
-
   .desktopContent {
     padding-bottom: 50px;
     padding-top: 40px;
   }
-
   .topBlock {
     padding-bottom: 0;
     align-items: baseline;
   }
-
+  .logoImgTop {
+    max-width: 190px;
+  }
   .nav {
     display: none;
   }
@@ -35,20 +42,22 @@
   .navList {
     display: flex;
     margin-right: 120px;
+    align-self: center;
+  }
+  .borderedButtonHeader {
+    transform: translateY(-25%);
   }
   .navLink {
     text-decoration: none;
   }
   .navText {
     position: relative !important;
-
     font-size: 16px !important;
     line-height: 1.9em;
     color: white;
     margin-right: 60px;
     transition: 0.3s ease-in-out;
   }
-
   .navLink:hover .navText {
     color: #60d4c9;
   }
@@ -77,11 +86,9 @@
     margin-right: 0 !important;
     transition: all 0.2s;
   }
-
   .accordion :hover {
     color: #60d4c9;
   }
-
   .navTextSmall:hover {
     color: #60d4c9;
   }
@@ -101,36 +108,28 @@
     margin-bottom: 10px !important;
     transition: 0.2s ease-in-out;
   }
-
   .aboutUsCards {
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-
   .cardItem {
     align-items: center;
     margin-bottom: 0;
   }
-
-  .aboutUsCardText {
-  }
-
+  .aboutUsCardText {}
   .aboutUsText {
     font-weight: 400;
   }
-
   .servicesSection {
     border-radius: 40px;
   }
-
   .servicesContainer {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     padding-top: 120px;
   }
-
   .servicesFlex {
     display: flex;
     flex-direction: row;
@@ -144,11 +143,9 @@
     width: 410px;
     height: 407px;
   }
-
   .planetImg {
     display: none;
   }
-
   .gridWrapper {
     max-width: 1200px;
     width: 100%;
@@ -167,35 +164,28 @@
   .casesSubtitleWithLine {
     justify-content: end;
   }
-
   .casesSection {
     border-radius: 40px 40px 0px 0px;
   }
   .second {
     transform: translateY(-30%);
   }
-
   .third {
     transform: translateY(3%);
   }
   .titleAndPhotoDesktop {
     display: flex;
     flex-direction: column;
-
     align-items: baseline;
     margin-right: 140px;
   }
   .servicesCards {
     width: 50%;
   }
-
   .burderedButtonText {
     background-color: #191919;
   }
-
-  .contactUsSection {
-  }
-
+  .contactUsSection {}
   .contactFlex {
     align-items: center;
     padding: 0px 100px;
@@ -208,7 +198,6 @@
   .contactButton {
     margin-top: 40px;
   }
-
   .contactUsImg {
     margin: 0px auto;
     max-width: 550px;
@@ -218,37 +207,30 @@
     width: 100%;
     height: auto;
   }
-
   .grey {
     background-color: #191919;
   }
   .footer {
-    /* max-width: 1400px;
+    max-width: 1290px;
     width: 100%;
-    margin: 0 auto; */
+    margin: 0 auto;
     padding-top: 150px;
     padding-bottom: 60px;
   }
-
-  .logoFooter,
-  .logoFooterBlock {
+  .logoFooter, .logoFooterBlock {
     max-width: 200px;
   }
-
   .footerCopyrigth {
     left: 3%;
   }
-
   .linksFooterPrivacy {
     top: 32%;
     left: 85%;
   }
-
   .typeOfContact {
     max-width: 14px;
     height: 20px;
   }
-
   .email {
     width: 20px;
     max-width: 20px;

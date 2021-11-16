@@ -19,36 +19,93 @@
     <header class="header">
       <div class="desktopWrapper">
         <div class="topBlock container">
-          <img class="logoImgTop" src="./images/mainLogo.WebP" />
+          <div class="wrapperHeader">
+            <img class="logoImgTop" src="./images/mainLogo.WebP" />
 
-          <nav role="navigation" class="nav">
-            <div id="menuToggle" class="burgerMenu">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
-              <input
-                class="input"
-                type="checkbox"
-                id="navigation"
-                onchange="onChange()"
-              />
+            <nav role="navigation" class="nav">
+              <div id="menuToggle" class="burgerMenu">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input
+                  class="input"
+                  type="checkbox"
+                  id="navigation"
+                  onchange="onChange()"
+                />
 
-              <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
-              <span></span>
-              <span></span>
-              <span></span>
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
 
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
-              <ul id="menu" class="navList">
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu" class="navList">
+                  <a href="../../index.html" class="navLink">
+                    <li class="navText">HOME</li>
+                  </a>
+                  <a href="index.html" class="navLink">
+                    <li class="navText">ABOUT US</li>
+                  </a>
+                  <a class="navLink innerMenu">
+                    <li class="navText accordion">
+                      SERVICES
+                      <div class="triangle"></div>
+                      <ul id="menuInMenu" class="navInnerList panel">
+                        <a href="../mobileDev/index.html" class="navLink">
+                          <li class="navTextSmall">Mobile development</li>
+                        </a>
+                        <a href="../cloudSoftDev/index.html" class="navLink">
+                          <li class="navTextSmall">Cloud development</li>
+                        </a>
+                        <a href="../QAServices/index.html" class="navLink">
+                          <li class="navTextSmall">Quality Assuarance</li>
+                        </a>
+                        <a href="../DevOpsServices/index.html" class="navLink">
+                          <li class="navTextSmall">DevOps</li>
+                        </a>
+                        <a
+                          href="../ProductDesignServices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Product Design</li>
+                        </a>
+                        <a
+                          href="../machineLearningServices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Machine learning</li>
+                        </a>
+                        <a
+                          href="../WebDevelopmentSerices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Web development</li>
+                        </a>
+                      </ul>
+                    </li>
+                  </a>
+                  <a href="../case1/index.html" class="navLink">
+                    <li class="navText">CASES</li>
+                  </a>
+                  <a href="../contact/index.html" class="navLink">
+                    <li class="navText careers">CONTACTS</li>
+                  </a>
+                </ul>
+              </div>
+            </nav>
+
+            <nav class="desktopNav">
+              <ul class="navList">
                 <a href="../../index.html" class="navLink">
                   <li class="navText">HOME</li>
                 </a>
@@ -59,37 +116,41 @@
                   <li class="navText accordion">
                     SERVICES
                     <div class="triangle"></div>
-                    <ul id="menuInMenu" class="navInnerList panel">
-                      <a href="../mobileDev/index.html" class="navLink">
-                        <li class="navTextSmall">Mobile development</li>
-                      </a>
-                      <a href="../cloudSoftDev/index.html" class="navLink">
-                        <li class="navTextSmall">Cloud development</li>
-                      </a>
-                      <a href="../QAServices/index.html" class="navLink">
-                        <li class="navTextSmall">Quality Assuarance</li>
-                      </a>
-                      <a href="../DevOpsServices/index.html" class="navLink">
-                        <li class="navTextSmall">DevOps</li>
-                      </a>
-                      <a
-                        href="../ProductDesignServices/index.html"
-                        class="navLink"
-                      >
-                        <li class="navTextSmall">Product Design</li>
-                      </a>
-                      <a
-                        href="../machineLearningServices/index.html"
-                        class="navLink"
-                      >
-                        <li class="navTextSmall">Machine learning</li>
-                      </a>
-                      <a
-                        href="../WebDevelopmentSerices/index.html"
-                        class="navLink"
-                      >
-                        <li class="navTextSmall">Web development</li>
-                      </a>
+                    <ul class="navInnerList panel">
+                      <div>
+                        <a href="../mobileDev/index.html" class="navLink">
+                          <li class="navTextSmall">Mobile development</li>
+                        </a>
+                        <a href="../cloudSoftDev/index.html" class="navLink">
+                          <li class="navTextSmall">Cloud development</li>
+                        </a>
+                        <a href="../QAServices/index.html" class="navLink">
+                          <li class="navTextSmall">Quality Assuarance</li>
+                        </a>
+                        <a href="../DevOpsServices/index.html" class="navLink">
+                          <li class="navTextSmall">DevOps</li>
+                        </a>
+                      </div>
+                      <div>
+                        <a
+                          href="../ProductDesignServices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Product Design</li>
+                        </a>
+                        <a
+                          href="../machineLearningServices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Machine learning</li>
+                        </a>
+                        <a
+                          href="../WebDevelopmentSerices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Web development</li>
+                        </a>
+                      </div>
                     </ul>
                   </li>
                 </a>
@@ -97,73 +158,14 @@
                   <li class="navText">CASES</li>
                 </a>
                 <a href="../contact/index.html" class="navLink">
-                  <li class="navText careers">CONTACTS</li>
+                  <li class="navText careersDesktop">CONTACTS</li>
                 </a>
               </ul>
-            </div>
-          </nav>
-
-          <nav class="desktopNav">
-            <ul class="navList">
-              <a href="../../index.html" class="navLink">
-                <li class="navText">HOME</li>
+              <a class="burderedButton borderedButtonHeader" href="../contact/index.html">
+                <button class="burderedButtonText">CONTACT US</button>
               </a>
-              <a href="index.html" class="navLink">
-                <li class="navText">ABOUT US</li>
-              </a>
-              <a class="navLink innerMenu">
-                <li class="navText accordion">
-                  SERVICES
-                  <div class="triangle"></div>
-                  <ul class="navInnerList panel">
-                    <div>
-                      <a href="../mobileDev/index.html" class="navLink">
-                        <li class="navTextSmall">Mobile development</li>
-                      </a>
-                      <a href="../cloudSoftDev/index.html" class="navLink">
-                        <li class="navTextSmall">Cloud development</li>
-                      </a>
-                      <a href="../QAServices/index.html" class="navLink">
-                        <li class="navTextSmall">Quality Assuarance</li>
-                      </a>
-                      <a href="../DevOpsServices/index.html" class="navLink">
-                        <li class="navTextSmall">DevOps</li>
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        href="../ProductDesignServices/index.html"
-                        class="navLink"
-                      >
-                        <li class="navTextSmall">Product Design</li>
-                      </a>
-                      <a
-                        href="../machineLearningServices/index.html"
-                        class="navLink"
-                      >
-                        <li class="navTextSmall">Machine learning</li>
-                      </a>
-                      <a
-                        href="../WebDevelopmentSerices/index.html"
-                        class="navLink"
-                      >
-                        <li class="navTextSmall">Web development</li>
-                      </a>
-                    </div>
-                  </ul>
-                </li>
-              </a>
-              <a href="../case1/index.html" class="navLink">
-                <li class="navText">CASES</li>
-              </a>
-              <a href="../contact/index.html" class="navLink">
-                <li class="navText careersDesktop">CONTACTS</li>
-              </a>
-            </ul>
-            <a class="burderedButton" href="../contact/index.html">
-              <button class="burderedButtonText">CONTACT US</button>
-            </a>
-          </nav>
+            </nav>
+          </div>
         </div>
         <div class="headerContent" id="headerContent">
           <div class="container headerTextVisibility desktopContent">

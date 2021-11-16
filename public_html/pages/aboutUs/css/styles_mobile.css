@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "TT Firis Neue";
+  font-family: "TT Firs Neue";
   src: url("../fonts/TTFirsNeue-Regular.ttf");
   font-weight: 400;
   font-style: normal;
@@ -8,6 +8,11 @@
 
 .container {
   padding: 30px 20px;
+}
+
+.wrapperHeader {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mainTitle {
@@ -124,9 +129,9 @@
 
 .topBlock {
   background-color: #191919;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; */
 }
 
 .logoImgTop {
