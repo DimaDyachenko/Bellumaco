@@ -1,10 +1,10 @@
-@media (min-width: 720px) {
+@media (min-width: 728px) {
   .headerContent {
     padding-bottom: 10px;
   }
 
   .tabletContainer {
-    max-width: 724px;
+    max-width: 728px;
     width: 100%;
     margin: 0px auto;
   }
@@ -18,7 +18,7 @@
   }
 
   .sectionWithBorders {
-    max-width: 728px;
+    max-width: 648px;
     width: 100%;
     margin: 0 auto;
     border-left: 2px solid black;
@@ -26,6 +26,8 @@
   }
 
   .desktopContent {
+    padding-left: 0;
+    padding-right: 0;
     max-width: 630px;
   }
   .logoImgTop {
@@ -76,6 +78,7 @@
   }
 
   .contactFlex {
+   padding: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -101,11 +104,17 @@
   }
 
   .aboutUsContainer {
+    padding-left: 87px;
+    padding-right: 87px;
     margin: 100px 0;
   }
 
   .aboutUsCards {
     width: 70%;
+  }
+
+  .aboutUsCardText {
+    font-size: 24px;
   }
 
   .aboutUsText,
@@ -120,8 +129,21 @@
     line-height: 1.5em;
   }
 
+  .cardItem {
+    margin-bottom: 40px;
+  }
+
+  .cardItem:last-of-type {
+    margin-bottom: 0;
+  }
+
   .servicesContainer {
-    padding: 100px 0;
+    padding: 100px 40px;
+  }
+
+  .servicesSubtitle {
+    font-size: 32px;
+    font-weight: 700;
   }
 
   .servicesCardItem {
@@ -145,6 +167,7 @@
   }
 
   .contactUsSection {
+    border: none;
     margin: 100px auto;
   }
 
@@ -165,11 +188,16 @@
   .gridWrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 800px;
+    height: 850px;
+    width: 100%;
+    max-width: 728px;
+    margin: 0 auto;
     /* grid-template-rows: repeat(3, 350px); */
   }
 
   .casesSection {
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 0;
   }
 
@@ -181,7 +209,7 @@
     grid-column: 3 / -1;
   }
   .casesSubtitleWithLine {
-    justify-content: start;
+    justify-content: end;
     /* margin-right: 30px; */
   }
 
@@ -197,7 +225,7 @@
     padding: 0;
   }
   .burderedButtonCases {
-    width: 70%;
+    width: 80%;
   }
   .casesCardItem {
     max-width: 423px;
@@ -248,6 +276,7 @@
     width: 100%;
     max-width: 160px;
     height: auto;
+    margin-right: 109px;
   }
 
   .footerContentBlock {
@@ -292,6 +321,7 @@
   }
 
   .quickLinksBlock {
+    margin-left: 100px;
     text-align: start;
   }
 
@@ -302,5 +332,10 @@
 
   .footerLink {
     margin-right: 30px;
+  }
+
+  .location {
+    width: 14px;
+    height: 20px;
   }
 }

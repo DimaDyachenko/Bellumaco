@@ -1,4 +1,4 @@
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
   .topBlock {
     padding-bottom: 0;
     /* max-width: 1400px;
@@ -131,8 +131,9 @@
     padding: 0;
     border-left: none;
     padding-right: 100px;
-    width: 80%;
+    width: 100%;
     grid-column: 3 / -1;
+    align-self: center;
   }
   .cell_2 {
     width: 80%;
@@ -180,7 +181,7 @@
   }
 
   .ourTeamContainer {
-    max-width: 1070px;
+    max-width: 1290px;
     width: 100%;
     margin: 0 auto;
     padding: 100px 0;
@@ -225,10 +226,12 @@
   }
 
   .contactFlex {
-    max-width: 860px;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 1290px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 108px;
+    padding: 0;
     border-left: 1px solid black;
     border-right: 1px solid black;
   }
@@ -237,11 +240,23 @@
     margin-bottom: 120px;
   }
 
+  .subtitleWithLineContact {
+    width: 80%;
+  }
+
+  .contentBlock {
+    flex: 0 1 50%;
+  }
+
+  .contactUsImg {
+    max-width: 520px;
+  }
+
   .grey {
     background-color: #191919;
   }
   .footer {
-    max-width: 1400px;
+    max-width: 1290px;
     width: 100%;
     margin: 0 auto;
 
