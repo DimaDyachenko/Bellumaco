@@ -234,6 +234,8 @@
 }
 
 .servicesSection, .casesSection {
+  transition: opacity .5s .25s ease-out;
+  opacity: 0;
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -244,6 +246,8 @@
 }
 
 .servicesCardItem {
+  transition: all 0.5s ease-in;
+  opacity: 0;
   margin-bottom: 20px;
 }
 
@@ -429,4 +433,14 @@
 
 .footer.container {
   padding-bottom: 0;
+}
+
+.first, .second, .third, .aboutUsContainer, .servicesSection, .photoDesktop, .contentBlock, .contactUsImg, .planetImg {
+  transition: all 0.5s ease-in;
+  opacity: 0;
+}
+
+.is-visible {
+  opacity: 1;
+  padding-top: 10px;
 }

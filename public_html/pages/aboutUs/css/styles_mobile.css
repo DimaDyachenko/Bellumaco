@@ -196,6 +196,7 @@
   width: 100%;
   transition: 0.2s all;
 }
+
 .mainButtonText:hover {
   background-color: #60d4c9;
 }
@@ -285,7 +286,6 @@
 
 .benefitsSection {
   background-image: url("../images/bg.png");
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -304,8 +304,7 @@
   margin-bottom: 30px;
 }
 
-.benefitsImg,
-.contactUsImgItem {
+.benefitsImg, .contactUsImgItem {
   width: 100%;
   height: auto;
 }
@@ -337,6 +336,10 @@
   grid-row-gap: 20px;
 }
 
+.contentBlock {
+  margin-bottom: 40px;
+}
+
 .footer {
   background-color: #191919;
   display: flex;
@@ -360,8 +363,7 @@
   flex-direction: column;
 }
 
-.quickLinksBlock {
-}
+.quickLinksBlock {}
 
 .footerTitle {
   color: #f0d57d;
@@ -396,7 +398,6 @@
   width: 20px;
   height: auto;
   margin-top: 50px;
-
   margin-bottom: 20px;
 }
 
@@ -416,7 +417,6 @@
   display: block;
   text-decoration: none;
   font-size: 16px;
-
   color: white;
   margin-bottom: 60px;
   transition: all 0.2s;
@@ -437,6 +437,17 @@
 .responsibleCard {
   text-align: center;
 }
+
 .footer.container {
   padding-bottom: 0;
+}
+
+.cell_1, .cell_2, .cell_3, .cell_4, .cell_5, .benefitsTextBlock, .imgBlock, .subtitleTeamSection, .gridItem_1, .gridItem_2, .gridItem_3, .gridItem_4, .gridItem_5, .gridItem_6, .contactUsSection {
+  transition: all 0.5s ease-in;
+  opacity: 0;
+}
+
+.is-visible {
+  opacity: 1;
+  padding-top: 10px;
 }

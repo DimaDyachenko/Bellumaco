@@ -198,8 +198,8 @@
       </div>
     </header>
     <section class="sectionWithBorders aboutUsSection">
-      <div class="container aboutUsContainer">
-        <div class="aboutUsCards">
+      <div class="container aboutUsContainer show-on-scroll">
+        <div class="aboutUsCards ">
           <div class="cardItem">
             <img class="numberImg one" src="./images/1+.png" />
             <p class="ordinaryText black aboutUsCardText">
@@ -228,7 +228,7 @@
         </div>
       </div>
     </section>
-    <section class="servicesSection" id="services">
+    <section class="servicesSection show-on-scroll" id="services">
       <div class="container servicesContainer tabletContainer">
         <div class="servicesFlex">
           <div class="titleAndPhotoDesktop">
@@ -236,13 +236,13 @@
               <div class="line white"></div>
               <h1 class="Subtitle servicesSubtitle">List of services</h1>
             </div>
-            <div class="photoDesktop">
+            <div class="photoDesktop show-on-scroll">
               <img class="planetImgDesktop" src="./images/planet.png" />
             </div>
           </div>
 
           <div class="servicesCards">
-            <div class="servicesCardItem">
+            <div class="servicesCardItem show-on-scroll">
               <h1 class="servicesTitle">.01 — Mobile development</h1>
               <p class="ordinaryText textService">
                 Business on smartphones is a priority for today. Huge customer
@@ -256,7 +256,7 @@
                 <button class="burderedButtonText">learn more</button>
               </a>
             </div>
-            <div class="servicesCardItem">
+            <div class="servicesCardItem show-on-scroll">
               <h1 class="servicesTitle">.02 — Cloud development</h1>
               <p class="ordinaryText textService">
                 Storing data on paper is not a good idea. It can lead to damage
@@ -272,7 +272,7 @@
                 <button class="burderedButtonText">learn more</button>
               </a>
             </div>
-            <div class="servicesCardItem">
+            <div class="servicesCardItem show-on-scroll">
               <h1 class="servicesTitle">.03 — Quality Assurance</h1>
               <p class="ordinaryText textService">
                 Any work done in computer technology requires a quality check.
@@ -286,7 +286,7 @@
                 <button class="burderedButtonText">learn more</button>
               </a>
             </div>
-            <div class="servicesCardItem">
+            <div class="servicesCardItem show-on-scroll">
               <h1 class="servicesTitle">.04 — DevOps</h1>
               <p class="ordinaryText textService">
                 Any development is a complex and large process that requires the
@@ -299,7 +299,7 @@
                 <button class="burderedButtonText">learn more</button>
               </a>
             </div>
-            <div class="servicesCardItem">
+            <div class="servicesCardItem show-on-scroll">
               <h1 class="servicesTitle">.05 — Product Design</h1>
               <p class="ordinaryText textService">
                 Every candy needs a wrapper. It needs one so it can be sold.
@@ -314,7 +314,7 @@
                 <button class="burderedButtonText">learn more</button>
               </a>
             </div>
-            <div class="servicesCardItem">
+            <div class="servicesCardItem show-on-scroll">
               <h1 class="servicesTitle">.06 — Machine learning</h1>
               <p class="ordinaryText textService">
                 Huge amounts of data are turned into useful insights that help
@@ -329,7 +329,7 @@
                 <button class="burderedButtonText">learn more</button>
               </a>
             </div>
-            <div class="servicesCardItem">
+            <div class="servicesCardItem show-on-scroll">
               <h1 class="servicesTitle">.07 — Web development</h1>
               <p class="ordinaryText textService">
                 Good design has to be properly implemented. That's what our web
@@ -344,13 +344,13 @@
               </a>
             </div>
           </div>
-          <img class="planetImg" src="./images/planet.png" />
+          <img class="planetImg show-on-scroll" src="./images/planet.png" />
         </div>
       </div>
     </section>
     <section class="sectionWithBorders contactUsSection">
       <div class="container contactFlex">
-        <div class="contentBlock">
+        <div class="contentBlock show-on-scroll">
           <div class="subtitleWithLine">
             <div class="line"></div>
             <h1 class="Subtitle contactUsSubtitle">
@@ -361,12 +361,12 @@
             <button class="mainButtonText">contact Us</button>
           </a>
         </div>
-        <div class="contactUsImg">
+        <div class="contactUsImg show-on-scroll">
           <img class="contactUsImgItem" src="./images/stone.png" />
         </div>
       </div>
     </section>
-    <section class="casesSection" id="cases">
+    <section class="casesSection show-on-scroll" id="cases">
       <div class="gridWrapper">
         <div class="container casesContainer">
           <div class="subtitleWithLine casesSubtitleWithLine">
@@ -375,7 +375,7 @@
           </div>
         </div>
 
-        <div class="casesCardItem first">
+        <div class="casesCardItem first show-on-scroll">
           <h1 class="servicesTitle">.01 — ThatHLTH</h1>
           <p class="ordinaryText textService">
             ThatHLTH is a mobile app designed to support a healthy lifestyle.
@@ -390,7 +390,7 @@
             <button class="burderedButtonText">Click here to learn more</button>
           </a>
         </div>
-        <div class="casesCardItem second">
+        <div class="casesCardItem second show-on-scroll">
           <h1 class="servicesTitle">.02 — CredFin</h1>
           <p class="ordinaryText textService">
             CredFin is a microcredit service that allows you to quickly get a
@@ -403,7 +403,7 @@
             <button class="burderedButtonText">Click here to learn more</button>
           </a>
         </div>
-        <div class="casesCardItem third">
+        <div class="casesCardItem third show-on-scroll">
           <h1 class="servicesTitle">.03 — Falcer</h1>
           <p class="ordinaryText textService">
             Falcer has become one of the leading medical technology companies in
@@ -557,6 +557,50 @@
           header.style.zIndex = "1";
         }
       });
+    </script>
+    <script>
+      // Detect request animation frame
+      var scroll =
+        window.requestAnimationFrame ||
+        // IE Fallback
+        function (callback) {
+          window.setTimeout(callback, 1000 / 60);
+        };
+      var elementsToShow = document.querySelectorAll(".show-on-scroll");
+
+      function loop() {
+        Array.prototype.forEach.call(elementsToShow, function (element) {
+          if (isElementInViewport(element)) {
+            element.classList.add("is-visible");
+          } else {
+            element.classList.remove("is-visible");
+          }
+        });
+
+        scroll(loop);
+      }
+
+      // Call the loop for the first time
+      loop();
+
+      // Helper function from: http://stackoverflow.com/a/7557433/274826
+      function isElementInViewport(el) {
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+          el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+          (rect.top <= 0 && rect.bottom >= 0) ||
+          (rect.bottom >=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <=
+              (window.innerHeight || document.documentElement.clientHeight)) ||
+          (rect.top >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight))
+        );
+      }
     </script>
   </body>
 </html>
