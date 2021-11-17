@@ -1,3 +1,145 @@
-@media (min-width: 768px) {
+@media (min-width: 726px) {
+  .container {
+    padding: 40px 40px;
+  }
+
   
+  .aboutUsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headerImg {
+    width: 50%;
+  }
+
+  .headerTitle {
+    font-size: 40px;
+    line-height: 1.1em;
+  }
+
+  .contactUsContainer {
+    padding: 100px 40px;
+  }
+
+  .contactsBlock {
+    padding: 40px 88px;
+    /* max-width: 686px;
+    width: 100%;
+    margin: 0 auto; */
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-bottom: 100px;
+  }
+
+  .historySubtitle {
+    justify-content: end;
+    font-size: 32px;
+  }
+
+  .formBlock {
+    margin: 0 -40px;
+  }
+
+  .formContainer {
+    max-width: 586px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 88px;
+  }
+
+  .mainButtonText {
+    max-width: 190px;
+  }
+
+  .formInner {
+    text-align: left;
+  }
+
+  .mapImg {
+    display: block;
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  
+  .footer {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .logoFooterBlock {
+        margin-right: 100px;
+      }
+  .logoFooter {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+  }
+
+  .footerContentBlock {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .footerCopyrigth {
+    position: absolute;
+    display: block !important;
+    color: white;
+    left: 3%;
+    top: 86%;
+  }
+
+  .list {
+    width: 60%;
+    margin: 0;
+    margin-left: auto;
+  }
+  .typeOfContactAndDetailsFooter {
+    display: flex;
+  }
+
+  .typeOfContact {
+    margin-right: 13px;
+  }
+
+  .location {
+      width: 14px;
+      height: 20px;
+  }
+
+  .contactDetails {
+    text-align: start;
+    line-height: 24px;
+  }
+
+  .linksFooterPrivacy {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    left: 73%;
+    top: 85%;
+  }
+
+  .quickLinksBlock {
+    text-align: start;
+  }
+
+  .linkedinBot,
+  .footerLink {
+    margin: 0;
+  }
+
+  .footerLink {
+    margin-right: 30px;
+  }
 }
