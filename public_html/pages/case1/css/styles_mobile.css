@@ -361,3 +361,11 @@
 .contactDetails {
   line-height: 24px;
 }
+.sideBorder, .resultTextBox, .resultMobWrapper, .workSectionWrapper {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.is-visible {
+  opacity: 1;
+  padding-top: 10px;
+}

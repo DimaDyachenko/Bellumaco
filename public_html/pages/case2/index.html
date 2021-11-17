@@ -153,6 +153,7 @@
           </a>
         </nav>
       </div>
+    </div>
       <div class="headerInner">
         <div class="container headerContainer headerTextVisibility">
           <div class="textWrapper">
@@ -174,13 +175,13 @@
           <img src="./img/whiteLineWithPoint.png" alt="#" style="width: 10px" />
         </div>
       </div>
-    </div>
+    
     </header>
     <main>
       <section class="infoSection">
         <div class="container infoSectionContainer">
           <div class="sideBorder">
-            <div class="infoBox">
+            <div class="infoBox show-on-scroll">
               <div class="infoBoxWithLine">
                 <img
                   class="infoBoxWithLineImg"
@@ -215,7 +216,7 @@
       </section>
       <section class="resultSection">
         <div class="container resultSectionContainer">
-          <div class="resultTextBox">
+          <div class="resultTextBox show-on-scroll">
             <div class="resultHead">
               <img class="resultImg" src="./img/WhiteRightLine.png" alt="" />
               <h2 class="resultTitle">Results:</h2>
@@ -236,20 +237,20 @@
               </p>
             </div>
           </div>
-          <div class="resultTablerWrapper">
+          <div class="resultTablerWrapper show-on-scroll">
             <img class="resultMobBoxImg" src="./img/tablet.png" alt="" />
           </div>
           <div class="resultMobBox">
-            <div class="resultMobWrapper">
+            <div class="resultMobWrapper show-on-scroll">
               <img class="resultMobBoxImg" src="./img/mob1.png" alt="" />
             </div>
-            <div class="resultMobWrapper secondMobBox">
+            <div class="resultMobWrapper secondMobBox show-on-scroll">
               <img class="resultMobBoxImg" src="./img/mob2.png" alt="" />
             </div>
-            <div class="resultMobWrapper thirdMobBox">
+            <div class="resultMobWrapper thirdMobBox show-on-scroll">
               <img class="resultMobBoxImg" src="./img/mob3.png" alt="" />
             </div>
-            <div class="resultMobWrapper fourthMobBox">
+            <div class="resultMobWrapper fourthMobBox show-on-scroll">
               <img class="resultMobBoxImg" src="./img/mob4.png" alt="" />
             </div>
           </div>
@@ -257,7 +258,7 @@
       </section>
       <section class="workSection">
         <div class="container workSectionContainer">
-          <div class="workSectionWrapper">
+          <div class="workSectionWrapper show-on-scroll">
             <div class="workSectionLeftBlock">
               <div class="workSectionHeadWrapper">
                 <img
@@ -397,6 +398,50 @@
           header.style.zIndex = "1";
         }
       });
+    </script>
+    <script>
+      // Detect request animation frame
+      var scroll =
+        window.requestAnimationFrame ||
+        // IE Fallback
+        function (callback) {
+          window.setTimeout(callback, 1000 / 60);
+        };
+      var elementsToShow = document.querySelectorAll(".show-on-scroll");
+
+      function loop() {
+        Array.prototype.forEach.call(elementsToShow, function (element) {
+          if (isElementInViewport(element)) {
+            element.classList.add("is-visible");
+          } else {
+            element.classList.remove("is-visible");
+          }
+        });
+
+        scroll(loop);
+      }
+
+      // Call the loop for the first time
+      loop();
+
+      // Helper function from: http://stackoverflow.com/a/7557433/274826
+      function isElementInViewport(el) {
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+          el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+          (rect.top <= 0 && rect.bottom >= 0) ||
+          (rect.bottom >=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <=
+              (window.innerHeight || document.documentElement.clientHeight)) ||
+          (rect.top >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight))
+        );
+      }
     </script>
   </body>
 </html>
