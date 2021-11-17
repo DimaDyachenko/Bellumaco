@@ -200,6 +200,9 @@
   .fourthMobBox {
     transform: none;
   }
+  .workSection {
+    background-size: cover;
+  }
   .workSectionContainer {
     padding: 100px 55px;
     display: block;

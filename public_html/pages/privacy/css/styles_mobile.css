@@ -28,8 +28,9 @@
   background-color: #191919;
 }
 .policyContainer {
-
+  max-width: 1400px;
   padding: 30px 20px;
+  margin: 0 auto;
 }
 .policyMainTitle {
   font-weight: bold;
@@ -44,14 +45,13 @@
   font-size: 16px;
   line-height: 150%;
   color: #cbcfcf;
-
 }
 .policyTitle {
   font-weight: bold;
-font-size: 18px;
-line-height: 150%;
-color: #F4FAF9;
-margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f4faf9;
+  margin-bottom: 20px;
 }
 .policyList {
   font-weight: normal;
@@ -61,8 +61,6 @@ margin-bottom: 20px;
   list-style-type: disc;
   margin-left: 25px;
 }
-
-
 
 .vanta-canvas {
   filter: drop-shadow(0px 30px 40px rgba(57, 56, 56, 0.2));
@@ -256,11 +254,16 @@ margin-bottom: 20px;
 /* footer */
 .footer {
   background-color: #191919;
+  padding: 60px 35px 80px;
+}
+.footerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 60px 35px 80px;
+  max-width: 1440px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .logoFooterBlock {
