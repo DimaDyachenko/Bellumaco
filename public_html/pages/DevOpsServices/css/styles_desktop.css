@@ -1,7 +1,6 @@
 @media (min-width: 1440px) {
   .vanta-canvas {
     min-height: 620px;
-    height: 620px !important;
   }
   .container {
     padding: 20px 165px 40px;
@@ -203,6 +202,9 @@
   }
   .fourthMobBox {
     transform: none;
+  }
+  .workSection {
+    background-size: cover;
   }
   .workSectionContainer {
     padding: 100px 55px;

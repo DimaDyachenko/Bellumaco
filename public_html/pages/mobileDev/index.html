@@ -156,6 +156,7 @@
             </a>
           </nav>
         </div>
+      </div>
         <div class="headerInner">
           <div class="container headerContainer">
             <div class="textWrapper">
@@ -180,14 +181,14 @@
             />
           </div>
         </div>
-      </div>
+     
     </header>
     <main>
       <section class="infoSection">
         <div class="container infoSectionContainer">
           <div class="sideBorder">
             <div class="infoBoxWrapper">
-            <div class="infoBox">
+            <div class="infoBox show-on-scroll">
               <div class="infoBoxWithLine">
                 <img
                   class="infoBoxWithLineImg"
@@ -202,7 +203,7 @@
                 security requirements.
               </p>
             </div>
-            <div class="infoBox">
+            <div class="infoBox show-on-scroll">
               <div class="infoBoxWithLine infoBoxWithLineDescription">
                 <img
                   class="infoBoxWithLineImg"
@@ -244,43 +245,9 @@
           </div>
         </div>
       </section>
-      <!-- <section class="resultSection">
-        <div class="container resultSectionContainer">
-          <div class="resultTextBox">
-            <div class="resultHead">
-              <img class="resultImg" src="./img/WhiteRightLine.png" alt="" />
-              <h2 class="resultTitle">Make your business smart, on smartphones.</h2>
-            </div>
-            <div>
-              <p class="resultInfo">
-                The development and implementation were done in Python. We used
-                cloud-based managed services for efficient setup and training,
-                as well as model deployment. Catch data was collected from a
-                variety of internal and external sources. Additionally, we
-                developed data pipelines to handle data from internal and
-                external APIs.
-              </p>
-            </div>
-          </div>
-          <div class="resultMobBox">
-            <div class="resultMobWrapper">
-              <img class="resultMobBoxImg" src="./img/mob1.png" alt="" />
-            </div>
-            <div class="resultMobWrapper secondMobBox">
-              <img class="resultMobBoxImg" src="./img/mob2.png" alt="" />
-            </div>
-            <div class="resultMobWrapper thirdMobBox">
-              <img class="resultMobBoxImg" src="./img/mob3.png" alt="" />
-            </div>
-            <div class="resultMobWrapper fourthMobBox">
-              <img class="resultMobBoxImg" src="./img/mob4.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section class="workSection">
         <div class="container workSectionContainer">
-          <div class="workSectionWrapper">
+          <div class="workSectionWrapper show-on-scroll">
             <div class="workSectionLeftBlock">
               <div class="workSectionHeadWrapper">
                 <img
@@ -411,6 +378,50 @@
           header.style.zIndex = "1";
         }
       });
+    </script>
+    <script>
+      // Detect request animation frame
+      var scroll =
+        window.requestAnimationFrame ||
+        // IE Fallback
+        function (callback) {
+          window.setTimeout(callback, 1000 / 60);
+        };
+      var elementsToShow = document.querySelectorAll(".show-on-scroll");
+
+      function loop() {
+        Array.prototype.forEach.call(elementsToShow, function (element) {
+          if (isElementInViewport(element)) {
+            element.classList.add("is-visible");
+          } else {
+            element.classList.remove("is-visible");
+          }
+        });
+
+        scroll(loop);
+      }
+
+      // Call the loop for the first time
+      loop();
+
+      // Helper function from: http://stackoverflow.com/a/7557433/274826
+      function isElementInViewport(el) {
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+          el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+          (rect.top <= 0 && rect.bottom >= 0) ||
+          (rect.bottom >=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <=
+              (window.innerHeight || document.documentElement.clientHeight)) ||
+          (rect.top >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight))
+        );
+      }
     </script>
   </body>
 </html>
