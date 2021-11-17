@@ -117,6 +117,31 @@
   .grey {
     background-color: #191919;
   }
+
+  .contactUsContainer {
+    max-width: 1290px;
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-left: 1px solid black;
+    padding: 0;
+  }
+
+  .formBlock {
+    width: 50%;
+    margin: 0;
+  }
+
+  .formContainer {
+    padding: 60px;
+    width: unset;
+  }
+  .contactsBlock {
+    border: none;
+    margin-bottom: 0;
+  }
   .footer {
     max-width: 1290px;
     width: 100%;

@@ -191,15 +191,105 @@
     </header>
     <section class="contactUsSection">
       <div class="container contactUsContainer">
-        <div class="contactsBlock">
+        <div class="contactsBlock show-on-scroll">
           <div class="subtitleWithLine historySubtitle">
             <div class="line black"></div>
             <h1 class="Subtitle historySubtitle">Our Contacts</h1>
           </div>
-          
+          <div class="contactList">
+            <div class="contactsDetails">
+              <p class="contactType">Phone:</p>
+              <p class="contactItem"></p>
+            </div>
+            <div class="contactsDetails">
+              <p class="contactType">Email:</p>
+              <p class="contactItem">info@bellumaco.com</p>
+            </div>
+            <div class="contactsDetails">
+              <p class="contactType">Address:</p>
+              <p class="contactItem">
+                Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="formBlock">
+          <div class="container formContainer">
+            <div class="subtitleWithLine contactsSubtitle">
+              <div class="line white"></div>
+              <h1 class="Subtitle contactsSubtitle">Order Consultation</h1>
+            </div>
+            <div class="formWrapper show-on-scroll">
+              <form
+                class=""
+                id="formElem"
+                action="../../mail-sender.php"
+                method="POST"
+                target="_top"
+              >
+                <div class="formInner">
+                  <div class="formGroup">
+                    <input
+                      type="text"
+                      class="field"
+                      required="required"
+                      placeholder="Type your Name..."
+                      pattern="[^0-9!@#\$\^&%\*\(\)\+=\-\[\]\{\}\|:<>\?,\.']+"
+                    />
+                  </div>
+
+                  <div class="formGroup">
+                    <input
+                      type="email"
+                      class="field w-input gtd-field-email"
+                      required="required"
+                      placeholder="email@gmail.com"
+                      id="femail"
+                      name="femail"
+                      pattern="[A-Za-z0-9._%+-]{1,}@[a-zA-Z0-9._%+-]{1,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z0-9._%+-]{2,}[.]{1}[a-zA-Z]{2,})"
+                    />
+                  </div>
+                  <div class="formGroup">
+                    <input
+                      type="tel"
+                      class="field w-input gtd-field-tel"
+                      required="required"
+                      placeholder="+ X (XXX) xxxx xxx xxx"
+                    />
+                  </div>
+                  <div class="formGroup">
+                    <input
+                      type="text"
+                      class="field w-input gtd-field-message"
+                      required="required"
+                      placeholder="Type subject of your message..."
+                    />
+                  </div>
+                  <div class="formGroup">
+                    <textarea
+                      class="field textarea"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+
+                  <div class="">
+                    <button
+                      class="mainButtonText formBtn"
+                      data-title="Contact us now"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-
+    </section>
+    <section class="mapSection show-on-scroll">
+      <img class="mapImg show-on-scroll" src="images/map.png" />
     </section>
     <section class="grey">
       <footer class="footer container">
@@ -320,26 +410,6 @@
       });
     </script>
 
-    <script>
-      (() => {
-        const refs = {
-          wrapper: document.querySelector(".cookiesWrapper"),
-          closeBtn: document.querySelector(".cookiesBtn"),
-          openBurger: document.querySelector(".input"),
-          burger: document.querySelector(".navList"),
-        };
-
-        refs.closeBtn.addEventListener("click", cookies);
-        refs.openBurger.addEventListener("click", burger);
-
-        function burger() {
-          refs.burger.classList.toggle("is-vissually");
-        }
-        function cookies() {
-          refs.wrapper.classList.toggle("is-hidden");
-        }
-      })();
-    </script>
     <script>
       // Detect request animation frame
       var scroll =

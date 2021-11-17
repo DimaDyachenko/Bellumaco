@@ -1,4 +1,4 @@
-@media (min-width: 720px) {
+@media (min-width: 726px) {
   .container {
     padding: 40px 40px;
   }
@@ -17,6 +17,44 @@
   .headerTitle {
     font-size: 40px;
     line-height: 1.1em;
+  }
+
+  .contactUsContainer {
+    padding: 100px 40px;
+  }
+
+  .contactsBlock {
+    padding: 40px 88px;
+    /* max-width: 686px;
+    width: 100%;
+    margin: 0 auto; */
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-bottom: 100px;
+  }
+
+  .historySubtitle {
+    justify-content: end;
+    font-size: 32px;
+  }
+
+  .formBlock {
+    margin: 0 -40px;
+  }
+
+  .formContainer {
+    max-width: 586px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 88px;
+  }
+
+  .mainButtonText {
+    max-width: 190px;
+  }
+
+  .formInner {
+    text-align: left;
   }
 
   
