@@ -57,6 +57,14 @@
     text-align: left;
   }
 
+  .mapImg {
+    display: block;
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
   
   .footer {
     position: relative;

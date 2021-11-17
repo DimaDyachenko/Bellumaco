@@ -134,6 +134,10 @@
     margin: 0;
   }
 
+  .mapImg {
+    max-width: 1290px;
+  }
+
   .formContainer {
     padding: 60px;
     width: unset;
