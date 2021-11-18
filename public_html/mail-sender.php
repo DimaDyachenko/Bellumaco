@@ -24,15 +24,15 @@ try {
     echo str_replace('_', '.', $data);
 
     /* Set the mail sender. */
-    $mail->setFrom('office@extendsupports.com', 'extendsupports.com');
+    $mail->setFrom('info@bellumaco.com', 'bellumaco.com');
     /* Add a recipient. */
     $mail->addAddress($email, 'D');
     /* Set the subject. */
-    $mail->Subject = 'extendsupports';
+    $mail->Subject = 'bellumaco';
     /* Set the mail message body. */
-    $mail->Body = 'Thank you for contacting Extend Supports, we received your message and will contact you shortly .
-    Regards,
-    Extend Supports team';
+    $mail->Body = 'Thank you for contacting Bellumaco, we received your message and will contact you shortly.
+    Regards ,
+    Bellumaco team';
 
     /* SMTP parameters. */
 
@@ -41,16 +41,16 @@ try {
     $mail->SMTPDebug = 0;
     /* SMTP server address. */
     //$mail->CharSet = "UTF-8";
-    $mail->Host = 'smtp-mail.outlook.com';
+    $mail->Host = 'smtp.gmail.com';
     /* Use SMTP authentication. */
     $mail->SMTPAuth = TRUE;
     /* Set the encryption system. */
     $mail->SMTPSecure = 'tls';
     $mail->MailerDebug = false;
     /* SMTP authentication username. */
-    $mail->Username = 'office@extendsupports.com';
+    $mail->Username = 'bellumaco@gmail.com';
     /* SMTP authentication password. */
-    $mail->Password = 'Xus41568';
+    $mail->Password = '1234567890maco';
     /* Set the SMTP port. */
     $mail->Port = 587;
     /* Finally send the mail. */

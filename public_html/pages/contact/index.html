@@ -454,5 +454,27 @@
         );
       }
     </script>
+    <script>
+      $('form#formElem').submit(function (event){
+          $.ajax({
+              type:"POST", // define method post or get
+              url:$('form#formElem').attr('action'), // gets the post url from your action attribute
+              data:$("input[name=femail]").val(), // binds your form data
+              dataType:'json', // server response data type, use 'html' 'json' etc
+              encode:true,
+              success:function(data){
+                console.log(data)
+              },
+              error:function( xhr, status, errorThrown ) {
+              //alert( "Sorry, there was a problem!" );
+              // console.log( "Error: " + errorThrown );
+              // console.log( "Status: " + status );
+              // console.dir( xhr );
+  
+              },
+          });
+           event.preventDefault(); // prevents from going to the posting url
+      });
+    </script>
   </body>
 </html>
