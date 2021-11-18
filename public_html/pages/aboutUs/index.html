@@ -16,12 +16,368 @@
   </head>
 
   <body>
-   
+    <header class="header">
+      <div class="desktopWrapper">
+        <div class="topBlock container">
+          <div class="wrapperHeader">
+            <img class="logoImgTop" src="./images/mainLogo.WebP" />
+
+            <nav role="navigation" class="nav">
+              <div id="menuToggle" class="burgerMenu">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input
+                  class="input"
+                  type="checkbox"
+                  id="navigation"
+                  onchange="onChange()"
+                />
+
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu" class="navList">
+                  <a href="../../index.html" class="navLink">
+                    <li class="navText">HOME</li>
+                  </a>
+                  <a href="index.html" class="navLink">
+                    <li class="navText">ABOUT US</li>
+                  </a>
+                  <a class="navLink innerMenu">
+                    <li class="navText accordion">
+                      SERVICES
+                      <div class="triangle"></div>
+                      <ul id="menuInMenu" class="navInnerList panel">
+                        <a href="../mobileDev/index.html" class="navLink">
+                          <li class="navTextSmall">Mobile development</li>
+                        </a>
+                        <a href="../cloudSoftDev/index.html" class="navLink">
+                          <li class="navTextSmall">Cloud development</li>
+                        </a>
+                        <a href="../QAServices/index.html" class="navLink">
+                          <li class="navTextSmall">Quality Assuarance</li>
+                        </a>
+                        <a href="../DevOpsServices/index.html" class="navLink">
+                          <li class="navTextSmall">DevOps</li>
+                        </a>
+                        <a
+                          href="../ProductDesignServices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Product Design</li>
+                        </a>
+                        <a
+                          href="../machineLearningServices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Machine learning</li>
+                        </a>
+                        <a
+                          href="../WebDevelopmentSerices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Web development</li>
+                        </a>
+                      </ul>
+                    </li>
+                  </a>
+                  <a href="../case1/index.html" class="navLink">
+                    <li class="navText">CASES</li>
+                  </a>
+                  <a href="../contact/index.html" class="navLink">
+                    <li class="navText careers">CONTACTS</li>
+                  </a>
+                </ul>
+              </div>
+            </nav>
+
+            <nav class="desktopNav">
+              <ul class="navList">
+                <a href="../../index.html" class="navLink">
+                  <li class="navText">HOME</li>
+                </a>
+                <a href="index.html" class="navLink">
+                  <li class="navText">ABOUT US</li>
+                </a>
+                <a class="navLink innerMenu">
+                  <li class="navText accordion">
+                    SERVICES
+                    <div class="triangle"></div>
+                    <ul class="navInnerList panel">
+                      <div>
+                        <a href="../mobileDev/index.html" class="navLink">
+                          <li class="navTextSmall">Mobile development</li>
+                        </a>
+                        <a href="../cloudSoftDev/index.html" class="navLink">
+                          <li class="navTextSmall">Cloud development</li>
+                        </a>
+                        <a href="../QAServices/index.html" class="navLink">
+                          <li class="navTextSmall">Quality Assuarance</li>
+                        </a>
+                        <a href="../DevOpsServices/index.html" class="navLink">
+                          <li class="navTextSmall">DevOps</li>
+                        </a>
+                      </div>
+                      <div>
+                        <a
+                          href="../ProductDesignServices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Product Design</li>
+                        </a>
+                        <a
+                          href="../machineLearningServices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Machine learning</li>
+                        </a>
+                        <a
+                          href="../WebDevelopmentSerices/index.html"
+                          class="navLink"
+                        >
+                          <li class="navTextSmall">Web development</li>
+                        </a>
+                      </div>
+                    </ul>
+                  </li>
+                </a>
+                <a href="../case1/index.html" class="navLink">
+                  <li class="navText">CASES</li>
+                </a>
+                <a href="../contact/index.html" class="navLink">
+                  <li class="navText careersDesktop">CONTACTS</li>
+                </a>
+              </ul>
+              <a
+                class="burderedButton borderedButtonHeader"
+                href="../contact/index.html"
+              >
+                <button class="burderedButtonText">CONTACT US</button>
+              </a>
+            </nav>
+          </div>
+        </div>
+        <div class="headerContent" id="headerContent">
+          <div class="container headerTextVisibility desktopContent">
+            <div class="aboutUsHeader">
+              <div class="textContentHeader">
+                <h2 class="blueSubtitle">IT COmpany</h2>
+                <h1 class="headerTitle">About us</h1>
+              </div>
+              <div class="headerImg">
+                <img class="headerPicture" src="images/headerPic.png" />
+              </div>
+            </div>
+
+            <div class="lineWithPoint">
+              <div class="lineHeader"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="companyHistory">
+      <div class="container companyHistoryContainer">
+        <div class="gridContainer">
+          <div class="gridCell cell_1 show-on-scroll">
+            <div class="subtitleWithLine historySubtitle">
+              <div class="line black"></div>
+              <h1 class="Subtitle historySubtitle">Company history</h1>
+            </div>
+            <p class="ordinaryText historyText black">
+              Bellumaco was founded in 2020. At that time our team consisted of
+              15 people united by the goal to create a service where customers
+              understand and solve their problems, and not just make money. And
+              as time has passed the team has grown, the number of projects and
+              professionalism has increased. But one thing has not changed - the
+              approach.
+            </p>
+          </div>
+          <div class="gridCell cell_2 show-on-scroll">
+            <img class="cellItem" src="./images/tables.jpg" />
+          </div>
+          <div class="gridCell cell_3 show-on-scroll">
+            <img class="cellItem" src="./images/office.jpg" />
+          </div>
+          <div class="gridCell cell_4 show-on-scroll">
+            <img class="cellItem" src="./images/lamp.jpg" />
+          </div>
+          <div class="gridCell cell_5 show-on-scroll">
+            <img class="cellItem" src="./images/table.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="lineWithPoint lineAboutUs black">
+        <div class="lineAboutUs black"></div>
+      </div>
+    </section>
+    <section class="benefitsSection">
+      <div class="container benefitsBlock">
+        <div class="benefitsTextBlock show-on-scroll">
+          <div class="subtitleWithLine">
+            <div class="line white"></div>
+            <h1 class="Subtitle benefitsSubtitle">Company benefits</h1>
+          </div>
+          <p class="ordinaryText benefitsText">
+            We prioritize quality in the long term over profitability in the
+            short term. We are not constrained by standard patterns, so we have
+            a huge layer of possibilities for implementation. Our team uses
+            innovative and reliable development methods. We create more than
+            just a system, we create a product.
+          </p>
+        </div>
+        <div class="imgBlock show-on-scroll">
+          <img class="benefitsImg" src="./images/benefitsStone.png" />
+        </div>
+      </div>
+    </section>
+    <section class="ourTeamSection">
+      <div class="container ourTeamContainer">
+        <div class="subtitleWithLine subtitleTeamSection show-on-scroll">
+          <div class="line black"></div>
+          <h1 class="Subtitle ourTeamSubtitle">Our team</h1>
+        </div>
+        <div class="gridWrapperTeam">
+          <div class="gridItem gridItem_1 show-on-scroll">
+            <img class="gridItemImg" src="./images/image1.png" />
+          </div>
+          <div class="gridItem gridItem_2 show-on-scroll">
+            <img class="gridItemImg" src="./images/image2.png" />
+          </div>
+          <div class="gridItem gridItem_3 show-on-scroll">
+            <img class="gridItemImg" src="./images/image3.png" />
+          </div>
+          <div class="gridItem gridItem_4 show-on-scroll">
+            <img class="gridItemImg" src="./images/image4.png" />
+          </div>
+          <div class="gridItem gridItem_5 show-on-scroll">
+            <img class="gridItemImg" src="./images/image5.png" />
+          </div>
+          <div class="gridItem gridItem_6 show-on-scroll">
+            <img class="gridItemImg" src="./images/image6.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sectionWithBorders contactUsSection show-on-scroll">
+      <div class="container contactFlex">
+        <div class="contentBlock">
+          <div class="subtitleWithLine subtitleWithLineContact">
+            <div class="line"></div>
+            <h1 class="Subtitle contactUsSubtitle">
+              Give life to the project of your dream, contact us
+            </h1>
+          </div>
+          <a class="mainButton contactButton" href="../contact/index.html">
+            <button class="mainButtonText">contact Us</button>
+          </a>
+        </div>
+        <div class="contactUsImg">
+          <img class="contactUsImgItem" src="./images/contactUsStone.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="grey">
+      <footer class="footer container">
+        <div class="logoFooterBlock">
+          <img class="logoFooter" src="./images/mainLogo.WebP" />
+        </div>
+        <div class="footerContentBlock">
+          <div class="quickLinksBlock">
+            <ul class="linksList">
+              <a href="../../index.html" class="navLinkFooter"
+                ><li class="navTextFooter">Home</li></a
+              >
+              <a href="index.html" class="navLinkFooter"
+                ><li class="navTextFooter">About Us</li></a
+              >
+              <a href="../mobileDev/index.html" class="navLinkFooter"
+                ><li class="navTextFooter">Services</li></a
+              >
+              <a href="../case1/index.html" class="navLinkFooter"
+                ><li class="navTextFooter">Cases</li></a
+              >
+              <a href="../contact/index.html" class="navLinkFooter"
+                ><li class="navTextFooter">Contact</li></a
+              >
+            </ul>
+          </div>
+          <div class="footerContactBlock">
+            <ul class="list">
+              <div class="typeOfContactAndDetailsFooter">
+                <img
+                  class="typeOfContact location"
+                  src="./images/location.png"
+                />
+                <li class="contactDetails">
+                  Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
+                </li>
+              </div>
+              <div class="typeOfContactAndDetailsFooter">
+                <img class="typeOfContact phone" src="./images/phone.png" />
+                <li class="contactDetails">+ 44 786 596 39 35</li>
+              </div>
+              <div class="typeOfContactAndDetailsFooter">
+                <img class="typeOfContact email" src="./images/letter.png" />
+                <li class="contactDetails">info@bellumaco.com</li>
+              </div>
+            </ul>
+
+            <div class="linksFooterPrivacy">
+              <a href="https://ru.linkedin.com/" class="navLinkFooter">
+                <img class="linkedinBot" src="./images/linkedin.png"
+              /></a>
+              <a href="pages/privacy/index.html" class="footerLink"
+                >Privacy Policy</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="copyrigthBlock">
+          <p class="footerCopyrigth">Copyright © 2021 Bellumaco</p>
+        </div>
+      </footer>
+    </section>
 
     <script src="../../js/jquery.js"></script>
 
     <script type="text/javascript" src="/geo.js"></script>
     <script type="text/javascript" src="/reg-form/reg.min.v2.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.waves.min.js"></script>
+    <!-- B. Instilize vanta js by #id selector change WAVES to BIRDS -->
+    <script>
+      // Step 3 - Instilize the plugin by #id selector
+      VANTA.WAVES({
+        el: "#headerContent",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x90909,
+        shininess: 37.0,
+        waveSpeed: 0.3,
+      });
+    </script>
 
     <script>
       var acc = document.getElementsByClassName("accordion");
@@ -40,29 +396,20 @@
         });
       }
     </script>
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
-        document.addEventListener("scroll", function (event) {
-          const animatedBoxes = document.getElementsByClassName("progress");
-          const windowOffsetTop = window.innerHeight + window.scrollY;
+    <script>
+      var checkbox = document.querySelector('input[type="checkbox"]');
+      let header = document.querySelector(".headerTextVisibility");
 
-          Array.prototype.forEach.call(animatedBoxes, (animatedBox) => {
-            const animatedBoxOffsetTop = animatedBox.offsetTop + 2150;
-
-            if (windowOffsetTop >= animatedBoxOffsetTop) {
-              addClass(animatedBox, "fade-in");
-            }
-          });
-        });
-      });
-
-      function addClass(element, className) {
-        const arrayClasses = element.className.split(" ");
-        if (arrayClasses.indexOf(className) === -1) {
-          element.className += " " + className;
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          header.style.zIndex = "0";
+          checkbox.value = "";
+        } else {
+          header.style.zIndex = "1";
         }
-      }
-    </script> -->
+      });
+    </script>
+    
     <script>
       (() => {
         const refs = {
@@ -82,6 +429,50 @@
           refs.wrapper.classList.toggle("is-hidden");
         }
       })();
+    </script>
+    <script>
+      // Detect request animation frame
+      var scroll =
+        window.requestAnimationFrame ||
+        // IE Fallback
+        function (callback) {
+          window.setTimeout(callback, 1000 / 60);
+        };
+      var elementsToShow = document.querySelectorAll(".show-on-scroll");
+
+      function loop() {
+        Array.prototype.forEach.call(elementsToShow, function (element) {
+          if (isElementInViewport(element)) {
+            element.classList.add("is-visible");
+          } else {
+            element.classList.remove("is-visible");
+          }
+        });
+
+        scroll(loop);
+      }
+
+      // Call the loop for the first time
+      loop();
+
+      // Helper function from: http://stackoverflow.com/a/7557433/274826
+      function isElementInViewport(el) {
+        // special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+          el = el[0];
+        }
+        var rect = el.getBoundingClientRect();
+        return (
+          (rect.top <= 0 && rect.bottom >= 0) ||
+          (rect.bottom >=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.top <=
+              (window.innerHeight || document.documentElement.clientHeight)) ||
+          (rect.top >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight))
+        );
+      }
     </script>
   </body>
 </html>

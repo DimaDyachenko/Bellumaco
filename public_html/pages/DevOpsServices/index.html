@@ -13,12 +13,337 @@
     <link rel="stylesheet" href="css/styles_tablet.css" />
     <link rel="stylesheet" href="css/styles_desktop.css" />
     <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="../../css/modal.css" />
   </head>
 
   <body>
-   
-    <script src="js/jquery.js"></script>
+    <header class="header">
+      <div class="desktopWrapper">
+        <div class="topBlock topBlockContainer">
+          <img class="logoImgTop" src="./img/mainLogo.WebP" />
+
+          <nav role="navigation" class="nav">
+            <div id="menuToggle" class="burgerMenu">
+              <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+              <input
+                class="input"
+                type="checkbox"
+                id="navigation"
+                onchange="onChange()"
+              />
+
+              <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+              <ul id="menu" class="navList">
+                <a href="../../index.html" class="navLink">
+                  <li class="navText">HOME</li>
+                </a>
+                <a href="../aboutUs/index.html" class="navLink">
+                  <li class="navText">ABOUT US</li>
+                </a>
+                <a class="navLink innerMenu">
+                  <li class="navText accordion">
+                    SERVICES
+                    <div class="triangle"></div>
+                    <ul id="menuInMenu" class="navInnerList panel">
+                      <a href="../WebDevelopmentSerices/index.html" class="navLink">
+                        <li class="navTextSmall">Mobile development</li>
+                      </a>
+                      <a
+                        href="../cloudSoftDev/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Cloud development</li>
+                      </a>
+                      <a
+                        href="../QAServices/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Quality Assuarance</li>
+                      </a>
+                      <a href="#" class="navLink">
+                        <li class="navTextSmall">DevOps</li>
+                      </a>
+                      <a href="../ProductDesignServices/index.html" class="navLink">
+                        <li class="navTextSmall">Product Design</li>
+                      </a>
+                      <a href="../machineLearningServices/index.html" class="navLink">
+                        <li class="navTextSmall">Machine learning</li>
+                      </a>
+                      <a href="../WebDevelopmentSerices/index.html" class="navLink">
+                        <li class="navTextSmall">Web development</li>
+                      </a>
+                    </ul>
+                  </li>
+                </a>
+                <a href="../case1/index.html" class="navLink">
+                  <li class="navText">CASES</li>
+                </a>
+                <a href="../contact/index.html" class="navLink">
+                  <li class="navText careers">CONTACTS</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="desktopNav">
+            <ul class="navList">
+              <a href="../../index.html" class="navLink">
+                <li class="navText">HOME</li>
+              </a>
+              <a href="../aboutUs/index.html" class="navLink">
+                <li class="navText">ABOUT US</li>
+              </a>
+              <a class="navLink innerMenu">
+                <li class="navText accordion">
+                  SERVICES
+                  <div class="triangle"></div>
+                  <ul class="navInnerList panel">
+                    <div class="triangleAccordion"></div>
+                    <a href="../mobileDev/index.html" class="navLink">
+                      <li class="navTextSmall">Mobile development</li>
+                    </a>
+                    <a
+                      href="../cloudSoftDev/index.html"
+                      class="navLink"
+                    >
+                      <li class="navTextSmall">Cloud development</li>
+                    </a>
+                    <a
+                      href="../QAServices/index.html"
+                      class="navLink"
+                    >
+                      <li class="navTextSmall">Quality Assuarance</li>
+                    </a>
+                    <a href="#" class="navLink">
+                      <li class="navTextSmall">DevOps</li>
+                    </a>
+                    <a href="../ProductDesignServices/index.html" class="navLink">
+                      <li class="navTextSmall">Product Design</li>
+                    </a>
+                    <a href="../machineLearningServices/index.html" class="navLink">
+                      <li class="navTextSmall">Machine learning</li>
+                    </a>
+                    <a href="../WebDevelopmentSerices/index.html" class="navLink">
+                      <li class="navTextSmall">Web development</li>
+                    </a>
+                  </ul>
+                </li>
+              </a>
+              <a href="../case1/index.html" class="navLink">
+                <li class="navText">CASES</li>
+              </a>
+              <a href="../contact/index.html" class="navLink">
+                <li class="navText careersDesktop">CONTACTS</li>
+              </a>
+            </ul>
+            <a href="../contact/index.html" class="burderedButton">
+              <button class="burderedButtonText">CONTACT US</button>
+            </a>
+          </nav>
+        </div>
+      </div>
+        <div class="headerInner">
+          <div class="container headerContainer">
+            <div class="textWrapper">
+              <p class="headerText">DevOps services</p>
+              <h1 class="headerTitle">
+                Great ideas deserve great implementation. We can provide this by
+                DevOps.
+              </h1>
+              <p class="headerInfo">
+                Any development is a complex and large process that requires the
+                work of several areas. And all of them are united by DevOps.
+              </p>
+            </div>
+            <div class="headerImgWrapper">
+              <img src="./img/img1.png" alt="#" class="headerImg" />
+            </div>
+          </div>
+          <div class="lineWithPointContainer">
+            <img
+              src="./img/whiteLineWithPoint.png"
+              alt="#"
+              style="width: 10px"
+            />
+          </div>
+        </div>
+      
+    </header>
+    <main>
+      <section class="infoSection">
+        <div class="container infoSectionContainer">
+          <div class="sideBorder">
+            <div class="infoBoxWrapper">
+              <div class="infoBox show-on-scroll">
+                <div class="infoBoxWithLine">
+                  <img
+                    class="infoBoxWithLineImg"
+                    src="./img/blackRightLine.png"
+                    alt="#"
+                  />
+                  <h2 class="infoBoxWithLineTitle">Introduction</h2>
+                </div>
+                <p class="infoBoxDescriprion">
+                  Every business creates the IT infrastructure it uses based on
+                  its knowledge, best judgment, budget and available technology.
+                  Over time, better and more cost-effective solutions emerge, or
+                  more experienced DevOps team services become available.
+                </p>
+              </div>
+              <div class="infoBox show-on-scroll">
+                <div class="infoBoxWithLine infoBoxWithLineDescription">
+                  <img
+                    class="infoBoxWithLineImg"
+                    src="./img/blackRightLine.png"
+                    alt="#"
+                  />
+                  <h2 class="infoBoxWithLineTitle">Description</h2>
+                </div>
+                <p class="infoBoxDescriprion infoBoxDescriprionRight">
+                  Reducing the time to market for new features in your product
+                  is essential to the long-term success of your business.
+                  Cloud-based DevOps tools help make software development
+                  predictable and reliable. Continuous delivery workflows and
+                  DevOps best practices reduce time to market for new product
+                  features and improve the reliability and performance of your
+                  IT infrastructure. Outsourcing this task to an experienced
+                  team ensures you have instant access to highly skilled
+                  professionals and turnkey solutions based on many successfully
+                  completed projects.
+                </p>
+              </div>
+            </div>
+            <div class="infoBoxImgWrapper">
+              <img
+                class="infoBoxImg"
+                src="./img/blackArrowBottom.png"
+                alt="#"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="workSection">
+        <div class="container workSectionContainer">
+          <div class="workSectionWrapper show-on-scroll">
+            <div class="workSectionLeftBlock">
+              <div class="workSectionHeadWrapper">
+                <img
+                  class="workSectionWithLineImg"
+                  src="./img/whiteRightLineDev.png"
+                  alt="#"
+                />
+                <h2 class="workSectionHeadTitle">
+                  Make your operations work.
+                </h2>
+              </div>
+              <div class="btnWrapper">
+                <a href="../contact/index.html">
+                  <button class="workSectionBtn">contact Us</button></a
+                >
+              </div>
+            </div>
+
+            <div class="workSectionRightBlock">
+              <img
+                class="headerImg workImg"
+                src="./img/workSection.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footerContainer">
+      <div class="logoFooterBlock">
+        <img class="logoFooter" src="./img/mainLogo.WebP" />
+      </div>
+      <div class="footerContentBlock">
+        <div class="quickLinksBlock">
+          <ul class="linksList">
+            <a href="../../index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Home</li></a
+            >
+            <a href="../aboutUs/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">About Us</li></a
+            >
+            <a href="../mobileDev/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Services</li></a
+            >
+            <a href="../case1/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Cases</li></a
+            >
+            <a href="../contact/index.html" class="navLinkFooter"
+              ><li class="navTextFooter navTextFooterLink">Contact</li></a
+            >
+          </ul>
+        </div>
+        <div class="footerContactBlock">
+          <ul class="list">
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact location" src="./img/location.png" />
+              <li class="contactDetails">
+                Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
+              </li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact phone" src="./img/phone.png" />
+              <li class="contactDetails">+ 44 786 596 39 35</li>
+            </div>
+            <div class="typeOfContactAndDetailsFooter">
+              <img class="typeOfContact email" src="./img/letter.png" />
+              <li class="contactDetails">info@bellumaco.com</li>
+            </div>
+          </ul>
+
+          <div class="linksFooterPrivacy">
+            <a href="https://ru.linkedin.com/" class="navLinkFooter">
+              <img class="linkedinBot" src="./img/linkedin.png"
+            /></a>
+            <a href="../privacy/index.html" class="footerLink"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyrigthBlock">
+        <p class="footerCopyrigth">Copyright © 2021 Bellumaco</p>
+      </div>
+    </div>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/vanta.waves.min.js"></script>
+    <script>
+      VANTA.WAVES({
+        el: ".headerInner",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 535.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x90909,
+      });
+    </script>
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -36,56 +361,62 @@
         });
       }
     </script>
-
     <script>
-      $("form#formElem").submit(function (event) {
-        $.ajax({
-          type: "POST", // define method post or get
-          url: $("form#formElem").attr("action"), // gets the post url from your action attribute
-          data: $("input[name=femail]").val(), // binds your form data
-          dataType: "json", // server response data type, use 'html' 'json' etc
-          encode: true,
-          success: function (data) {
-            console.log(data);
-          },
-          error: function (xhr, status, errorThrown) {
-            //alert( "Sorry, there was a problem!" );
-            console.log("Error: " + errorThrown);
-            console.log("Status: " + status);
-            console.dir(xhr);
-          },
-        });
-        event.preventDefault(); // prevents from going to the posting url
+      var checkbox = document.querySelector('input[type="checkbox"]');
+      let header = document.querySelector(".headerTextVisibility");
+
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          header.style.zIndex = "0";
+          checkbox.value = "";
+        } else {
+          header.style.zIndex = "1";
+        }
       });
     </script>
-    <script>
-      (() => {
-        const refs = {
-          wrapper: document.querySelector(".cookiesWrapper"),
-          closeBtn: document.querySelector(".cookiesBtn"),
-          openBurger: document.querySelector(".input"),
-          burger: document.querySelector(".navList"),
-          openModalBtn: document.querySelector(".mainButton"),
-          closeModalBtn: document.querySelector(".modalClose"),
-          modal: document.querySelector(".backdrop"),
-          openMenu: document.querySelector(".menu"),
-        };
-
-        refs.closeBtn.addEventListener("click", cookies);
-        refs.openBurger.addEventListener("click", burger);
-        refs.openModalBtn.addEventListener("click", modal);
-        refs.closeModalBtn.addEventListener("click", modal);
-
-        function burger() {
-          refs.burger.classList.toggle("is-vissually");
-        }
-        function cookies() {
-          refs.wrapper.classList.toggle("is-hidden");
-        }
-        function modal() {
-          refs.modal.classList.toggle("is-hidden");
-        }
-      })();
-    </script>
+        <script>
+          // Detect request animation frame
+          var scroll =
+            window.requestAnimationFrame ||
+            // IE Fallback
+            function (callback) {
+              window.setTimeout(callback, 1000 / 60);
+            };
+          var elementsToShow = document.querySelectorAll(".show-on-scroll");
+    
+          function loop() {
+            Array.prototype.forEach.call(elementsToShow, function (element) {
+              if (isElementInViewport(element)) {
+                element.classList.add("is-visible");
+              } else {
+                element.classList.remove("is-visible");
+              }
+            });
+    
+            scroll(loop);
+          }
+    
+          // Call the loop for the first time
+          loop();
+    
+          // Helper function from: http://stackoverflow.com/a/7557433/274826
+          function isElementInViewport(el) {
+            // special bonus for those using jQuery
+            if (typeof jQuery === "function" && el instanceof jQuery) {
+              el = el[0];
+            }
+            var rect = el.getBoundingClientRect();
+            return (
+              (rect.top <= 0 && rect.bottom >= 0) ||
+              (rect.bottom >=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.top <=
+                  (window.innerHeight || document.documentElement.clientHeight)) ||
+              (rect.top >= 0 &&
+                rect.bottom <=
+                  (window.innerHeight || document.documentElement.clientHeight))
+            );
+          }
+        </script>
   </body>
 </html>

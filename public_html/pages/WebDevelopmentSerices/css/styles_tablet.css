@@ -1,245 +1,187 @@
 @media (min-width: 768px) {
-  @font-face {
-    font-family: "Cardo";
-    src: url("../fonts/Cardo-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Prompt";
-    src: url("../fonts/Prompt-Regular.ttf");
-    font-weight: 400;
-    font-style: normal;
+  .vanta-canvas {
+    min-height: 533px;
   }
   .container {
+    padding: 40px 40px 40px;
+  }
+  .topBlockContainer {
     padding: 30px 40px;
   }
-  .header {
-    background-image: url("../images/policy_bg_tab.WebP");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-  }
-  .topBlock {
+  .headerContainer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 140px;
   }
-
-  .logoImgTop {
-    max-width: 150px;
-  }
-  .nav {
-    align-self: center;
+  .headerText {
+    max-width: 170px;
   }
   .headerTitle {
     font-size: 40px;
-    line-height: 1.25em;
-    margin-bottom: 30px;
-    max-width: 340px;
-  }
-  .headerList {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 472px;
-  }
-  .headerListItem {
-      width: 236px;
-  }
-  .headerListItemLink {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .headerContent {
-    padding-bottom: 280px;
-  }
-  .headerText {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 60px;
-  }
-  .mainButton {
-    width: 100%;
-    max-width: 250px;
-  }
-  .brownSection {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  .marginForButton {
-    width: 60%;
-  }
-  .titleWithLine {
-    position: relative;
-    color: #d3b870;
-    font-size: 16px;
-    margin-left: 90px;
-    letter-spacing: 2px;
-  }
-  .titleWithLine::before {
-    width: 80px;
-    left: -90px;
-    bottom: 8px;
-  }
-  .mainTitle {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-  .white {
-    color: white;
-    font-size: 40px;
-  }
-  .businessKnowsTitle {
-    font-size: 30px;
-  }
-  .red {
-    color: #9a312e;
-    font-size: 40px;
-  }
-  .black {
-    color: black;
-    font-size: 40px;
-  }
-  .bottom {
-    margin: 0 !important;
-  }
-  .listWithYellowDots {
-    margin-bottom: 60px;
-  }
-  .listItem {
-    margin-left: 15px;
-    margin-bottom: 15px;
-  }
-  .weAreYourSolutionImg {
-    width: 100%;
-    height: 100%;
-  }
-  .rightContentPhoto {
-    
-  }
-
-  .flex {
-    flex-direction: row;
-    display: flex;
-  }
-  .rightContentPhotoLitle {
-    width: 50%;
-    height: auto;
-    display: block;
-  }
-  .leftContentWithPhoto {
-    margin: 0 !important;
-    padding-top: 80px;
-    padding-bottom: 50px;
-   
-  }
-  .bottomContentTitle {
-    font-size: 40px;
     line-height: 44px;
-}
-.bottomContent {
-    padding: 60px 40px;
-
-}
-  .leftContentWithPhotoLitle {
-    width: calc(50% - 80px);
-    padding: 70px 40px 70px 40px;
-    align-self: center;
   }
-  .humanResoursesBlock, .trainingBlock, .managementConsultingBlock, .financeConsultingBlock {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
+  .textWrapper,
+  .headerImgWrapper {
+    width: 50%;
   }
-
-  .flex:nth-of-type(2) {
-    flex-direction: row-reverse;
+  .headerInfo {
+    max-width: 334px;
+    margin-bottom: 0;
+  }
+  .headerImg {
+    margin-top: 40px;
+  }
+  .lineWithPointContainer {
+    padding-bottom: 20px;
+    margin-top: -40px;
+  }
+  .infoSection {
+    padding: 60px 0 60px;
+  }
+  .infoBoxWithLine {
+    margin-left: 87px;
+  }
+  .infoBoxWithLineImg {
+    width: 69px;
+    height: 9px;
+  }
+  .infoBoxWithLineTitle {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .infoBoxDescriprion {
+    margin-left: 87px;
+    max-width: 490px;
+  }
+  .infoBoxList {
+    margin-bottom: 40px;
+    margin-left: 95px;
+    max-width: 495px;
+  }
+  .sideBorder {
+    border-right: 2px solid #393838;
+    border-left: 2px solid #393838;
   }
  
-  .goldCarrerBlock {
-    padding: 60px 40px;
+  .workSection {
+    background-image: url(../img/devBG_tab.png);
   }
-  .careersTitle {
-    margin-bottom: 50px;
-    font-size: 40px;
+  .workSectionContainer {
+    padding-bottom: 100px;
   }
-  .contactUsBlock {
-    /* padding: 30px 40px 0; */
-  }
-  .typeOfContactAndDetails {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  .typeOfContactAndDetailsFooter {
-    max-width: 250px;
-  }
-  
-  .typeOfContactAndDetails:last-of-type {
-    margin-bottom: 60px;
-  }
-  .typeOfContact {
-    display: block;
-    width: 100%;
-  }
-  .contactDetails {
-    display: block;
-    /* width: 30%; */
-  }
-  .footer {
-    background-color: #240c0c;
-    display: flex;
-    flex-direction: column;
-  }
-  .logoFooterBlock {
+  .workSectionHeadWrapper {
     margin-bottom: 50px;
   }
-  .logoFooter {
-    /* width: 50%; */
+  .workSectionLeftBlock {
+    margin-bottom: 120px;
+  }
+  .workSectionRightBlock {
+    max-width: 511px;
+    max-height: 343px;
+    margin: 0 auto;
+  }
+  .workSectionWithLineImg {
+    width: 69px;
+    height: 9px;
+  }
+  .workSectionHeadTitle {
+    font-size: 32px;
+    line-height: 140%;
+  }
+  .workSectionDescription {
+    padding-left: 90px;
+    margin-bottom: 50px;
     max-width: 334px;
-    /* max-height: 139px; */
-    height: auto;
   }
-  .footerContentBlock {
+  .btnWrapper {
+    max-width: 190px;
+    padding-left: 90px;
+  }
+  /* .workSectionWrapper {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    line-height: 24px;
-    padding: 0 40px;
+  } */
+  .workImg {
+    margin-top: 0;
   }
-  .footerLink {
-    margin-bottom: 50px;
-  }
-  .footerLink:last-of-type {
-    display: none;
-  }
-  .footerCopyrigth {
-    margin-left: 40px;
-  
-  }
-  .titleWrapper {
+  /* footer  */
+  .footer {
     padding: 80px 40px;
   }
-  .blackWhiteBlockWrapper {
+  .footerContainer {
+    position: relative;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
   }
-  .blackBlock, .whiteBlock {
-    width: 50%;
-    padding: 80px 50px;
+  .logoFooterBlock {
+    margin-right: 109px;
   }
-  .wrapper {
-    padding: 80px 40px 0;
-  }
-  .formContainer {
-    padding: 60px;
-    margin: 0 70px 80px;
-  }
-  .agreement {
-    display: flex;
-  }
-  .formCheckboxLink {
-    margin-left: 10px;
+  .logoFooter {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
   }
 
+  .footerContentBlock {
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .footerCopyrigth {
+    position: absolute;
+    display: block !important;
+    color: white;
+    left: 5%;
+    top: 86%;
+  }
+
+  .list {
+    max-width: 250px;
+    margin: 0;
+    margin-left: auto;
+  }
+  .typeOfContactAndDetailsFooter {
+    display: flex;
+  }
+
+  .typeOfContact {
+    margin-right: 13px;
+  }
+  .location {
+    width: 12px;
+    height: 20px;
+  }
+  .phone {
+    width: 18px;
+    height: 18px;
+  }
+  .contactDetails {
+    text-align: start;
+    line-height: 24px;
+  }
+
+  .linksFooterPrivacy {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    left: 73%;
+    top: 85%;
+  }
+
+  .quickLinksBlock {
+    text-align: start;
+    margin-right: 110px;
+  }
+
+  .linkedinBot,
+  .footerLink {
+    margin: 0;
+  }
+
+  .footerLink {
+    margin-right: 30px;
+  }
 }

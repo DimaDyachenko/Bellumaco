@@ -1,13 +1,415 @@
 @font-face {
-  font-family: "Cardo";
-  src: url("../fonts/Cardo-Regular.ttf");
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Regular.ttf");
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
 }
 
-@font-face {
-  font-family: "Prompt";
-  src: url("../fonts/Prompt-Regular.ttf");
+.container {
+  padding: 30px 20px;
+}
+
+.wrapperHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainTitle {
+  color: #f0f8f7;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 137%;
+  font-family: "TT Firis Neue";
+}
+
+.subtitleWithLine {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4em;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.white {
+  color: white !important;
+  background-color: white !important;
+}
+
+.white::after {
+  border: 1px solid white !important;
+}
+
+.black {
+  color: black !important;
+}
+
+.burderedButton {
+  display: block;
+}
+
+.burderedButtonText {
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  /* background-color: #191919; */
+  color: #60d4c9;
+  border: 1px solid #60d4c9;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.burderedButtonText:hover {
+  background-color: #60d4c9;
+  color: black;
+}
+
+.line {
+  position: relative;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 1px;
+  background-color: black;
+  margin-right: 21px;
+  transform: translateY(15px);
+}
+
+.line::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+  left: 100%;
+  top: 0;
+  transform: translate(-25%, -30%);
+}
+
+.lineWithPoint {
+  display: block !important;
+  margin-top: 40px;
+}
+
+.lineHeader {
+  position: relative;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80px;
+  background-color: white;
+  /* transform: rotate(90deg); */
+}
+
+.lineHeader::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  top: 100%;
+  transform: translate(-45%);
+}
+
+.ordinaryText {
+  color: #f0f8f7;
   font-weight: 400;
-  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.topBlock {
+  background-color: #191919;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-start; */
+}
+
+.logoImgTop {
+  max-width: 130px;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+.desktopNav {
+  display: none;
+}
+
+.logoHeader {
+  max-width: 25px;
+  width: 100%;
+  height: auto;
+  margin: 0px 0 30px;
+}
+
+/* .aboutUsHeader {
+  padding-bottom: 50px;
+} */
+
+.headerContent {
+  /* max-height: 700px; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.vanta-canvas {
+  border-radius: 0 0 20px 20px;
+}
+
+.headerTitile {
+  margin-bottom: 20px;
+}
+
+.headerText {
+  margin-bottom: 40px;
+}
+
+.mainButton {
+  display: block;
+  width: 100%;
+}
+
+.mainButtonText {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 16px 0;
+  background-color: #00e2d5;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  width: 100%;
+  transition: 0.2s all;
+}
+
+.mainButtonText:hover {
+  background-color: #60d4c9;
+}
+
+.lineWithPoint {
+  margin-top: 0;
+}
+
+.blueSubtitle {
+  color: #00e2d5;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.headerTitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.4em;
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.headerPicture {
+  width: 100%;
+  height: auto;
+}
+
+.contactUsContainer {
+  padding-top: 80px;
+}
+.contactsBlock {
+  
+  padding-bottom: 80px;
+}
+
+.contactsDetails{
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.contactsDetails:last-of-type {
+  margin-bottom: 0;
+}
+.contactType {
+  font-weight: bold;
+  margin-right: 7px;
+}
+
+.formBlock {
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 -20px;
+  filter: drop-shadow(0px 30px 40px rgba(57, 56, 56, 0.2));
+border-radius: 20px;
+}
+
+.contactsSubtitle {
+  color: white;
+}
+
+.formContainer{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+input {
+  width: calc(100% - 20px);
+  height: 48px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  padding-left: 15px;
+}
+
+.textarea {
+  width: calc(100% - 20px);
+  height: 120px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.mapSection {
+
+
+  margin: 60px 0;
+}
+
+.mapImg {
+
+  width: 100%;
+  height: auto;
+}
+
+.mapImg {
+  width: 100%;
+  height: auto;
+}
+.footer {
+  background-color: #191919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logoFooterBlock {
+  max-width: 130px;
+  margin-bottom: 50px;
+}
+
+.logoFooter {
+  width: 100%;
+  height: auto;
+}
+
+.footerContentBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.quickLinksBlock {}
+
+.footerTitle {
+  color: #f0d57d;
+  font-family: "Cardo";
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.linksList {
+  margin-bottom: 42px;
+}
+
+.navLinkFooter {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.navLinkFooter:hover {
+  color: #00e2d5;
+}
+
+.navTextFooter {
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.linkedinBot {
+  width: 20px;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.typeOfContactAndDetailsFooter {
+  color: white;
+  margin-bottom: 23px;
+}
+
+.typeOfContact {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  max-width: 20px;
+  height: auto;
+}
+
+.footerLink {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 60px;
+  transition: all 0.2s;
+}
+
+.footerLink:hover {
+  color: #00e2d5;
+}
+
+.copyrigthBlock {
+  margin-bottom: 15px;
+}
+
+.footerCopyrigth {
+  display: none;
+}
+
+.responsibleCard {
+  text-align: center;
+}
+
+.footer.container {
+  padding-bottom: 0;
+}
+
+.formWrapper, .contactsBlock, .mapSection, .mapImg{
+  transition: all 1s ease-in;
+  opacity: 0;
+}
+
+.is-visible {
+  opacity: 1;
+  padding-top: 10px;
 }
