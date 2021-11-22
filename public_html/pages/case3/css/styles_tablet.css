@@ -8,6 +8,9 @@
   .topBlockContainer {
     padding: 30px 40px;
   }
+  .logoImgTop {
+    max-width: 157px;
+  }
   .headerContainer {
     display: flex;
     justify-content: space-between;

@@ -18,37 +18,95 @@
   <body>
     <header class="header">
       <div class="desktopWrapper">
-      <div class="topBlock topBlockContainer">
-        <img class="logoImgTop" src="./img/mainLogo.WebP" />
+        <div class="topBlock topBlockContainer">
+          <a href="../../index.html">
+            <img class="logoImgTop" src="./img/mainLogo.WebP"
+          /></a>
 
-        <nav role="navigation" class="nav">
-          <div id="menuToggle" class="burgerMenu">
-            <!--
+          <nav role="navigation" class="nav">
+            <div id="menuToggle" class="burgerMenu">
+              <!--
             A fake / hidden checkbox is used as click reciever,
             so you can use the :checked selector on it.
             -->
-            <input
-              class="input"
-              type="checkbox"
-              id="navigation"
-              onchange="onChange()"
-            />
+              <input
+                class="input"
+                type="checkbox"
+                id="navigation"
+                onchange="onChange()"
+              />
 
-            <!--
+              <!--
             Some spans to act as a hamburger.
             
             They are acting like a real hamburger,
             not that McDonalds stuff.
             -->
-            <span></span>
-            <span></span>
-            <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
 
-            <!--
+              <!--
             Too bad the menu has to be inside of the button
             but hey, it's pure CSS magic.
             -->
-            <ul id="menu" class="navList">
+              <ul id="menu" class="navList">
+                <a href="../../index.html" class="navLink">
+                  <li class="navText">HOME</li>
+                </a>
+                <a href="../aboutUs/index.html" class="navLink">
+                  <li class="navText">ABOUT US</li>
+                </a>
+                <a class="navLink innerMenu">
+                  <li class="navText accordion">
+                    SERVICES
+                    <div class="triangle"></div>
+                    <ul id="menuInMenu" class="navInnerList panel">
+                      <a href="../mobileDev/index.html" class="navLink">
+                        <li class="navTextSmall">Mobile development</li>
+                      </a>
+                      <a href="../cloudSoftDev/index.html" class="navLink">
+                        <li class="navTextSmall">Cloud development</li>
+                      </a>
+                      <a href="../QAServices/index.html" class="navLink">
+                        <li class="navTextSmall">Quality Assuarance</li>
+                      </a>
+                      <a href="../DevOpsServices/index.html" class="navLink">
+                        <li class="navTextSmall">DevOps</li>
+                      </a>
+                      <a
+                        href="../ProductDesignServices/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Product Design</li>
+                      </a>
+                      <a
+                        href="../machineLearningServices/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Machine learning</li>
+                      </a>
+                      <a
+                        href="../WebDevelopmentSerices/index.html"
+                        class="navLink"
+                      >
+                        <li class="navTextSmall">Web development</li>
+                      </a>
+                    </ul>
+                  </li>
+                </a>
+                <a href="../case1/index.html" class="navLink">
+                  <li class="navText">CASES</li>
+                </a>
+                <a href="../contact/index.html" class="navLink">
+                  <li class="navText careers">CONTACTS</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+
+          <nav class="desktopNav">
+            <ul class="navList">
               <a href="../../index.html" class="navLink">
                 <li class="navText">HOME</li>
               </a>
@@ -59,32 +117,36 @@
                 <li class="navText accordion">
                   SERVICES
                   <div class="triangle"></div>
-                  <ul id="menuInMenu" class="navInnerList panel">
+                  <ul class="navInnerList panel">
+                    <div class="triangleAccordion"></div>
                     <a href="../mobileDev/index.html" class="navLink">
                       <li class="navTextSmall">Mobile development</li>
                     </a>
-                    <a
-                      href="../cloudSoftDev/index.html"
-                      class="navLink"
-                    >
+                    <a href="../cloudSoftDev/index.html" class="navLink">
                       <li class="navTextSmall">Cloud development</li>
                     </a>
-                    <a
-                      href="../QAServices/index.html"
-                      class="navLink"
-                    >
+                    <a href="../QAServices/index.html" class="navLink">
                       <li class="navTextSmall">Quality Assuarance</li>
                     </a>
                     <a href="../DevOpsServices/index.html" class="navLink">
                       <li class="navTextSmall">DevOps</li>
                     </a>
-                    <a href="../ProductDesignServices/index.html" class="navLink">
+                    <a
+                      href="../ProductDesignServices/index.html"
+                      class="navLink"
+                    >
                       <li class="navTextSmall">Product Design</li>
                     </a>
-                    <a href="../machineLearningServices/index.html" class="navLink">
+                    <a
+                      href="../machineLearningServices/index.html"
+                      class="navLink"
+                    >
                       <li class="navTextSmall">Machine learning</li>
                     </a>
-                    <a href="../WebDevelopmentSerices/index.html" class="navLink">
+                    <a
+                      href="../WebDevelopmentSerices/index.html"
+                      class="navLink"
+                    >
                       <li class="navTextSmall">Web development</li>
                     </a>
                   </ul>
@@ -94,66 +156,15 @@
                 <li class="navText">CASES</li>
               </a>
               <a href="../contact/index.html" class="navLink">
-                <li class="navText careers">CONTACTS</li>
+                <li class="navText careersDesktop">CONTACTS</li>
               </a>
             </ul>
-          </div>
-        </nav>
-
-        <nav class="desktopNav">
-          <ul class="navList">
-            <a href="../../index.html" class="navLink">
-              <li class="navText">HOME</li>
+            <a href="../contact/index.html" class="burderedButton">
+              <button class="burderedButtonText">CONTACT US</button>
             </a>
-            <a href="../aboutUs/index.html" class="navLink">
-              <li class="navText">ABOUT US</li>
-            </a>
-            <a class="navLink innerMenu">
-              <li class="navText accordion">
-                SERVICES
-                <div class="triangle"></div>
-                <ul class="navInnerList panel">
-                  <div class="triangleAccordion"></div>
-                  <a href="../mobileDev/index.html" class="navLink">
-                    <li class="navTextSmall">Mobile development</li>
-                  </a>
-                  <a
-                    href="../cloudSoftDev/index.html"
-                    class="navLink"
-                  >
-                    <li class="navTextSmall">Cloud development</li>
-                  </a>
-                  <a href="../QAServices/index.html" class="navLink">
-                    <li class="navTextSmall">Quality Assuarance</li>
-                  </a>
-                  <a href="../DevOpsServices/index.html" class="navLink">
-                    <li class="navTextSmall">DevOps</li>
-                  </a>
-                  <a href="../ProductDesignServices/index.html" class="navLink">
-                    <li class="navTextSmall">Product Design</li>
-                  </a>
-                  <a href="../machineLearningServices/index.html" class="navLink">
-                    <li class="navTextSmall">Machine learning</li>
-                  </a>
-                  <a href="../WebDevelopmentSerices/index.html" class="navLink">
-                    <li class="navTextSmall">Web development</li>
-                  </a>
-                </ul>
-              </li>
-            </a>
-            <a href="../case1/index.html" class="navLink">
-              <li class="navText">CASES</li>
-            </a>
-            <a href="../contact/index.html" class="navLink">
-              <li class="navText careersDesktop">CONTACTS</li>
-            </a>
-          </ul>
-          <a href="../contact/index.html" class="burderedButton">
-            <button class="burderedButtonText">CONTACT US</button>
-          </a>
-        </nav>
+          </nav>
+        </div>
       </div>
-    </div>
       <div class="headerInner">
         <div class="container headerContainer headerTextVisibility">
           <div class="textWrapper">
@@ -175,7 +186,6 @@
           <img src="./img/whiteLineWithPoint.png" alt="#" style="width: 10px" />
         </div>
       </div>
-    
     </header>
     <main>
       <section class="infoSection">
@@ -294,64 +304,61 @@
     </main>
     <footer class="footer container">
       <div class="footerContainer">
-      <div class="logoFooterBlock">
-        <img class="logoFooter" src="./img/mainLogo.WebP" />
-      </div>
-      <div class="footerContentBlock">
-        <div class="quickLinksBlock">
-          <ul class="linksList">
-            <a href="../../index.html" class="navLinkFooter"
-              ><li class="navTextFooter navTextFooterLink">Home</li></a
-            >
-            <a href="../aboutUs/index.html" class="navLinkFooter"
-              ><li class="navTextFooter navTextFooterLink">About Us</li></a
-            >
-            <a href="../mobileDev/index.html" class="navLinkFooter"
-              ><li class="navTextFooter navTextFooterLink">Services</li></a
-            >
-            <a href="../case1/index.html" class="navLinkFooter"
-              ><li class="navTextFooter navTextFooterLink">Cases</li></a
-            >
-            <a href="../contact/index.html" class="navLinkFooter"
-              ><li class="navTextFooter navTextFooterLink">Contact</li></a
-            >
-          </ul>
+        <div class="logoFooterBlock">
+          <img class="logoFooter" src="./img/mainLogo.WebP" />
         </div>
-        <div class="footerContactBlock">
-          <ul class="list">
-            <div class="typeOfContactAndDetailsFooter">
-              <img
-                class="typeOfContact location"
-                src="./img/location.png"
-              />
-              <li class="contactDetails">
-                Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
-              </li>
-            </div>
-            <div class="typeOfContactAndDetailsFooter">
-              <img class="typeOfContact phone" src="./img/phone.png" />
-              <li class="contactDetails">+ 44 786 596 39 35</li>
-            </div>
-            <div class="typeOfContactAndDetailsFooter">
-              <img class="typeOfContact email" src="./img/letter.png" />
-              <li class="contactDetails">info@bellumaco.com</li>
-            </div>
-          </ul>
+        <div class="footerContentBlock">
+          <div class="quickLinksBlock">
+            <ul class="linksList">
+              <a href="../../index.html" class="navLinkFooter"
+                ><li class="navTextFooter navTextFooterLink">Home</li></a
+              >
+              <a href="../aboutUs/index.html" class="navLinkFooter"
+                ><li class="navTextFooter navTextFooterLink">About Us</li></a
+              >
+              <a href="../mobileDev/index.html" class="navLinkFooter"
+                ><li class="navTextFooter navTextFooterLink">Services</li></a
+              >
+              <a href="../case1/index.html" class="navLinkFooter"
+                ><li class="navTextFooter navTextFooterLink">Cases</li></a
+              >
+              <a href="../contact/index.html" class="navLinkFooter"
+                ><li class="navTextFooter navTextFooterLink">Contact</li></a
+              >
+            </ul>
+          </div>
+          <div class="footerContactBlock">
+            <ul class="list">
+              <div class="typeOfContactAndDetailsFooter">
+                <img class="typeOfContact location" src="./img/location.png" />
+                <li class="contactDetails">
+                  Spyrou Kyprianou 61, SK HOUSE, 4003, Limassol, Cyprus
+                </li>
+              </div>
+              <div class="typeOfContactAndDetailsFooter">
+                <img class="typeOfContact phone" src="./img/phone.png" />
+                <li class="contactDetails">+ 44 786 596 39 35</li>
+              </div>
+              <div class="typeOfContactAndDetailsFooter">
+                <img class="typeOfContact email" src="./img/letter.png" />
+                <li class="contactDetails">info@bellumaco.com</li>
+              </div>
+            </ul>
 
-          <div class="linksFooterPrivacy">
-            <a href="https://ru.linkedin.com/" class="navLinkFooter">
-              <img class="linkedinBot" src="./img/linkedin.png"
-            /></a>
-            <a href="../privacy/index.html" class="footerLink"
-              >Privacy Policy</a
-            >
+            <div class="linksFooterPrivacy">
+              <a href="https://ru.linkedin.com/" class="navLinkFooter">
+                <img class="linkedinBot" src="./img/linkedin.png"
+              /></a>
+              <a href="../privacy/index.html" class="footerLink"
+                >Privacy Policy</a
+              >
+            </div>
           </div>
         </div>
+        <div class="copyrigthBlock">
+          <p class="footerCopyrigth">Copyright © 2021 Bellumaco</p>
+        </div>
       </div>
-      <div class="copyrigthBlock">
-        <p class="footerCopyrigth">Copyright © 2021 Bellumaco</p>
-      </div>
-    </div>
     </footer>
     <script src="../../js/jquery.js"></script>
     <script src="./js/three.min.js"></script>
