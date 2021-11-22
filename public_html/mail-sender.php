@@ -48,9 +48,9 @@ try {
     $mail->SMTPSecure = 'tls';
     $mail->MailerDebug = false;
     /* SMTP authentication username. */
-    $mail->Username = 'bellumaco@gmail.com';
+    $mail->Username = 'bellumaco2@gmail.com';
     /* SMTP authentication password. */
-    $mail->Password = '1234567890maco';
+    $mail->Password = 'Qt?xSy*)8k<DBBwq';
     /* Set the SMTP port. */
     $mail->Port = 587;
     /* Finally send the mail. */
