@@ -57,6 +57,13 @@
     text-align: left;
   }
 
+  .mapSection {
+    background-image: url('../images/tablet.png');
+    border-radius: 40px;
+  
+    margin: 0 0 80px;
+  }
+
   .mapImg {
     display: block;
     width: 100%;

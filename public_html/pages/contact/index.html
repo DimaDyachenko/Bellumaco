@@ -20,7 +20,9 @@
       <div class="desktopWrapper">
         <div class="topBlock container">
           <div class="wrapperHeader">
-            <img class="logoImgTop" src="./images/mainLogo.WebP" />
+            <a href="../../index.html">
+              <img class="logoImgTop" src="./images/mainLogo.WebP" />
+            </a>
 
             <nav role="navigation" class="nav">
               <div id="menuToggle" class="burgerMenu">
@@ -289,7 +291,7 @@
       </div>
     </section>
     <section class="mapSection show-on-scroll">
-      <img class="mapImg show-on-scroll" src="images/map.png" />
+      <!-- <img class="mapImg show-on-scroll" src="images/map.png" /> -->
     </section>
     <section class="grey">
       <footer class="footer container">
@@ -341,7 +343,7 @@
               <a href="https://ru.linkedin.com/" class="navLinkFooter">
                 <img class="linkedinBot" src="./images/linkedin.png"
               /></a>
-              <a href="pages/privacy/index.html" class="footerLink"
+              <a href="../privacy/index.html" class="footerLink"
                 >Privacy Policy</a
               >
             </div>
@@ -455,25 +457,24 @@
       }
     </script>
     <script>
-      $('form#formElem').submit(function (event){
-          $.ajax({
-              type:"POST", // define method post or get
-              url:$('form#formElem').attr('action'), // gets the post url from your action attribute
-              data:$("input[name=femail]").val(), // binds your form data
-              dataType:'json', // server response data type, use 'html' 'json' etc
-              encode:true,
-              success:function(data){
-                console.log(data)
-              },
-              error:function( xhr, status, errorThrown ) {
-              //alert( "Sorry, there was a problem!" );
-              // console.log( "Error: " + errorThrown );
-              // console.log( "Status: " + status );
-              // console.dir( xhr );
-  
-              },
-          });
-           event.preventDefault(); // prevents from going to the posting url
+      $("form#formElem").submit(function (event) {
+        $.ajax({
+          type: "POST", // define method post or get
+          url: $("form#formElem").attr("action"), // gets the post url from your action attribute
+          data: $("input[name=femail]").val(), // binds your form data
+          dataType: "json", // server response data type, use 'html' 'json' etc
+          encode: true,
+          success: function (data) {
+            console.log(data);
+          },
+          error: function (xhr, status, errorThrown) {
+            //alert( "Sorry, there was a problem!" );
+            // console.log( "Error: " + errorThrown );
+            // console.log( "Status: " + status );
+            // console.dir( xhr );
+          },
+        });
+        event.preventDefault(); // prevents from going to the posting url
       });
     </script>
   </body>
