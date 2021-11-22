@@ -295,13 +295,11 @@ input {
 }
 
 .mapSection {
-background-image: url('../images/map.png');
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-height: 500px;
+  margin: 50px 0 80px;
+}
 
-  margin: 60px -20px;
+iframe {
+  border-radius: 20px;
 }
 
 .mapImg {
