@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+.notFountSection {
+  background-color: #191919;
+  height: 100vh;
+}
+.container {
+  padding: 130px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.errorImg {
+  width: 50%;
+}
+.errorTitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #f0f8f7;
+  margin-bottom: 10px;
+}
+.errorText {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #cbcfcf;
+  margin-bottom: 160px;
+}
+.errorBtn {
+  width: 280px;
+  padding: 16px 32px;
+  background: #00e2d5;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #0e0e0e;
+}
+a {
+  display: block;
+}
