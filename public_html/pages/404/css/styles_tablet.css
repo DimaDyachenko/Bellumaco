@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+    .container {
+        padding: 100px;
+      }
+      .errorTitle {
+          margin-bottom: 20px;
+      }
+      .errorText {
+          margin-bottom: 50px;
+      }
+      .errorBtn {
+          width: 190px;
+      }
+  }
+  
