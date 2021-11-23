@@ -30,7 +30,7 @@
   }
   .navList {
     display: flex;
-    margin-right: 160px;
+    margin-right: 128px;
     align-self: center;
   }
 
@@ -49,7 +49,7 @@
     font-size: 16px !important;
     line-height: 1.9em;
     color: white;
-    margin-right: 60px;
+    margin-right: 30px;
     transition: 0.3s ease-in-out;
   }
   .navLink:hover .navText {
@@ -77,7 +77,6 @@
   }
   .accordion {
     position: relative;
-    margin-right: 0 !important;
     transition: all 0.2s;
   }
   .accordion :hover {
@@ -134,9 +133,15 @@
     margin: 0;
   }
 
-  .mapImg {
-    max-width: 1290px;
+  .historySubtitle {
+    justify-content: start;
   }
+
+  .mapSection {
+  
+    margin: 20px 0 120px;
+  }
+
 
   .formContainer {
     padding: 60px;

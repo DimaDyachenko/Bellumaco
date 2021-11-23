@@ -41,7 +41,7 @@
   }
   .navList {
     display: flex;
-    margin-right: 120px;
+    margin-right: 128px;
     align-self: center;
   }
   .borderedButtonHeader {
@@ -55,7 +55,7 @@
     font-size: 16px !important;
     line-height: 1.9em;
     color: white;
-    margin-right: 60px;
+    margin-right: 30px;
     transition: 0.3s ease-in-out;
   }
   .navLink:hover .navText {
@@ -138,10 +138,16 @@
     width: 100%;
     margin: 0 auto;
   }
+
+  .photoDesktop {
+    position: relative;
+  }
   .planetImgDesktop {
+    position: absolute;
     display: block !important;
     width: 410px;
     height: 407px;
+    top: 0;
   }
   .planetImg {
     display: none;
@@ -159,7 +165,7 @@
     padding: 0;
   }
   .casesCardItem {
-    max-width: 630px;
+    max-width: 550px;
   }
   .casesSubtitleWithLine {
     justify-content: end;
@@ -172,6 +178,10 @@
   }
   .third {
     transform: translateY(3%);
+  }
+
+  .burderedButtonCases {
+    max-width: 270px;
   }
   .titleAndPhotoDesktop {
     display: flex;
