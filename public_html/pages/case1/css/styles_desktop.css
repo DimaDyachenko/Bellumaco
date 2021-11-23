@@ -75,7 +75,6 @@
   }
   .accordion {
     position: relative;
-    margin-right: 0 !important;
     transition: all 0.2s;
   }
 
